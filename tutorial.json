@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "summary": {
+    "title": "Introduction",
+    "description": "> Welcome to the git lessons!"
+  },
+  "config": {
+    "testRunner": {
+      "command": "./node_modules/.bin/mocha",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "setup": {
+        "commands": [
+          "cd .freeCodeCamp && npm install",
+          "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
+        ]
+      },
+      "directory": "freeCodeCamp"
+    },
+    "repo": {
+      "uri": "https://github.com/moT01/.learn-git",
+      "branch": "v0.1.0"
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ],
+    "setup": {
+      "commits": [
+        "b75ff6432feded8c0aa06088293c2ac19bd598ba"
+      ]
+    }
+  },
+  "levels": [
+    {
+      "id": "10",
+      "title": "Restart Terminal",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "10.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f2d099fbf70b31800b9e48cbac6677cc50c7af12"
+            ]
+          },
+          "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
+          "hints": [
+            "Follow the directions closely",
+            "If the tests don't pass, redo those instructions"
+          ]
+        }
+      ]
+    }
+  ]
+}
