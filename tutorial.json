@@ -30,7 +30,7 @@
     ],
     "setup": {
       "commits": [
-        "b75ff6432feded8c0aa06088293c2ac19bd598ba"
+        "495346db0b61314d5f4c764cb55d959fd055e919"
       ]
     }
   },
@@ -48,13 +48,238 @@
               "../.bash_history"
             ],
             "commits": [
-              "f2d099fbf70b31800b9e48cbac6677cc50c7af12"
+              "2c91dc3ab473671356cb52a2a0767a39081479bc"
             ]
           },
           "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
           "hints": [
             "Follow the directions closely",
             "If the tests don't pass, redo those instructions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Make Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "20.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f3af07ca31e2fd8544c38ccf07a7ac362b1e6d2e"
+            ]
+          },
+          "content": "You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `website` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.",
+          "hints": [
+            "Enter `mkdir website` in the terminal from the `project` folder",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there",
+            "Don't try to create the folder with another method"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Change Directory",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "30.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1fbba9dbfd75b33db5dc8835a16e1e4dd6cdbe70"
+            ]
+          },
+          "content": "Use the \"change directory\" command in the terminal to change to your new folder.",
+          "hints": [
+            "Enter `cd website` into the terminal",
+            "Make sure you are in the `project` folder first",
+            "Enter `cd ~/project` to get to the `project` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Initialize a git Repository",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "40.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3ea1a0aead34fc2cb9c8c60d91a3909cd75491be"
+            ]
+          },
+          "content": "This folder will be your git repository. To turn it into one, type `git init` into the terminal from this folder.",
+          "hints": [
+            "Enter `git init` into the terminal while in the `git-practice` folder",
+            "Make sure you are in the `git-practice` folder first",
+            "Enter `cd ~/project/git-practice` to get to the `git-practice` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "title": "Git Status",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "50.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "21d77790d94ac16c9a33e0766459755e64fc33b5"
+            ]
+          },
+          "content": "You can use `git status` to see the status of where you are with your repository. This command is your best friend.",
+          "hints": [
+            "Type `git status` into the terminal and press enter",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "title": "Create index.html",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "60.1",
+          "setup": {
+            "watchers": [
+              "../website"
+            ],
+            "commits": [
+              "08915c657d7f9fc2de5f040662f3610606ac32ee"
+            ]
+          },
+          "content": "You are on the \"master\" branch with nothing to commit. Let's make something to commit! Create `index.html` in your website folder.",
+          "hints": [
+            "You can create the file from the command line with `touch index.html` while in the `website` folder",
+            "Enter `cd ~/project/website` to get to the `website` folder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "title": "Git Status",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "70.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3040592a606ab6d707cd8ac66f374797e0c2bbb6"
+            ]
+          },
+          "content": "Check your status again with `git status`",
+          "hints": [
+            "Type `git status` into the terminal and press enter",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "80",
+      "title": "Add index.html",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "80.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9ac6085710b7b4eafc58b60ddcb17213793d39dc"
+            ]
+          },
+          "content": "It shows the file you created as \"untracked\" because it didn't exist in the last commit. It takes two steps to commit it. The first step is to \"add\" it. Use `git add index.html` to add the file.",
+          "hints": [
+            "Type `git add index.html` into the terminal and press enter",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "title": "Git Status",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "90.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ca1a74001fd6044938bcecb4bee7b92ca1cfdd36"
+            ]
+          },
+          "content": "Check the status again.",
+          "hints": [
+            "Use the \"git status\" command",
+            "Enter `git status` into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "title": "Your first commit",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "100.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d884d3cb80b6ff99f53d360e78106f519c52da62"
+            ]
+          },
+          "content": "The file is now added and ready to be committed. Use `git commit -m \"message\"` to commit your changes. `-m` stands for message, and whatever you put in the quotes will be the message that goes with that commit. Commit your changes with the message, `my first commit`.",
+          "hints": [
+            "Enter `git commit -m \"my first commit\" into the terminal",
+            "Make sure you are in the `website` folder first",
+            "Enter `cd ~/project/website` to get to the `website` folder if you aren't there"
           ]
         }
       ]
