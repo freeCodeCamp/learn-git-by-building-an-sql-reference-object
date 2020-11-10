@@ -19,7 +19,7 @@
       "directory": "freeCodeCamp"
     },
     "repo": {
-      "uri": "https://github.com/moT01/.learn-git",
+      "uri": "https://github.com/moT01/.learn-git-by-building-an-sql-reference-object",
       "branch": "v0.1.0"
     },
     "dependencies": [
@@ -30,7 +30,7 @@
     ],
     "setup": {
       "commits": [
-        "495346db0b61314d5f4c764cb55d959fd055e919"
+        "3dc5fc8e3131f63b98eab90129aef107c6d75b5e"
       ]
     }
   },
@@ -48,7 +48,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2c91dc3ab473671356cb52a2a0767a39081479bc"
+              "5601c5d30286185c246b6a1b23b6fce07383636f"
             ]
           },
           "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
@@ -72,7 +72,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f3af07ca31e2fd8544c38ccf07a7ac362b1e6d2e"
+              "38110f9f343dce8a87a84a9bd21c0e9eaad73c6a"
             ]
           },
           "content": "You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `website` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.",
@@ -97,7 +97,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1fbba9dbfd75b33db5dc8835a16e1e4dd6cdbe70"
+              "91e659d44a2cc7aaec6f96096f7504e04703ba53"
             ]
           },
           "content": "Use the \"change directory\" command in the terminal to change to your new folder.",
@@ -122,7 +122,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3ea1a0aead34fc2cb9c8c60d91a3909cd75491be"
+              "bddda9c5626bedf73433825d6b7aac9cdf47b966"
             ]
           },
           "content": "This folder will be your git repository. To turn it into one, type `git init` into the terminal from this folder.",
@@ -147,7 +147,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "21d77790d94ac16c9a33e0766459755e64fc33b5"
+              "1ab25dc18bb7b83193ead928636cc5a858914840"
             ]
           },
           "content": "You can use `git status` to see the status of where you are with your repository. This command is your best friend.",
@@ -172,7 +172,7 @@
               "../website"
             ],
             "commits": [
-              "08915c657d7f9fc2de5f040662f3610606ac32ee"
+              "6e7b517dd063abef4bb9914cb93ca480f7438dac"
             ]
           },
           "content": "You are on the \"master\" branch with nothing to commit. Let's make something to commit! Create `index.html` in your website folder.",
@@ -196,7 +196,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3040592a606ab6d707cd8ac66f374797e0c2bbb6"
+              "4db9f8bfccce06859292540642254984cef14fa7"
             ]
           },
           "content": "Check your status again with `git status`",
@@ -221,7 +221,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9ac6085710b7b4eafc58b60ddcb17213793d39dc"
+              "bbe736c36ddb7ee7710cdf85a235562bd12c0570"
             ]
           },
           "content": "It shows the file you created as \"untracked\" because it didn't exist in the last commit. It takes two steps to commit it. The first step is to \"add\" it. Use `git add index.html` to add the file.",
@@ -246,7 +246,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ca1a74001fd6044938bcecb4bee7b92ca1cfdd36"
+              "c82ea544019f265de2a6d86fa4d304489d6fd11f"
             ]
           },
           "content": "Check the status again.",
@@ -272,7 +272,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d884d3cb80b6ff99f53d360e78106f519c52da62"
+              "e42a4e797da5537409f5cd9a1bfea1dc4817c4cd"
             ]
           },
           "content": "The file is now added and ready to be committed. Use `git commit -m \"message\"` to commit your changes. `-m` stands for message, and whatever you put in the quotes will be the message that goes with that commit. Commit your changes with the message, `my first commit`.",
