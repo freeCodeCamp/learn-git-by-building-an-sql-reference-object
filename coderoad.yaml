@@ -8,7 +8,7 @@ config:
       commands:
       - cd .freeCodeCamp && npm install
       - sudo cp ~/project/.freeCodeCamp/.bashrc ~
-    directory: freeCodeCamp
+    directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-git-by-building-an-sql-reference-object
     branch: v0.1.0
