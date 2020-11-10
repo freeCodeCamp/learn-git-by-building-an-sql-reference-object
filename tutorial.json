@@ -5,16 +5,19 @@
     "description": "> Welcome to the git lessons!"
   },
   "config": {
+    "setup": {
+      "commands": [
+        "cd .freeCodeCamp && npm install",
+        "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
+      ],
+      "commits": [
+        "e9ff310da6778f0941cb802f750b43eca7033af8"
+      ]
+    },
     "testRunner": {
       "command": "./node_modules/.bin/mocha",
       "args": {
         "tap": "--reporter=mocha-tap-reporter"
-      },
-      "setup": {
-        "commands": [
-          "cd .freeCodeCamp && npm install",
-          "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
-        ]
       },
       "directory": ".freeCodeCamp"
     },
@@ -27,12 +30,7 @@
         "name": "node",
         "version": ">=10"
       }
-    ],
-    "setup": {
-      "commits": [
-        "e9ff310da6778f0941cb802f750b43eca7033af8"
-      ]
-    }
+    ]
   },
   "levels": [
     {
