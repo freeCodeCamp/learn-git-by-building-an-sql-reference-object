@@ -53,7 +53,7 @@ Git is a version control system to keep track of your code. This folder will be 
 
 ### 50.1
 
-Use the list command with the `-a` flag to list the hidden folder and files.
+Use the list command with the `-a` flag to list the hidden folders and files.
 
 #### HINTS
 
@@ -78,7 +78,7 @@ The `git init` command created that `.git` folder for you. It's what keeps track
 
 ### 70.1
 
-A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be for your production code, and other branches for adding or testings new features. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.
+A git repository has different branches to help keep track things you are doing to your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.
 
 #### HINTS
 
@@ -109,6 +109,7 @@ Now you are on the `main` branch. Use the touch command to create `README.md` in
 
 - Use `touch file_name` to create a file
 - Type `touch README.md` into the terminal and press enter
+- Don't try to create the file with another method
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -171,6 +172,7 @@ Now your file is in staging and will be added with the next commit. You aren't q
 
 - Use `touch file_name` to create a file
 - Type `touch sql_reference.json` into the terminal and press enter
+- Don't try to create the file with another method
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -191,7 +193,7 @@ Check your status again.
 
 ### 160.1
 
-Add the new file you created to the staging area. 
+You now have one file in staging and one that is untracked. Add the new file you created to the staging area. 
 
 #### HINTS
 
@@ -218,7 +220,7 @@ Check your status again please.
 
 ### 180.1
 
-Now you have two files in staging. To commit them, you can use `git commit -m "initial commit"`. The `-m` stands for "message". Often times, the first commit of a repo will have the message "initial commit". Commit your two files with the message `initial commit`.
+Now you have two files in staging. To commit them, you can use `git commit -m "Initial commit"`. The `-m` stands for "message". Often times, the first commit of a repo will have the message "Initial commit". Commit your two files with the message `Initial commit`.
 
 #### HINTS
 
@@ -230,7 +232,7 @@ Now you have two files in staging. To commit them, you can use `git commit -m "i
 
 ### 190.1
 
-Check your status to see what's there.
+When you make a commit, whatever is in the staging area will be added to your git history. Check your status to see what's there.
 
 #### HINTS
 
@@ -286,7 +288,7 @@ Check your status again.
 
 ### 230.1
 
-Git recognizes new unstaged changes to your file. You can see the changes you made with `git diff`. Take a look at the new changes.
+Git recognizes new unstaged changes to your file. Notice that it doesn't say that it's untracked anymore because the file has been previously committed. You can see the changes you made with `git diff`. Take a look at the new changes.
 
 #### HINTS
 
@@ -329,6 +331,8 @@ Your new changes are ready to be committed. Commit them with the message `feat: 
 #### HINTS
 
 - Type `git commit -m "feat: add create database reference"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -404,7 +408,7 @@ Looks like you changed a couple lines. Add your changes to the staging area.
 #### HINTS
 
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -418,6 +422,8 @@ Commit your staged changes with the message, `feat: add drop database reference`
 
 - Commit changes with `git commit -m "message"`
 - Type `git commit -m "feat: add drop database reference"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -558,6 +564,8 @@ The changes are now in staging. Commit your staged changes with the message `fea
 
 - Commit changes with `git commit -m "message"`
 - Type `git commit -m "feat: add create table reference"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -713,6 +721,8 @@ Commit your staged changes with the message `feat: add drop table reference`.
 
 - Commit changes with `git commit -m "message"`
 - Type `git commit -m "feat: add drop table reference"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 - Make sure you are in your `sql_reference` repo folder
 
 ## 560. Checkout main

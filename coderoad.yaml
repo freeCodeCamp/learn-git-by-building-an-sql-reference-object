@@ -75,7 +75,7 @@ levels:
       - id: '100.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/README.md
   - id: '110'
     steps:
       - id: '110.1'
@@ -141,7 +141,7 @@ levels:
       - id: '210.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/sql_reference.json
   - id: '220'
     steps:
       - id: '220.1'
@@ -183,7 +183,7 @@ levels:
       - id: '280.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/sql_reference.json
   - id: '290'
     steps:
       - id: '290.1'
@@ -249,7 +249,7 @@ levels:
       - id: '390.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/sql_reference.json
   - id: '400'
     steps:
       - id: '400.1'
@@ -327,7 +327,7 @@ levels:
       - id: '520.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/sql_reference.json
   - id: '530'
     steps:
       - id: '530.1'
