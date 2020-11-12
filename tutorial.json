@@ -11,7 +11,7 @@
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
       ],
       "commits": [
-        "1eabcc0ed1d951378331099b7a57c291793ff1c7"
+        "ba8f70bf2a1768702c03e38cf56e4d59851b14eb"
       ]
     },
     "testRunner": {
@@ -46,7 +46,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "41deeaf8a8b28ec4f1e4d506343bc258c5424b70"
+              "80d83538b6a795a092fbca6544681498c17e3382"
             ]
           },
           "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
@@ -70,7 +70,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e5d60e30236a6f165c32b221ab36906fd9b485cf"
+              "77c87a65ec1b907b7c95c07105ea7cd11b63b35e"
             ]
           },
           "content": "You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `sql_reference` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.",
@@ -95,7 +95,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dcaaba203bc21bdb21c6b0df856569183d83b5f2"
+              "428dac2429b07b07fcd4014a61c59e54e64bc4d5"
             ]
           },
           "content": "Use the \"change directory\" command in the terminal to change to your new folder.",
@@ -120,7 +120,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "21b77124d664dcca19cf88c8c98d4d2f325e9d6d"
+              "4a1764c0939cb733cb05cd4edb7965f56470dd15"
             ]
           },
           "content": "Git is a version control system to keep track of your code. This folder will be your git repository. To turn it into one, type `git init` into the terminal from this folder.",
@@ -145,10 +145,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "6df7023e15869f0d2b3ed3b2a70126c5da2ec912"
+              "fc5d781acda8ff7fc5de430bb9dd626925343508"
             ]
           },
-          "content": "Use the list command with the `-a` flag to list the hidden folder and files.",
+          "content": "Use the list command with the `-a` flag to list the hidden folders and files.",
           "hints": [
             "The list command is `ls`",
             "Type `ls -a` into the terminal and press enter",
@@ -171,7 +171,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d5195792cbb0b35b2a4fd419948cf32edfe561e3"
+              "5d351b8c672fc6088f1f3c51a305af43e40a83be"
             ]
           },
           "content": "The `git init` command created that `.git` folder for you. It's what keeps track of all the things in your repository. Use `git status` to see the status of where you are. This command will be your best friend.",
@@ -196,10 +196,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "d8d38b6ff6ec93c4e08ae97f3ec2e7e2509a36fe"
+              "dd9e1c9aae35cca9f7e705a64caeaf9964fc2eee"
             ]
           },
-          "content": "A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be for your production code, and other branches for adding or testings new features. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.",
+          "content": "A git repository has different branches to help keep track things you are doing to your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.",
           "hints": [
             "Capitalization matters",
             "Type `git checkout -b main` into the terminal",
@@ -222,7 +222,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f69e986c8f896219e92d19764bb23b69c08d73f7"
+              "2fd3355e6402b17433652c981490ccffb92a938c"
             ]
           },
           "content": "Check your status again with `git status`.",
@@ -247,13 +247,14 @@
               "../.bash_history"
             ],
             "commits": [
-              "c977d400ceb72eedb02d1d9bda62c4989bc2aa18"
+              "f7fc03f58b4b85057dfb217e827d724db9b6a806"
             ]
           },
           "content": "Now you are on the `main` branch. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.",
           "hints": [
             "Use `touch file_name` to create a file",
             "Type `touch README.md` into the terminal and press enter",
+            "Don't try to create the file with another method",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -270,10 +271,10 @@
           "id": "100.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./sql_reference/README.md"
             ],
             "commits": [
-              "51ed3b4d94f7da7c05bc7d9a893f732b0d043a31"
+              "c906d9649aef586106f9749e37986de6ebdc4872"
             ]
           },
           "content": "Add `SQL Reference` at the top of your new file to let people know what your repo is for.",
@@ -296,7 +297,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d825a7771843e12de03be0599940292c913a9433"
+              "c70874408851932640940159b29a079a36dd87e9"
             ]
           },
           "content": "Check the status of your repo again.",
@@ -322,7 +323,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5ba71d19509ab15897902ac8ecaa380066acab61"
+              "a534b15337f292a79245b3d60258110156cb3c67"
             ]
           },
           "content": "The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.",
@@ -347,7 +348,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "e186b5b57b1c081419e6b26aba2e9b8c000189ee"
+            ]
           },
           "content": "Check your status again.",
           "hints": [
@@ -371,12 +374,15 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "89242466ade4dfaf6ac8eca4085b11af8f43b8e2"
+            ]
           },
           "content": "Now your file is in staging and will be added with the next commit. You aren't quite ready to commit this yet though. Use `touch` again to create `sql_reference.json` in your repo.",
           "hints": [
             "Use `touch file_name` to create a file",
             "Type `touch sql_reference.json` into the terminal and press enter",
+            "Don't try to create the file with another method",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -395,7 +401,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "788411d144a7d533d788ef60808e9132bdc57572"
+            ]
           },
           "content": "Check your status again.",
           "hints": [
@@ -419,9 +427,11 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "9e0acc0a8b45e88d2207f4e043883a12f74e39bc"
+            ]
           },
-          "content": "Add the new file you created to the staging area.",
+          "content": "You now have one file in staging and one that is untracked. Add the new file you created to the staging area.",
           "hints": [
             "Here's the example again: `git add file_name`",
             "You added the last one with `git add README.md`",
@@ -444,7 +454,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "f21ba2f174668774f0e183aec51ff257d61b8bc3"
+            ]
           },
           "content": "Check your status again please.",
           "hints": [
@@ -468,9 +480,11 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "ab07968d8823c473c67c06a5f04c55972b3c7f90"
+            ]
           },
-          "content": "Now you have two files in staging. To commit them, you can use `git commit -m \"initial commit\"`. The `-m` stands for \"message\". Often times, the first commit of a repo will have the message \"initial commit\". Commit your two files with the message `initial commit`.",
+          "content": "Now you have two files in staging. To commit them, you can use `git commit -m \"Initial commit\"`. The `-m` stands for \"message\". Often times, the first commit of a repo will have the message \"Initial commit\". Commit your two files with the message `Initial commit`.",
           "hints": [
             "Type `git commit -m \"initial commit\"` in the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
@@ -491,9 +505,11 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "6af8846f465b171e691a340bf5a1af5511d43099"
+            ]
           },
-          "content": "Check your status to see what's there.",
+          "content": "When you make a commit, whatever is in the staging area will be added to your git history. Check your status to see what's there.",
           "hints": [
             "Use the \"git status\" command in your repo",
             "Type `git status` into the terminal and press enter",
@@ -515,7 +531,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "ea5517c88b1076affccfe7b13f097aace0aeaa92"
+            ]
           },
           "content": "Your \"working tree\" is clean. That means the files were committed, and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.",
           "hints": [
@@ -536,9 +554,11 @@
           "id": "210.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./sql_reference/sql_reference.json"
             ],
-            "commits": []
+            "commits": [
+              "32d3eb2a5226a023365958762ede722db188b6a3"
+            ]
           },
           "content": "You can see the commit you made. It shows the message you gave with the commit, along with your username, email, the date, and a commit hash. The hash is that long string of characters. Open up your `.json` file and add this object to it:\n\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\"\n  }\n}\n```",
           "hints": [
@@ -559,7 +579,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "0f4f864385e20821d615160333ed626bed00788e"
+            ]
           },
           "content": "Check your status again.",
           "hints": [
@@ -583,9 +605,11 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "0dee0866914eb668bc2bd73a0a0460a1dd3eff01"
+            ]
           },
-          "content": "Git recognizes new unstaged changes to your file. You can see the changes you made with `git diff`. Take a look at the new changes.",
+          "content": "Git recognizes new unstaged changes to your file. Notice that it doesn't say that it's untracked anymore because the file has been previously committed. You can see the changes you made with `git diff`. Take a look at the new changes.",
           "hints": [
             "Type `git diff` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
@@ -606,7 +630,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "35211ba3730851df8366a4d1e4921e7f11ea9bd3"
+            ]
           },
           "content": "Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to at the end of the command.",
           "hints": [
@@ -630,7 +656,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "caedbefa48cec0499846715f448b764c78f2316a"
+            ]
           },
           "content": "Check your status.",
           "hints": [
@@ -654,11 +682,15 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "99dcdbc3404304b8792823ac2b03260d0be036d8"
+            ]
           },
           "content": "Your new changes are ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what a commit looks like: `git commit -m \"message\"`.",
           "hints": [
             "Type `git commit -m \"feat: add create database reference\"` into the terminal and press enter",
+            "View your `git log` to see if your message is correct",
+            "If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -677,7 +709,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "3e9c6f1dd99049e450e91bc9a0d9d23ead684788"
+            ]
           },
           "content": "Commit messages often start with `fix:` or `feat:` among others to help people understand what your commit is doing. Check your `git log` again to see the new commit added.",
           "hints": [
@@ -698,9 +732,11 @@
           "id": "280.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./sql_reference/sql_reference.json"
             ],
-            "commits": []
+            "commits": [
+              "5a1c908c63b94c353fbdca518d69da564a717ac2"
+            ]
           },
           "content": "Now there's two commits in your history, the newest one is at the top :smile: Add `\"drop\": \"DROP DATABASE database_name;\"` to the `database` object in your `sql_reference.json` file. Don't forget the comma at the end of the previous line to make it a valid json object.",
           "hints": [
@@ -722,7 +758,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "2fb19d4f3cae23f8be4834ea55b87b5654d2f7ba"
+            ]
           },
           "content": "Check the status.",
           "hints": [
@@ -746,7 +784,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "83d2680ade4d2ffa644a4341f1daae38d2bb9624"
+            ]
           },
           "content": "Changes not staged, I should have expected that. Check the `diff` quick.",
           "hints": [
@@ -770,12 +810,14 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "4a80858d0a78600bb17bf2885b8ac49d74d63584"
+            ]
           },
           "content": "Looks like you changed a couple lines. Add your changes to the staging area.",
           "hints": [
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter",
+            "Type `git add sql_reference.json` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -794,12 +836,16 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "674d5a0b08cd9dbc12e8bdb5abb6a8c68c9a1cd1"
+            ]
           },
           "content": "Commit your staged changes with the message, `feat: add drop database reference`",
           "hints": [
             "Commit changes with `git commit -m \"message\"`",
             "Type `git commit -m \"feat: add drop database reference\"` into the terminal and press enter",
+            "View your `git log` to see if your message is correct",
+            "If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -818,7 +864,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "0649635f20cf075f1f634eaeecd436081c06353f"
+            ]
           },
           "content": "I think you're catching on :smile: Check the `log` again.",
           "hints": [
@@ -841,7 +889,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "0ecf9e1b8b179598c6980230427a6e0a78a03f19"
+            ]
           },
           "content": "You have been making changes to your `main` branch. You actually want to try and avoid that. Type `git branch` to see the current branches in your repo.",
           "hints": [
@@ -864,7 +914,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "b3a882ce0c557755711e54f591efce8745c1659e"
+            ]
           },
           "content": "You only have the `main` branch still. You can create a branch with `git branch branch_name`. Branches often start with `fix/` or `feat/` among others like commit messages, but they use a forward slash and can't contain spaces. Create a new branch named `feat/add-create-table-reference`.",
           "hints": [
@@ -887,7 +939,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "949a71d7281463be092ab9b772cd6ebe9e92067b"
+            ]
           },
           "content": "Your new branch is basically a fork of the `main` branch since that's the branch you were on when you created it. It will have the same code and commit history as `main` did at the time of the branch creation. View your branches again with `git branch`.",
           "hints": [
@@ -910,7 +964,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "6c44a04e95c3e58b8d22693371240c0e4fe55044"
+            ]
           },
           "content": "You created the branch, but you are still on the `main` branch as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.",
           "hints": [
@@ -933,7 +989,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "b6d86491e8f803667554590b5b24f67d51223915"
+            ]
           },
           "content": "It says you switched to your new branch. Type `git branch` so I can make sure the `*` switched.",
           "hints": [
@@ -954,9 +1012,11 @@
           "id": "390.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./sql_reference/sql_reference.json"
             ],
-            "commits": []
+            "commits": [
+              "bcb8eb8ce1f36ef7c53b96b85c943eaf7df173d8"
+            ]
           },
           "content": "Like I said, you don't want to make commits directly to the `main` branch of a repo. So this branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name();\",\n}\n```",
           "hints": [
@@ -978,7 +1038,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "93e0a71c88c09fc79d56369260d1cec950afc40d"
+            ]
           },
           "content": "Check the status again. You might as well get used to it :smiley_cat:",
           "hints": [
@@ -1002,7 +1064,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "64fe0b1a17e85699d31fb996ba446ba40c544715"
+            ]
           },
           "content": "Add the file to staging.",
           "hints": [
@@ -1027,12 +1091,16 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "426ad58e8dc65aff097787d233c998317a3a0356"
+            ]
           },
           "content": "The changes are now in staging. Commit your staged changes with the message `feat: add create table reference`.",
           "hints": [
             "Commit changes with `git commit -m \"message\"`",
             "Type `git commit -m \"feat: add create table reference\"` into the terminal and press enter",
+            "View your `git log` to see if your message is correct",
+            "If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -1051,7 +1119,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "56aa1e881f1f5656df5a527704d1b0ade2d57b0e"
+            ]
           },
           "content": "Check your `git log` again.",
           "hints": [
@@ -1074,7 +1144,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "60b265c25bd1a1be121a362af3e3e9449ec1152e"
+            ]
           },
           "content": "Now you have four commits. Use `git checkout` to switch back to the `main` branch.",
           "hints": [
@@ -1096,7 +1168,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "158d27c2aa5dfdad13aaf42be13475ab63f9748a"
+            ]
           },
           "content": "You may have noticed that the code you added disappeared from the json file. Your changes were added on the `feat/add-create-table-reference` branch so they don't exist on this branch. Check the log of the main branch.",
           "hints": [
@@ -1119,7 +1193,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "8a2261fa7c09fe778125d30e1919cca199008a38"
+            ]
           },
           "content": "The commit you added is not on this branch so it simply doesn't exist as far as this branch is concerned. If you switch back to the other branch, everything would show back up. View the branches you have to remind me the name of your other branch.",
           "hints": [
@@ -1142,7 +1218,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "8eafa58de0797f12a270d42e2a001e53f451b0a1"
+            ]
           },
           "content": "You created the `feat/add-create-table-reference` branch, made some commits, and now it's ready to be added to the `main` branch. You can use `git merge branch_name` to bring changes from a branch into the branch you are currently on. Merge the changes from your feature branch into the `main` branch.",
           "hints": [
@@ -1164,7 +1242,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "3cff46af6d84849ecebbbd22ee06d3b949c5c9a7"
+            ]
           },
           "content": "Your additions magically appeared in the json file. Check the log again.",
           "hints": [
@@ -1186,7 +1266,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "572bc1f78a5fa51c0b09609a2d9307b4a0282d29"
+            ]
           },
           "content": "The commits you made on your feature branch were added to this branch. You can delete a branch with `git branch -d branch_name`. `-d` stands for \"delete\". Since your changes were added, you can safely delete the `feat/add-create-table-reference` branch. Do that now.",
           "hints": [
@@ -1207,7 +1289,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "6ca41aaa3ef38790c7b9bc50bbd2c464868c5fd5"
+            ]
           },
           "content": "View your branches again to verify that it's gone.",
           "hints": [
@@ -1230,7 +1314,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "b5ab1a9e327283cddbcf62d8ec1b21feb54c83ff"
+            ]
           },
           "content": "You're just left with the `main` branch again... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.",
           "hints": [
@@ -1249,9 +1335,11 @@
           "id": "520.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./sql_reference/sql_reference.json"
             ],
-            "commits": []
+            "commits": [
+              "fe5f71fe4d71ee7a34f58ffae5dc82bbf5d6814e"
+            ]
           },
           "content": "Add a reference in the `table` object of your json file for dropping a table. It should look like this: `\"drop\": \"DROP TABLE table_name;\"`",
           "hints": [
@@ -1273,7 +1361,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "aad0bca49177ef7855712e21aad9ec7fdf4c4445"
+            ]
           },
           "content": "Check your status.",
           "hints": [
@@ -1296,7 +1386,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "6f0d0b35ee07cc8190eed066a6ab0b0b00bd733a"
+            ]
           },
           "content": "Add your changes to staging.",
           "hints": [
@@ -1319,12 +1411,16 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "e971e51e2ebb407de897e51ad74006c383c06ddc"
+            ]
           },
           "content": "Commit your staged changes with the message `feat: add drop table reference`.",
           "hints": [
             "Commit changes with `git commit -m \"message\"`",
             "Type `git commit -m \"feat: add drop table reference\"` into the terminal and press enter",
+            "View your `git log` to see if your message is correct",
+            "If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again",
             "Make sure you are in your `sql_reference` repo folder"
           ]
         }
@@ -1342,7 +1438,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "e50d4321a9fc633e927d84eef28a1a313044a67b"
+            ]
           },
           "content": "Switch back your `main` branch.",
           "hints": [
@@ -1364,7 +1462,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "06d27475ddbde37af2d26b4bc6650b03b56ac08a"
+            ]
           },
           "content": "Remember that the code and commits you added aren't on this branch. View the branches on your repo so you can get the name of it to merge your feature into the main branch.",
           "hints": [
@@ -1386,7 +1486,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "76eb0746b55381197edf5e19d06bdd0c03bdb6f0"
+            ]
           },
           "content": "Merge your feature branch into the `main` branch.",
           "hints": [
@@ -1410,7 +1512,9 @@
             "watchers": [
               "../.bash_history"
             ],
-            "commits": []
+            "commits": [
+              "785a355dc9ebf62d605ed8fcd581c9eadcaaebf6"
+            ]
           },
           "content": "Your code and commits from your new feature are now added to this branch. Delete your feature branch.",
           "hints": [
