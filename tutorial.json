@@ -11,7 +11,7 @@
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
       ],
       "commits": [
-        "fec25b59e331c53bb82211a389ff6bdaf3f3814e"
+        "1eabcc0ed1d951378331099b7a57c291793ff1c7"
       ]
     },
     "testRunner": {
@@ -46,7 +46,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "25d1e404a6c4592e7a27a370ec4f10e85ba19d49"
+              "41deeaf8a8b28ec4f1e4d506343bc258c5424b70"
             ]
           },
           "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
@@ -70,7 +70,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "08dcaa5676bf21242d08f226eea6d969bedff5c0"
+              "e5d60e30236a6f165c32b221ab36906fd9b485cf"
             ]
           },
           "content": "You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `sql_reference` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.",
@@ -95,7 +95,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c20a6da913000b29bcfe70e5e2fc9ce881dcaa7b"
+              "dcaaba203bc21bdb21c6b0df856569183d83b5f2"
             ]
           },
           "content": "Use the \"change directory\" command in the terminal to change to your new folder.",
@@ -120,7 +120,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fc0c0cc54be06034fa5517564af80014f2a3031d"
+              "21b77124d664dcca19cf88c8c98d4d2f325e9d6d"
             ]
           },
           "content": "Git is a version control system to keep track of your code. This folder will be your git repository. To turn it into one, type `git init` into the terminal from this folder.",
@@ -145,7 +145,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e25593f0e0d9a0094fa0d55fbc0cbca88fa41ca6"
+              "6df7023e15869f0d2b3ed3b2a70126c5da2ec912"
             ]
           },
           "content": "Use the list command with the `-a` flag to list the hidden folder and files.",
@@ -171,7 +171,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e5d31a716c9dca75785df05ac52f2d76b2a8e5ca"
+              "d5195792cbb0b35b2a4fd419948cf32edfe561e3"
             ]
           },
           "content": "The `git init` command created that `.git` folder for you. It's what keeps track of all the things in your repository. Use `git status` to see the status of where you are. This command will be your best friend.",
@@ -185,7 +185,7 @@
     },
     {
       "id": "70",
-      "title": "Create main Branch",
+      "title": "Checkout main Branch",
       "summary": "",
       "content": "",
       "steps": [
@@ -196,12 +196,13 @@
               "../.bash_history"
             ],
             "commits": [
-              "93a72aafcbbb67f7b8d16ab7ec00595df957f9bf"
+              "d8d38b6ff6ec93c4e08ae97f3ec2e7e2509a36fe"
             ]
           },
-          "content": "A git repository is made of branches to keep track of different parts of your code. It's common to have a `main` branch which might be your production code, and other branches for adding features or testing new features. You are on the \"master\" branch. You can rename it with `git branch -m new_name`. Use that command to rename the current branch to `main`.",
+          "content": "A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be for your production code, and other branches for adding or testings new features. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.",
           "hints": [
-            "Type `git branch -m main` into the terminal",
+            "Capitalization matters",
+            "Type `git checkout -b main` into the terminal",
             "Make sure you are in your `sql-reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -221,7 +222,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8f83ef5d48d1223c927af3d21165a5af789782b4"
+              "f69e986c8f896219e92d19764bb23b69c08d73f7"
             ]
           },
           "content": "Check your status again with `git status`.",
@@ -246,10 +247,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "cb7a55c696c5f8a87f918de360c004aac8e1237c"
+              "c977d400ceb72eedb02d1d9bda62c4989bc2aa18"
             ]
           },
-          "content": "You can see the branch was renamed to `main`. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.",
+          "content": "Now you are on the `main` branch. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.",
           "hints": [
             "Use `touch file_name` to create a file",
             "Type `touch README.md` into the terminal and press enter",
@@ -272,7 +273,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7c518135e85c2fe7f71b3bd0a082898f8897c3cf"
+              "51ed3b4d94f7da7c05bc7d9a893f732b0d043a31"
             ]
           },
           "content": "Add `SQL Reference` at the top of your new file to let people know what your repo is for.",
@@ -295,7 +296,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c92d18d85aac3e329c88d08b43b4c594169912fe"
+              "d825a7771843e12de03be0599940292c913a9433"
             ]
           },
           "content": "Check the status of your repo again.",
@@ -321,7 +322,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "633396c0c2f492ebff0f695e6853c59f799a82e9"
+              "5ba71d19509ab15897902ac8ecaa380066acab61"
             ]
           },
           "content": "The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.",
