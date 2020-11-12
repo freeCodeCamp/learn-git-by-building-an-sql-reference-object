@@ -53,12 +53,12 @@ Git is a version control system to keep track of your code. This folder will be 
 
 ### 50.1
 
-Use the list command with the `-l` flag to list the hidden folder and files.
+Use the list command with the `-a` flag to list the hidden folder and files.
 
 #### HINTS
 
 - The list command is `ls`
-- Type `ls -l` into the terminal and press enter
+- Type `ls -a` into the terminal and press enter
 - Make sure you are in the `sql_reference` folder first
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
