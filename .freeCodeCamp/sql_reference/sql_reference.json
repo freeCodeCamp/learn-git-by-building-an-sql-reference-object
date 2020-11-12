@@ -2,8 +2,5 @@
   "database": {
     "create": "CREATE DATABASE database_name;",
     "drop": "DROP DATABASE database_name;"
-  },
-  "table": {
-    "create": "CREATE TABLE table_name;"
   }
 }
