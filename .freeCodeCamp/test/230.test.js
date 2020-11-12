@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand, getCwd } = require('./utils');
 
 describe('You', () => {
@@ -9,6 +9,6 @@ describe('You', () => {
   });
 
   it('should check the status of your repository', async () => {
-    assert(lastCommand[0] === 'git' && lastCommand[1] === 'status' && cwd === '/home/strove/project/sql_reference');
+    assert(lastCommand[0] === 'git' && lastCommand[1] === 'diff' && cwd === '/home/strove/project/sql_reference');
   });
-});*/
+});
