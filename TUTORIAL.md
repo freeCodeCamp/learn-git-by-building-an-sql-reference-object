@@ -78,7 +78,7 @@ The `git init` command created that `.git` folder for you. It's what keeps track
 
 ### 70.1
 
-A git repository is made of branches to keep track of different parts of your code. It's common to have a `main` branch which might be your production code, and other branches for adding features or testing new features. You are on the "master" branch. You can rename it with `git branch -m new_name`. Use that command to rename the current branch to `main`.
+A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be your production code, and other branches for adding features or testing new features. You are on the "master" branch. You can rename it with `git branch -m new_name`. Use that command to rename the current branch to `main`.
 
 #### HINTS
 
