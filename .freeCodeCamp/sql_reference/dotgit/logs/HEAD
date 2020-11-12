@@ -6,3 +6,4 @@ a5de9441f554604a1418a7ea46d836ea9ca09613 684afe786ecb33e590f7dd03d9d53b6b7770684
 18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 684afe786ecb33e590f7dd03d9d53b6b7770684d moT01 <20648924+moT01@users.noreply.github.com> 1631242588 -0500	checkout: moving from feat/add-create-table-reference to main
 684afe786ecb33e590f7dd03d9d53b6b7770684d 18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 moT01 <20648924+moT01@users.noreply.github.com> 1631242637 -0500	merge feat/add-create-table-reference: Fast-forward
 18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 moT01 <20648924+moT01@users.noreply.github.com> 1631242724 -0500	checkout: moving from main to feat/add-drop-table-reference
+18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 0ae0bd456114d57c6587643a47a9e3399d2ad88d moT01 <20648924+moT01@users.noreply.github.com> 1631242829 -0500	commit: feat: add drop table reference
