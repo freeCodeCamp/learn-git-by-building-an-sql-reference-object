@@ -74,15 +74,16 @@ The `git init` command created that `.git` folder for you. It's what keeps track
 - Make sure you are in the `sql_reference` folder first
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 70. Create main Branch
+## 70. Checkout main Branch
 
 ### 70.1
 
-A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be your production code, and other branches for adding features or testing new features. You are on the "master" branch. You can rename it with `git branch -m new_name`. Use that command to rename the current branch to `main`.
+A git repository has different branches to help keep track of different versions of your code. It's common to have a `main` branch which might be for your production code, and other branches for adding or testings new features. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.
 
 #### HINTS
 
-- Type `git branch -m main` into the terminal
+- Capitalization matters
+- Type `git checkout -b main` into the terminal
 - Make sure you are in your `sql-reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -102,7 +103,7 @@ Check your status again with `git status`.
 
 ### 90.1
 
-You can see the branch was renamed to `main`. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.
+Now you are on the `main` branch. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.
 
 #### HINTS
 
