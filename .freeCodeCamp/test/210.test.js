@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getFileContents } = require('./utils');
 
 describe('Your "sql_reference.json" file', () => {
@@ -11,4 +11,4 @@ describe('Your "sql_reference.json" file', () => {
   it('should have the correct object added', async () => {
     assert(parsedJson.database.create === 'CREATE DATABASE database_name;');
   });
-});
+});*/
