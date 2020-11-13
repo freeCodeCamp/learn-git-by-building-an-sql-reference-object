@@ -78,7 +78,7 @@ The `git init` command created that `.git` folder for you. It's what keeps track
 
 ### 70.1
 
-A git repository has different branches to help keep track things you are doing to your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.
+A git repository has different branches to help keep track things you are doing with your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You are on the `master` branch. You can switch to a new branch with `git checkout -b new_branch`. Use that command to switch to a new branch named `main`.
 
 #### HINTS
 
@@ -117,7 +117,7 @@ Now you are on the `main` branch. Use the touch command to create `README.md` in
 
 ### 100.1
 
-Add `SQL Reference` at the top of your new file to let people know what your repo is for.
+Add the text `SQL Reference` at the top of your new file to let people know what your repo is for.
 
 #### HINTS
 
@@ -232,7 +232,7 @@ Now you have two files in staging. To commit them, you can use `git commit -m "I
 
 ### 190.1
 
-When you make a commit, whatever is in the staging area will be added to your git history. Check your status to see what's there.
+When you make a commit, whatever is in the staging area will be added to your git history. Check your status again to see what's there.
 
 #### HINTS
 
@@ -245,7 +245,7 @@ When you make a commit, whatever is in the staging area will be added to your gi
 
 ### 200.1
 
-Your "working tree" is clean. That means the files were committed, and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.
+Your "working tree" is clean, the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.
 
 #### HINTS
 
@@ -257,7 +257,7 @@ Your "working tree" is clean. That means the files were committed, and there's n
 
 ### 210.1
 
-You can see the commit you made. It shows the message you gave with the commit, along with your username, email, the date, and a commit hash. The hash is that long string of characters. Open up your `.json` file and add this object to it:
+You can see the commit you made. It shows the message you gave with the commit, along with your username, email, the date, and a commit hash. The hash is that long string of characters. Open up your `.json` file and create an object with a reference for how to create a database that looks like this:
 
 ```json
 {
@@ -300,7 +300,7 @@ Git recognizes new unstaged changes to your file. Notice that it doesn't say tha
 
 ### 240.1
 
-Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to at the end of the command.
+The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to at the end of the command.
 
 #### HINTS
 
@@ -326,7 +326,7 @@ Check your status.
 
 ### 260.1
 
-Your new changes are ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what a commit looks like: `git commit -m "message"`.
+Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what the command to commit looks like: `git commit -m "message"`.
 
 #### HINTS
 
@@ -443,7 +443,7 @@ I think you're catching on :smile: Check the `log` again.
 
 ### 340.1
 
-You have been making changes to your `main` branch. You actually want to try and avoid that. Type `git branch` to see the current branches in your repo.
+Now there's three commits :smile: You have been making changes to your `main` branch. You actually want to try and avoid that. Type `git branch` to see the current branches in your repo.
 
 #### HINTS
 
@@ -544,7 +544,7 @@ Check the status again. You might as well get used to it :smiley_cat:
 
 ### 410.1
 
-Add the file to staging.
+You made new changes so the file shows up as not staged. Add the file to staging.
 
 #### HINTS
 
@@ -642,7 +642,7 @@ Your additions magically appeared in the json file. Check the log again.
 
 ### 490.1
 
-The commits you made on your feature branch were added to this branch. You can delete a branch with `git branch -d branch_name`. `-d` stands for "delete". Since your changes were added, you can safely delete the `feat/add-create-table-reference` branch. Do that now.
+The `feat: add create table reference` commit you made on your feature branch was added to this branch. You can delete a branch with `git branch -d branch_name`. `-d` stands for "delete". Since your changes were added, you can safely delete the `feat/add-create-table-reference` branch. Do that now.
 
 #### HINTS
 
@@ -652,7 +652,7 @@ The commits you made on your feature branch were added to this branch. You can d
 
 ### 500.1
 
-View your branches again to verify that it's gone.
+It said it was deleted but view your branches again for me to verify that it's gone.
 
 #### HINTS
 
@@ -664,7 +664,7 @@ View your branches again to verify that it's gone.
 
 ### 510.1
 
-You're just left with the `main` branch again... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.
+You're just left with the `main` branch now... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.
 
 #### HINTS
 
@@ -740,7 +740,7 @@ Switch back your `main` branch.
 
 ### 570.1
 
-Remember that the code and commits you added aren't on this branch. View the branches on your repo so you can get the name of it to merge your feature into the main branch.
+Remember that the code and commit you added aren't on this branch, so they disappeared again. View the branches on your repo so you can get the name of it to merge your feature into the main branch.
 
 #### HINTS
 
@@ -764,7 +764,7 @@ Merge your feature branch into the `main` branch.
 
 ### 590.1
 
-Your code and commits from your new feature are now added to this branch. Delete your feature branch.
+The commit from your feature branch was added to the `main` branch so you can safely delete the branch. Delete your feature branch.
 
 #### HINTS
 
