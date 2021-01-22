@@ -507,7 +507,7 @@ Like I said, you don't want to make commits directly to the `main` branch of a r
 
 ```json
 "table": {
-  "create": "CREATE TABLE table_name();",
+  "create": "CREATE TABLE table_name;",
 }
 ```
 
@@ -522,7 +522,7 @@ Like I said, you don't want to make commits directly to the `main` branch of a r
       "drop": "DROP DATABASE database_name;",
     },
     "table": {
-      "create": "CREATE TABLE table_name();"
+      "create": "CREATE TABLE table_name;"
     }
   }
   ```
@@ -682,7 +682,7 @@ Add a reference in the `table` object of your json file for dropping a table. It
 - The `table` object should look like this:
   ```json
   "table": {
-    "create": "CREATE TABLE table_name();",
+    "create": "CREATE TABLE table_name;",
     "drop": "DROP TABLE table_name;"
   }
   ```
@@ -765,6 +765,468 @@ Merge your feature branch into the `main` branch.
 ### 590.1
 
 The commit from your feature branch was added to the `main` branch so you can safely delete the branch. Delete your feature branch.
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 600. Checkout Add column references
+
+### 600.1
+
+git checkout -b feat/add-column-references
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 610. Add column Reference
+
+### 610.1
+
+Add add column to json
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 620. git diff
+
+### 620.1
+
+git diff
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 630. Git add
+
+### 630.1
+
+git add .
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 640. Git commit add column
+
+### 640.1
+
+git commit "Feat:add create column reference"
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 650. git log
+
+### 650.1
+
+git log
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 660. git log 3
+
+### 660.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 670. git checkout main
+
+### 670.1
+
+git checkout main
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 680. git checkout fix create table
+
+### 680.1
+
+git checkout -b fix/create-table-syntax
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 690. Fix Create Table Syntax
+
+### 690.1
+
+Fix create table syntax
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 700. git add
+
+### 700.1
+
+git add .
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 710. git commit create table syntax
+
+### 710.1
+
+git commit fix: create table syntax
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 720. git checkout main
+
+### 720.1
+
+git checkout main
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 730. git branch
+
+### 730.1
+
+git branch to get the name
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 740. git merge
+
+### 740.1
+
+git merge fix/create-table-syntax
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 750. git log 3
+
+### 750.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 760. git checkout column references
+
+### 760.1
+
+git checkout add column references
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 770. git log 3
+
+### 770.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 780. git rebase main
+
+### 780.1
+
+git rebase main
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 790. git log 3
+
+### 790.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 800. Add Drop Table Reference
+
+### 800.1
+
+Add drop table reference to json file
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 810. git add
+
+### 810.1
+
+git add .
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 820. commit drop column reference
+
+### 820.1
+
+git commit -m feat: add drop column reference
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 830. git log 3
+
+### 830.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 840. git checkout main
+
+### 840.1
+
+git checkout main
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 850. git checkout insert row
+
+### 850.1
+
+git checkout -b feat/add-insert-row-reference
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 860. Add Insert Row Reference
+
+### 860.1
+
+add insert row to json
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 870. git add .
+
+### 870.1
+
+git add .
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 880. Commit Insert Row
+
+### 880.1
+
+git commit -m "feat:add insert row reference"
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 890. git checkout main
+
+### 890.1
+
+git checkout main
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 900. git branch
+
+### 900.1
+
+git branch
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 910. git merge
+
+### 910.1
+
+git merge feat/add-insert-row-reference
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 920. git log 3
+
+### 920.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 930. git checkout column references
+
+### 930.1
+
+git checkout column references
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 940. git rebase main
+
+### 940.1
+
+git rebase main - you will be greeted with a choice - accept current/incoming
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 950. git add
+
+### 950.1
+
+git add . conflict resolutions
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 960. git rebase continue
+
+### 960.1
+
+git rebase continue
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 970. git log 3
+
+### 970.1
+
+git log -3
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 980. Add Rename Column Reference
+
+### 980.1
+
+add rename column to json
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 990. git add
+
+### 990.1
+
+git add .
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 1000. Commit Rename Column Reference
+
+### 1000.1
+
+git commit -m feat: add rename column reference
+
+#### HINTS
+
+- Here's an example: `git branch -d branch_name`
+- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+
+## 1010. git checkout main
+
+### 1010.1
+
+git checkout main
 
 #### HINTS
 
