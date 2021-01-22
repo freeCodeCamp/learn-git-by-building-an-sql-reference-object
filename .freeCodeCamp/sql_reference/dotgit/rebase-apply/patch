@@ -1,0 +1,13 @@
+diff --git a/sql_reference.json b/sql_reference.json
+index 11761b7c2843856f3092f41531a13dea5f392f27..72cdf002768235461067a7d78435466300851f75 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -6,5 +6,8 @@
+   "table": {
+     "create": "CREATE TABLE table_name();",
+     "drop": "DROP TABLE table_name;"
++  },
++  "column": {
++    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+   }
+ }
