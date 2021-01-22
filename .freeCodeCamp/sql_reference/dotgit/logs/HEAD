@@ -12,3 +12,4 @@ c808ee6221649fa42e400d0374daec2f674b720e b33750d50ecbbb6e9b64780742b3c700fa42d73
 b33750d50ecbbb6e9b64780742b3c700fa42d732 b33750d50ecbbb6e9b64780742b3c700fa42d732 moT01 <20648924+moT01@users.noreply.github.com> 1622831372 -0500	checkout: moving from main to feat/add-column-references
 b33750d50ecbbb6e9b64780742b3c700fa42d732 3126737065a8e7dc5bc9c81a0545bf8a0458a537 moT01 <20648924+moT01@users.noreply.github.com> 1622831472 -0500	commit: feat: add column reference
 3126737065a8e7dc5bc9c81a0545bf8a0458a537 b33750d50ecbbb6e9b64780742b3c700fa42d732 moT01 <20648924+moT01@users.noreply.github.com> 1622831502 -0500	checkout: moving from feat/add-column-references to main
+b33750d50ecbbb6e9b64780742b3c700fa42d732 b33750d50ecbbb6e9b64780742b3c700fa42d732 moT01 <20648924+moT01@users.noreply.github.com> 1622831530 -0500	checkout: moving from main to fix/create-table-syntax
