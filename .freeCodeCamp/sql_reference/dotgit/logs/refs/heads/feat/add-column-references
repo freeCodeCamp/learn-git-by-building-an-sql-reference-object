@@ -1,3 +1,4 @@
 0000000000000000000000000000000000000000 0ae0bd456114d57c6587643a47a9e3399d2ad88d moT01 <20648924+moT01@users.noreply.github.com> 1631242994 -0500	branch: Created from HEAD
 0ae0bd456114d57c6587643a47a9e3399d2ad88d e3d4ca9c8e3d96568a3174de9cc889b03e03a5f0 moT01 <20648924+moT01@users.noreply.github.com> 1631243090 -0500	commit: feat: add column reference
 e3d4ca9c8e3d96568a3174de9cc889b03e03a5f0 1719dcc754091294beb150e10575fbd88cf297a6 moT01 <20648924+moT01@users.noreply.github.com> 1631243449 -0500	rebase finished: refs/heads/feat/add-column-references onto d3609d2b8047c0d7da867b65072151d8eb69484e
+1719dcc754091294beb150e10575fbd88cf297a6 d2ad723e4a7089d1893d021f3eb716ceae282395 moT01 <20648924+moT01@users.noreply.github.com> 1631243565 -0500	commit: feat: add drop column reference
