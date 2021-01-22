@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getStagedFiles } = require('./utils');
 
 describe('You', () => {
@@ -14,4 +14,4 @@ describe('You', () => {
 
     assert(stagedFileIndex >= 0);
   });
-});
+});*/
