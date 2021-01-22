@@ -6,5 +6,9 @@
   "table": {
     "create": "CREATE TABLE table_name();",
     "drop": "DROP TABLE table_name;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;"
   }
 }
