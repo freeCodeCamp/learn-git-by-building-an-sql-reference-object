@@ -3,3 +3,4 @@ f61b8643dd4bae6941e9455b8cae68fdf67b9e2b eebdfca644d69738f73e71e40b66858a27cb15b
 eebdfca644d69738f73e71e40b66858a27cb15b9 74969b55b6c575b80f8482776d12cf211bdc3621 moT01 <20648924+moT01@users.noreply.github.com> 1622820842 -0500	commit: feat: add drop database reference
 74969b55b6c575b80f8482776d12cf211bdc3621 c808ee6221649fa42e400d0374daec2f674b720e moT01 <20648924+moT01@users.noreply.github.com> 1622830467 -0500	merge feat/add-create-table-reference: Fast-forward
 c808ee6221649fa42e400d0374daec2f674b720e b33750d50ecbbb6e9b64780742b3c700fa42d732 moT01 <20648924+moT01@users.noreply.github.com> 1622831172 -0500	merge feat/add-drop-table-reference: Fast-forward
+b33750d50ecbbb6e9b64780742b3c700fa42d732 d206dd63a605e3899847d39089ea1c7c7e9a7f00 moT01 <20648924+moT01@users.noreply.github.com> 1622831695 -0500	merge fix/create-table-syntax: Fast-forward
