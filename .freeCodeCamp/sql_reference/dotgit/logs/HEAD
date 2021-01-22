@@ -11,3 +11,4 @@ a5de9441f554604a1418a7ea46d836ea9ca09613 684afe786ecb33e590f7dd03d9d53b6b7770684
 18f0344599cd58dd4b0d2c54baaa6fb4a6a35523 0ae0bd456114d57c6587643a47a9e3399d2ad88d moT01 <20648924+moT01@users.noreply.github.com> 1631242904 -0500	merge feat/add-drop-table-reference: Fast-forward
 0ae0bd456114d57c6587643a47a9e3399d2ad88d 0ae0bd456114d57c6587643a47a9e3399d2ad88d moT01 <20648924+moT01@users.noreply.github.com> 1631242994 -0500	checkout: moving from main to feat/add-column-references
 0ae0bd456114d57c6587643a47a9e3399d2ad88d e3d4ca9c8e3d96568a3174de9cc889b03e03a5f0 moT01 <20648924+moT01@users.noreply.github.com> 1631243090 -0500	commit: feat: add column reference
+e3d4ca9c8e3d96568a3174de9cc889b03e03a5f0 0ae0bd456114d57c6587643a47a9e3399d2ad88d moT01 <20648924+moT01@users.noreply.github.com> 1631243115 -0500	checkout: moving from feat/add-column-references to main
