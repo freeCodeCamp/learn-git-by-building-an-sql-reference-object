@@ -2,3 +2,4 @@
 b33750d50ecbbb6e9b64780742b3c700fa42d732 3126737065a8e7dc5bc9c81a0545bf8a0458a537 moT01 <20648924+moT01@users.noreply.github.com> 1622831472 -0500	commit: feat: add column reference
 3126737065a8e7dc5bc9c81a0545bf8a0458a537 cf46b7189d8a37b7395fee4f756d0e81372f0bcc moT01 <20648924+moT01@users.noreply.github.com> 1622831836 -0500	rebase finished: refs/heads/feat/add-column-references onto d206dd63a605e3899847d39089ea1c7c7e9a7f00
 cf46b7189d8a37b7395fee4f756d0e81372f0bcc 5285eb0ab364b962fc27866ed87dbe76a30f0251 moT01 <20648924+moT01@users.noreply.github.com> 1622831914 -0500	commit: feat: add drop column reference
+5285eb0ab364b962fc27866ed87dbe76a30f0251 3fddefa9ee5bf3c11c613d93cb7982cb0778ac59 moT01 <20648924+moT01@users.noreply.github.com> 1622832631 -0500	rebase finished: refs/heads/feat/add-column-references onto 13ebfe80e4e069cabbd6a840851946573c85b0bd
