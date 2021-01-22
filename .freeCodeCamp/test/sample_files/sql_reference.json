@@ -4,10 +4,7 @@
     "drop": "DROP DATABASE database_name;"
   },
   "table": {
-    "create": "CREATE TABLE table_name;",
+    "create": "CREATE TABLE table_name();",
     "drop": "DROP TABLE table_name;"
-  },
-  "column": {
-    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
   }
 }
