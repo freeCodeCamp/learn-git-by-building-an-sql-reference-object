@@ -1,0 +1,26 @@
+From 1719dcc754091294beb150e10575fbd88cf297a6 Mon Sep 17 00:00:00 2001
+From: moT01 <20648924+moT01@users.noreply.github.com>
+Date: Thu, 9 Sep 2021 22:04:50 -0500
+Subject: feat: add column reference
+
+---
+ sql_reference.json | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/sql_reference.json b/sql_reference.json
+index 11761b7c2843856f3092f41531a13dea5f392f27..72cdf002768235461067a7d78435466300851f75 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -6,5 +6,8 @@
+   "table": {
+     "create": "CREATE TABLE table_name();",
+     "drop": "DROP TABLE table_name;"
++  },
++  "column": {
++    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+   }
+ }
+-- 
+2.17.2 (Apple Git-113)
+
+
