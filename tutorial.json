@@ -1018,10 +1018,10 @@
               "1f3342237065b12de1c1e7532dbec25ebefbd3a1"
             ]
           },
-          "content": "Like I said, you don't want to make commits directly to the `main` branch of a repo. So this branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name();\",\n}\n```",
+          "content": "Like I said, you don't want to make commits directly to the `main` branch of a repo. So this branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name;\",\n}\n```",
           "hints": [
             "Make sure to add commas to keep it a valid json object",
-            "The whole file should look like this:\n  ```json\n  {\n    \"database\": {\n      \"create\": \"CREATE DATABASE database_name;\",\n      \"drop\": \"DROP DATABASE database_name;\",\n    },\n    \"table\": {\n      \"create\": \"CREATE TABLE table_name();\"\n    }\n  }\n  ```"
+            "The whole file should look like this:\n  ```json\n  {\n    \"database\": {\n      \"create\": \"CREATE DATABASE database_name;\",\n      \"drop\": \"DROP DATABASE database_name;\",\n    },\n    \"table\": {\n      \"create\": \"CREATE TABLE table_name;\"\n    }\n  }\n  ```"
           ]
         }
       ]
@@ -1344,7 +1344,7 @@
           "content": "Add a reference in the `table` object of your json file for dropping a table. It should look like this: `\"drop\": \"DROP TABLE table_name;\"`",
           "hints": [
             "Don't forget the commas to make it a valid json object",
-            "The `table` object should look like this:\n  ```json\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name();\",\n    \"drop\": \"DROP TABLE table_name;\"\n  }\n  ```"
+            "The `table` object should look like this:\n  ```json\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name;\",\n    \"drop\": \"DROP TABLE table_name;\"\n  }\n  ```"
           ]
         }
       ]
@@ -1517,6 +1517,1014 @@
             ]
           },
           "content": "The commit from your feature branch was added to the `main` branch so you can safely delete the branch. Delete your feature branch.",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "600",
+      "title": "Checkout Add column references",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "600.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f357582ee9bb86b5aabd2a9995b0d2eaf47b7b4d"
+            ]
+          },
+          "content": "git checkout -b feat/add-column-references",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "610",
+      "title": "Add column Reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "610.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "329056638bae2b44debaa7b6013f604942257b3e"
+            ]
+          },
+          "content": "Add add column to json",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "620",
+      "title": "git diff",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "620.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e11163e502a07b5bb7a6d41f7e7c7a1dd617e757"
+            ]
+          },
+          "content": "git diff",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "630",
+      "title": "Git add",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "630.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a52634ff6bdc737d07183399e453b894da2b6274"
+            ]
+          },
+          "content": "git add .",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "640",
+      "title": "Git commit add column",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "640.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "69e820cbc7635708b0ed0a88f9b34702b36e4ca3"
+            ]
+          },
+          "content": "git commit \"Feat:add create column reference\"",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "650",
+      "title": "git log",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "650.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "561d1581955f89cfc469d1e9d45c3aeb4d1d4bde"
+            ]
+          },
+          "content": "git log",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "660",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "660.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3447fded37e43d72d577c2c8b23e873e48f57259"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "670",
+      "title": "git checkout main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "670.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "125964d3425e12529fde06569f69afa1c772b27d"
+            ]
+          },
+          "content": "git checkout main",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "680",
+      "title": "git checkout fix create table",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "680.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7c4cc4cda0cc443b64a3e2a184e626b70eef4f39"
+            ]
+          },
+          "content": "git checkout -b fix/create-table-syntax",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "690",
+      "title": "Fix Create Table Syntax",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "690.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "55fac226698a19ee6a195e438c162d90effe9616"
+            ]
+          },
+          "content": "Fix create table syntax",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "700",
+      "title": "git add",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "700.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5f4e5a1e058178bb953bce47906fe755933418d4"
+            ]
+          },
+          "content": "git add .",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "710",
+      "title": "git commit create table syntax",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "710.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0861b6a1eebbdd6b411450a40570a8bbcd75f1c6"
+            ]
+          },
+          "content": "git commit fix: create table syntax",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "720",
+      "title": "git checkout main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "720.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3370f6302efe7b99b54e1d7ab701a95e5e65322d"
+            ]
+          },
+          "content": "git checkout main",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "730",
+      "title": "git branch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "730.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5183d0d78b0094868531da4e8f44c951a24a0593"
+            ]
+          },
+          "content": "git branch to get the name",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "740",
+      "title": "git merge",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "740.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b8369a80d7ae3bf7a3cb715cb158eb7b35b6a239"
+            ]
+          },
+          "content": "git merge fix/create-table-syntax",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "750",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "750.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f4fa556d5df07d1943a5236507a98020bbea99a9"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "760",
+      "title": "git checkout column references",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "760.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8545fd9ebb4b84f0c2ad9a1b22c5808fd1ed0408"
+            ]
+          },
+          "content": "git checkout add column references",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "770",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "770.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "589c8832984c66145405d5e0d513068a276dddd4"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "780",
+      "title": "git rebase main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "780.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "27ab880d18d4317056b54a0a4066c780124d84e2"
+            ]
+          },
+          "content": "git rebase main",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "790",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "790.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "416a3403144341424019ec844a740b329810f070"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "800",
+      "title": "Add Drop Table Reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "800.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "24208243f02303b2166142e623ab102e7ed872ad"
+            ]
+          },
+          "content": "Add drop table reference to json file",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "810",
+      "title": "git add",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "810.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "96849fd711f07cabcba49c4dad7815243e471eee"
+            ]
+          },
+          "content": "git add .",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "820",
+      "title": "commit drop column reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "820.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b24bc0e36dbfdf2265a3979f132ec45045658583"
+            ]
+          },
+          "content": "git commit -m feat: add drop column reference",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "830",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "830.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8224a3dbd15a5d27651122360effff7442e6d572"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "840",
+      "title": "git checkout main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "840.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9eeab8930266c9f350dace7b74713c9763d68352"
+            ]
+          },
+          "content": "git checkout main",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "850",
+      "title": "git checkout insert row",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "850.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a7b03505c8fd80a06e14cbcd095f9e9553a2cc64"
+            ]
+          },
+          "content": "git checkout -b feat/add-insert-row-reference",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "860",
+      "title": "Add Insert Row Reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "860.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "a83604d98da5b62edec8226793df2b03a4cf34d5"
+            ]
+          },
+          "content": "add insert row to json",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "870",
+      "title": "git add .",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "870.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "051fe6f4a8698f72272b6ecc23d47c6e3ba19cef"
+            ]
+          },
+          "content": "git add .",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "880",
+      "title": "Commit Insert Row",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "880.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "645f7a39e3fd32ebf31a3507c75442dc7c4d5553"
+            ]
+          },
+          "content": "git commit -m \"feat:add insert row reference\"",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "890",
+      "title": "git checkout main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "890.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "346eda114595ea9477f534562cd15d20a966eafc"
+            ]
+          },
+          "content": "git checkout main",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "900",
+      "title": "git branch",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "900.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e176a750b20f098f404d9c43d3d23066a88f3537"
+            ]
+          },
+          "content": "git branch",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "910",
+      "title": "git merge",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "910.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e8257d695bc92d1cee73d99cdb081799f1f1191e"
+            ]
+          },
+          "content": "git merge feat/add-insert-row-reference",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "920",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "920.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3dac1f714977377e103d7fc46c7d38dd0518660f"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "930",
+      "title": "git checkout column references",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "930.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "921cf885e9cd38e6bedd67a5963fed358fc7f343"
+            ]
+          },
+          "content": "git checkout column references",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "940",
+      "title": "git rebase main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "940.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "a331151282cdd55e262f31e78dd3a8808a8a8a1d"
+            ]
+          },
+          "content": "git rebase main - you will be greeted with a choice - accept current/incoming",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "950",
+      "title": "git add",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "950.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "20e1b07f53754ae797a8101ac459195806715851"
+            ]
+          },
+          "content": "git add . conflict resolutions",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "960",
+      "title": "git rebase continue",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "960.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ac5668fe1855142d4e367fa65758c1b317561eb1"
+            ]
+          },
+          "content": "git rebase continue",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "970",
+      "title": "git log 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "970.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "31e4cebac45f3f22b549d0670e8a9b96ac94223d"
+            ]
+          },
+          "content": "git log -3",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "980",
+      "title": "Add Rename Column Reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "980.1",
+          "setup": {
+            "watchers": [
+              "./sql_reference/sql_reference.json"
+            ],
+            "commits": [
+              "530fe0662a03451e144e7c155e357da29704b0e7"
+            ]
+          },
+          "content": "add rename column to json",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "990",
+      "title": "git add",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "990.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b650812f91e9ed2272e6458c4cf93430c8ff5ae0"
+            ]
+          },
+          "content": "git add .",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000",
+      "title": "Commit Rename Column Reference",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1000.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5a26a24b121b4e7a5d8cdb1190a097998a8ae73f"
+            ]
+          },
+          "content": "git commit -m feat: add rename column reference",
+          "hints": [
+            "Here's an example: `git branch -d branch_name`",
+            "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1010",
+      "title": "git checkout main",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1010.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a7acf8e53909913e0df69a9ce0de1eb568ae3a90"
+            ]
+          },
+          "content": "git checkout main",
           "hints": [
             "Here's an example: `git branch -d branch_name`",
             "Type `git branch -d feat/add-create-table-reference` into the terminal and press enter"
