@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand, getCommandOutput } = require('./utils');
 
 describe('You', () => {
@@ -6,6 +6,6 @@ describe('You', () => {
     const lastCommand = await getLastCommand();
     const commandOutput = await getCommandOutput('git status');
 
-    assert(lastCommand[0] === 'git' && lastCommand[1] === 'checkout' && /On branch main\s/.test(commandOutput));
+    assert(lastCommand[0] === 'git' && lastCommand[1] === 'checkout' && /On branch feat\/add-insert-row-reference\s/.test(commandOutput));
   });
-});*/
+});
