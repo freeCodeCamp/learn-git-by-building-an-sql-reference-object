@@ -478,6 +478,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '755'
+    steps:
+      - id: '755.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '760'
     steps:
       - id: '760.1'
@@ -574,12 +580,6 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '920'
-    steps:
-      - id: '920.1'
-        setup:
-          watchers:
-            - ../.bash_history
   - id: '930'
     steps:
       - id: '930.1'
@@ -591,10 +591,28 @@ levels:
       - id: '940.1'
         setup:
           watchers:
-            - ./sql_reference/sql_reference.json
+            - ../.bash_history
   - id: '950'
     steps:
       - id: '950.1'
+        setup:
+          watchers:
+            - ./sql_reference/sql_reference.json
+  - id: '953'
+    steps:
+      - id: '953.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '956'
+    steps:
+      - id: '956.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '958'
+    steps:
+      - id: '958.1'
         setup:
           watchers:
             - ../.bash_history

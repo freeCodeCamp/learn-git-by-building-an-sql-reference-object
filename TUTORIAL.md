@@ -403,7 +403,7 @@ Changes not staged. Check the `diff` quick.
 
 ### 310.1
 
-It shows one line removed and two lines added. Add your changes to the staging area.
+It should show one line removed and two lines added. Add your changes to the staging area.
 
 #### HINTS
 
@@ -436,6 +436,7 @@ I think you're catching on :smile: Check the `log` again.
 #### HINTS
 
 - Type `git log` into the terminal and press enter
+- Press `enter` in the terminal to go through the whole log
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -657,7 +658,7 @@ You created the `feat/add-create-table-reference` branch, made some commits, and
 
 ### 480.1
 
-The commits from your feature branch were added to this branch. There's a message with some info about the merge. Check the log with the `--oneline` flag again.
+The commits and code from your feature branch were added to this branch. There's a message with some info about the merge. Check the log with the `--oneline` flag again.
 
 #### HINTS
 
@@ -673,6 +674,7 @@ The `feat: add create table reference` commit you made on your feature branch wa
 
 #### HINTS
 
+- The branch name is `feat/add-create-table-reference`
 - Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
 
 ## 500. Git Branch
@@ -928,7 +930,7 @@ The create table SQL command is a function, so it needs parenthesis `()` at the 
 
 ### 700.1
 
-Add your files to staging. 
+Check your status and diff if you need to. Then, add your files to staging. 
 
 #### HINTS
 
@@ -975,7 +977,7 @@ View your branches to remind me of the branch name.
 
 ### 740.1
 
-I forgot that there was three branches. Merge your bug fix branch into this branch.
+Merge your bug fix branch into this branch.
 
 #### HINTS
 
@@ -994,6 +996,17 @@ View your log with the oneline flag.
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
+## 755. Git Branch -d
+
+### 755.1
+
+The bug fix is in and you can safely delete the branch. Go ahead and do that now. View your branches if you need to find the name.
+
+#### HINTS
+
+- The branch name is `fix/create-table-syntax`
+- Type `git branch -d fix/create-table-syntax` into the terminal and press enter
+
 ## 760. git checkout column references
 
 ### 760.1
@@ -1004,6 +1017,7 @@ Your bug fix is merged into the `main` branch. Switch back to your feature branc
 
 - Check your branches if you need to get the name of the branch
 - Use `git checkout branch_name` to switch to a branch
+- It's the `feat/add-column-references` branch
 - Enter `git checkout feat/add-column-references` into the terminal and press enter
 
 ## 770. git log
@@ -1039,11 +1053,11 @@ There was some fancy output there. Show me the log again with the same flag you 
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
 
-## 800. Add Drop Table Reference
+## 800. Add Drop Column Reference
 
 ### 800.1
 
-If you look at the logs, it added the bug fix commit from `main`, and then the commit you added to this branch on top of it. Now, when this branch is ready to be merged into `main`, it will have all the same features and fixes. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a reference for dropping a column. The syntax is in the hints, give it a try first.
+If you look at the logs, it added the bug fix commit from `main`, and then the commit you added to this branch on top of it. Now, when this branch is ready to be merged into `main`, it will have all the same features and fixes. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.
 
 #### HINTS
 
@@ -1075,12 +1089,12 @@ Check your status and diff if you need to see your changes. Then, add your chang
 
 ### 820.1
 
-Commit your changes with the message: `feat: add drop column reference".
+Commit your changes with the message: `feat: add drop column reference`.
 
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: create table syntax"` into the terminal and press enter
+- Type `git commit -m "feat: add drop column reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
@@ -1122,7 +1136,7 @@ Create and switch to a new branch named `feat/add-insert-row-reference`
 
 ### 860.1
 
-Pretend that this branch is for someone else working on a new feature at the same time you are working on the column commands. Add a `row` key to you JSON object. Make it an object with one value: `"insert": "INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"`
+Pretend that this branch is for someone else working on a new feature at the same time you are working on the column commands. Add a `row` key to your JSON object. Make it an object with an `insert` key whose value is `"INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"`
 
 #### HINTS
 
@@ -1132,12 +1146,13 @@ Pretend that this branch is for someone else working on a new feature at the sam
     "insert": "INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"
   }
   ```
+- The `row` key should be a sibling of `column`
 
 ## 870. git add .
 
 ### 870.1
 
-Add your changes to staging.
+Check your status and diff if you need to. Then, add your changes to staging.
 
 #### HINTS
 
@@ -1154,7 +1169,7 @@ Commit your changes with the message: `feat: add insert row reference`.
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: create table syntax"` into the terminal and press enter
+- Type `git commit -m "feat: add insert row reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
@@ -1185,7 +1200,7 @@ View your branches.
 
 ### 910.1
 
-Merge your branch that adds the command to insert an SQL row into the `main` branch.
+Merge your branch with the `row` reference you were just working on into the `main` branch.
 
 #### HINTS
 
@@ -1194,21 +1209,11 @@ Merge your branch that adds the command to insert an SQL row into the `main` bra
 - You want to merge the `feat/add-insert-row-reference` branch
 - Type `git merge feat/add-insert-row-reference` into the terminal and press enter
 
-## 920. git log
-
-### 920.1
-
-Check your logs.
-
-#### HINTS
-
-- Use the `git log` command
-
 ## 930. git checkout column references
 
 ### 930.1
 
-git checkout column references
+Check your logs if you want to see the added commit. Then, switch to your branch to add column references.
 
 #### HINTS
 
@@ -1219,88 +1224,140 @@ git checkout column references
 
 ### 940.1
 
-git rebase main - you will be greeted with a choice - accept current/incoming
+Another commit was added to `main`. As a reminder, a rebase will add the new commit to this branch in the same spot as it is on `main`. Then add the commits you made to this branch on top of that. `rebase` this branch against `main` so it's up to date. You should see a conflict...
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Here's an example: `git rebase branch_name`
+- Type `git rebase main` into the terminal and press enter
 
-## 950. git add
+## 950. fix conflicts
 
 ### 950.1
 
-When git tried to apply the first commit you added to this branch, it ran into a conflict from the insert row command. You need to fix this. VSCode gives you a few options to do this automatically, or you can do it manually. 
-
-git add . conflict resolutions
+The confict arose because the first commit you added to this branch changed the same lines as commit from `main`. So it tried to add the commit, but couldn't do it because something was already there. There are sections separated by characters (`<`, `>`, and `=`) that represent where you are (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again. 
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Be sure to remove all those special characters
+- The part of the JSON object with conflicts should look like this:
+  ```json
+  "row": {
+    "insert": "INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+  }
+  ```
+
+## 953. Git Status
+
+### 953.1
+
+Check your status.
+
+#### HINTS
+
+- Use the "git status" command in your repo
+- Type `git status` into the terminal and press enter
+- Make sure you are in your `sql_reference` repo folder
+
+## 956. git add .
+
+### 956.1
+
+You are still in the middle of rebasing and there's one file that needs to be merged yet. Add the file to staging like you would any other commit.
+
+#### HINTS
+
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 958. Git Status
+
+### 958.1
+
+Check your status again.
+
+#### HINTS
+
+- Use the "git status" command in your repo
+- Type `git status` into the terminal and press enter
+- Make sure you are in your `sql_reference` repo folder
 
 ## 960. git rebase continue
 
 ### 960.1
 
-git rebase continue
+It says `all conflicts fixed: run "git rebase --continue"`. Continue the rebase.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Enter `git rebase --continue` in the terminal and press enter
 
-## 970. git log 3
+## 970. git log
 
 ### 970.1
 
-git log -3
+The conflicts have been fixed, and the rebase is finished. View your log with the `oneline` flag.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git log` command
+- Type `git log --oneline` into the terminal and press enter
 
 ## 980. Add Rename Column Reference
 
 ### 980.1
 
-add rename column to json
+After all that, you can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now that this branch is up to date, you can continue working on it. Add a `rename` key to the `column`. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- The `column` key should look like this:
+  ```json
+  "column": {
+		"add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+		"rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;"
+  }
+  ```
 
 ## 990. git add
 
 ### 990.1
 
-git add .
+Check your status and diff if you need to. Then, add the file to staging.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
 
 ## 1000. Commit Rename Column Reference
 
 ### 1000.1
 
-git commit -m feat: add rename column reference
+Commit your changes with the message `feat: add rename column reference`
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Commit changes with `git commit -m "message"`
+- Type `git commit -m "feat: add rename column reference"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
 ## 1010. git checkout main
 
 ### 1010.1
 
-git checkout main
+Switch to your `main` branch.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git checkout` command
+- Here's an example: `git checkout branch_name`
+- Enter `git checkout main` into the terminal and press enter
