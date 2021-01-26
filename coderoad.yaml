@@ -256,6 +256,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '405'
+    steps:
+      - id: '405.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '410'
     steps:
       - id: '410.1'
@@ -337,6 +343,12 @@ levels:
   - id: '530'
     steps:
       - id: '530.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '535'
+    steps:
+      - id: '535.1'
         setup:
           watchers:
             - ../.bash_history

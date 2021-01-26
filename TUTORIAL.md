@@ -541,6 +541,19 @@ Show me the status again. You might as well get used to it :smiley_cat:
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
+## 405. Git Diff
+
+### 405.1
+
+Changes not staged. Check the `diff` quick so you can make sure your changes look good.
+
+#### HINTS
+
+- Use the "git diff" command in your repo
+- Type `git diff` into the terminal and press enter
+- Make sure you are in your `sql_reference` repo folder
+- Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
+
 ## 410. Add CREATE TABLE
 
 ### 410.1
@@ -712,6 +725,19 @@ Check your status.
 - Use the "git status" command in your repo
 - Type `git status` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
+
+## 535. Git Diff
+
+### 535.1
+
+Check the `diff` so you can confirm you like your changes.
+
+#### HINTS
+
+- Use the "git diff" command in your repo
+- Type `git diff` into the terminal and press enter
+- Make sure you are in your `sql_reference` repo folder
+- Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
 ## 540. Add DROP TABLE
 
@@ -996,7 +1022,7 @@ View your log with the oneline flag.
 
 ### 780.1
 
-You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is a common scenario with many people working on a codebase simultaneously. You need to update this branch so it has all the same commits from `main`, but you can't simply merge that branch into this one. You need that bug fix commit to be in the same order here as it is on main. You will need to `rebase` this branch against `main` so it will add the bug fix commit in the right spot, and then apply the commits from this branch on top of it. Type `git rebase main` to rebase this branch.
+You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is a common scenario with many people working on a codebase simultaneously. You need to update this branch so it has all the same commits from `main`, but you can't simply merge that branch into this one. You need that bug fix commit to be in the same order here as it is on main. You will need to `rebase` this branch against `main` so it will add the bug fix commit in the right spot, and then apply the commits from this branch on top of it. Enter `git rebase main` to rebase this branch.
 
 #### HINTS
 
@@ -1037,7 +1063,7 @@ If you look at the logs, it added the bug fix commit from `main`, and then the c
 
 ### 810.1
 
-Add your changes to staging.
+Check your status and diff if you need to see your changes. Then, add your changes to staging.
 
 #### HINTS
 
