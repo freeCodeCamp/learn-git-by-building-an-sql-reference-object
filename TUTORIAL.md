@@ -232,7 +232,7 @@ Now you have two files in staging. To commit them, you can use `git commit -m "I
 
 ### 190.1
 
-When you make a commit, whatever is in the staging area will be added to your git history. Check your status again to see what's there.
+When you make a commit, whatever is in the staging area will be added to your git history. You can see some info in the terminal ouput about the commit. Check your status again to see what's there.
 
 #### HINTS
 
@@ -455,7 +455,7 @@ Now there's three commits :smile: You have been making changes to your `main` br
 
 ### 350.1
 
-You only have the `main` branch still. You can create a branch with `git branch branch_name`. Branches often start with `fix/` or `feat/` among others like commit messages, but they use a forward slash and can't contain spaces. Create a new branch named `feat/add-create-table-reference`.
+You only have the `main` branch still. You can create a branch with `git branch branch_name`. Branches often start with `fix/` or `feat/`, among others, like commit messages, but they use a forward slash and can't contain spaces. Create a new branch named `feat/add-create-table-reference`.
 
 #### HINTS
 
@@ -479,7 +479,7 @@ Your new branch is basically a fork of the `main` branch since that's the branch
 
 ### 370.1
 
-You created the branch, but you are still on the `main` branch as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.
+You can see your new branch, but you are still on the `main` branch as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.
 
 #### HINTS
 
@@ -621,7 +621,7 @@ You may have noticed that the code you added disappeared from the json file. You
 
 ### 460.1
 
-The commit you added to your feature branch is not on this branch. So the commit isn't here, the code isn't here, it just doesn't exist on this branch yet. If you switched to your feature branch, it would show back up. View the branches you have to remind me the name of your other branch.
+You can see three commits on this branch and four on the feature branch you were just on. The commit and code you added on the feature branch only exist over there for now. View the branches you have to remind me the name of your other branch.
 
 #### HINTS
 
@@ -644,7 +644,7 @@ You created the `feat/add-create-table-reference` branch, made some commits, and
 
 ### 480.1
 
-The commits from your feature branch were added to this branch. There's a message with some info about the merge. Check the log with the oneline flag again.
+The commits from your feature branch were added to this branch. There's a message with some info about the merge. Check the log with the `--oneline` flag again.
 
 #### HINTS
 
@@ -656,7 +656,7 @@ The commits from your feature branch were added to this branch. There's a messag
 
 ### 490.1
 
-The `feat: add create table reference` commit you made on your feature branch was added to this branch with the merge. You can delete a branch with `git branch -d branch_name`. `-d` stands for "delete". Since your changes were added, you can safely delete the `feat/add-create-table-reference` branch. Do that now.
+The `feat: add create table reference` commit you made on your feature branch was added to this branch with the merge. You can delete a branch with `git branch -d branch_name`. `-d` stands for "delete". Since your changes were added, you can safely delete your feature branch. Do that now.
 
 #### HINTS
 
@@ -678,7 +678,7 @@ It said it was deleted, but view your branches again for me to verify that it's 
 
 ### 510.1
 
-You're just left with the `main` branch now... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.
+You're just left with the `main` branch... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.
 
 #### HINTS
 
@@ -885,7 +885,7 @@ Create and switch to a branch named `fix/create-table-syntax`
 
 ### 690.1
 
-The create table SQL command is a function, so it needs parenthesis `()` at the end. Add those to the and of the command.
+The create table SQL command is a function, so it needs parenthesis `()` at the end. Add those to the end of the command.
 
 #### HINTS
 
@@ -972,10 +972,11 @@ View your log with the oneline flag.
 
 ### 760.1
 
-Your bug fix is in. Switch back to your feature branch so you can continue adding column references.
+Your bug fix is merged into the `main` branch. Switch back to your feature branch so you can continue adding column references.
 
 #### HINTS
 
+- Check your branches if you need to get the name of the branch
 - Use `git checkout branch_name` to switch to a branch
 - Enter `git checkout feat/add-column-references` into the terminal and press enter
 
@@ -995,166 +996,187 @@ View your log with the oneline flag.
 
 ### 780.1
 
-This branch has your adding a column commit that's not on `main`, and `main` has your bug fix commit that's not here. There will often be many people working on a codebase at the same time, adding their own commits and bug fixes. You need to bring that bug fix commit into this branch so it will be up to date with `main`. You can't simply merge that branch into this one. You need that bug fix commit to be in the same order here as it is on main. You will need to `rebase` this branch against `main` so it will add the bug fix commit in the right spot, and then apply the commits you added on top of it. Type `git rebase main` to rebase this branch.
+You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is a common scenario with many people working on a codebase simultaneously. You need to update this branch so it has all the same commits from `main`, but you can't simply merge that branch into this one. You need that bug fix commit to be in the same order here as it is on main. You will need to `rebase` this branch against `main` so it will add the bug fix commit in the right spot, and then apply the commits from this branch on top of it. Type `git rebase main` to rebase this branch.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Type `git rebase main` into the terminal and press enter
 
-## 790. git log 3
+## 790. git log
 
 ### 790.1
 
-git log -3
+There was some fancy output there. Show me the log again with the same flag you have been using so you can see what happened.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
 
 ## 800. Add Drop Table Reference
 
 ### 800.1
 
-Add drop table reference to json file
+If you look at the logs, it added the bug fix commit from `main`, and then the commit you added to this branch on top of it. Now, when this branch is ready to be merged into `main`, it will have all the same features and fixes. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a reference for dropping a column. The syntax is in the hints, give it a try first.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- It follows a similar syntax as adding a column
+- Don't forget the semi-colon at the end
+- Here's the SQL command: `ALTER TABLE table_name DROP COLUMN column_name;`
+- Make sure the above value is in the `column.drop` key
+- Here's what the `column` object should look like:
+  ```json
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TALBE table_name DROP COLUMN column_name;"
+  }
+  ```
 
 ## 810. git add
 
 ### 810.1
 
-git add .
+Add your changes to staging.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
 
 ## 820. commit drop column reference
 
 ### 820.1
 
-git commit -m feat: add drop column reference
+Commit your changes with the message: `feat: add drop column reference".
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Commit changes with `git commit -m "message"`
+- Type `git commit -m "fix: create table syntax"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
-## 830. git log 3
+## 830. git log
 
 ### 830.1
 
-git log -3
+View your log again. Make sure you use my favorite flag.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
 
 ## 840. git checkout main
 
 ### 840.1
 
-git checkout main
+Switch to your `main` branch.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git checkout` command
+- Here's an example: `git checkout branch_name`
+- Enter `git checkout main` into the terminal and press enter
 
 ## 850. git checkout insert row
 
 ### 850.1
 
-git checkout -b feat/add-insert-row-reference
+Create and switch to a new branch named `feat/add-insert-row-reference`
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Here's an example: `git checkout -b branch_name`
+- Type `git checkout -b feat/add-insert-row-reference` into the terminal and press enter
 
 ## 860. Add Insert Row Reference
 
 ### 860.1
 
-add insert row to json
+Pretend that this branch is for someone else working on a new feature at the same time you are working on the column commands. Add a `row` key to you JSON object. Make it an object with one value: `"insert": "INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"`
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Your JSON oject should have this:
+  ```json
+	"row": {
+    "insert": "INSERT INTO table_name(column_1, column_2) VALUES(value_1, value_2);"
+  }
+  ```
 
 ## 870. git add .
 
 ### 870.1
 
-git add .
+Add your changes to staging.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
 
 ## 880. Commit Insert Row
 
 ### 880.1
 
-git commit -m "feat:add insert row reference"
+Commit your changes with the message: `feat: add insert row reference`.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Commit changes with `git commit -m "message"`
+- Type `git commit -m "fix: create table syntax"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
 ## 890. git checkout main
 
 ### 890.1
 
-git checkout main
+Switch to your `main` branch.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git checkout` command
+- Here's an example: `git checkout branch_name`
+- Enter `git checkout main` into the terminal and press enter
 
 ## 900. git branch
 
 ### 900.1
 
-git branch
+View your branches.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use `git branch` to view your branches
+- Make sure you are in your `sql_reference` repo folder
 
 ## 910. git merge
 
 ### 910.1
 
-git merge feat/add-insert-row-reference
+Merge your branch that adds the command to insert an SQL row into the `main` branch.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git merge` command
+- Here's an example: `git merge branch_name`
+- You want to merge the `feat/add-insert-row-reference` branch
+- Type `git merge feat/add-insert-row-reference` into the terminal and press enter
 
-## 920. git log 3
+## 920. git log
 
 ### 920.1
 
-git log -3
+Check your logs.
 
 #### HINTS
 
-- Here's an example: `git branch -d branch_name`
-- Type `git branch -d feat/add-create-table-reference` into the terminal and press enter
+- Use the `git log` command
 
 ## 930. git checkout column references
 
@@ -1181,6 +1203,8 @@ git rebase main - you will be greeted with a choice - accept current/incoming
 ## 950. git add
 
 ### 950.1
+
+When git tried to apply the first commit you added to this branch, it ran into a conflict from the insert row command. You need to fix this. VSCode gives you a few options to do this automatically, or you can do it manually. 
 
 git add . conflict resolutions
 
