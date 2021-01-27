@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand, getCwd } = require('./utils');
 
 describe('You', () => {
@@ -14,4 +14,4 @@ describe('You', () => {
 
     assert(lastCommand[0] === 'git' && lastCommand[1] === 'stash' && lastCommand[2] === 'show' && (args1 || args2) && cwd === '/home/strove/project/sql_reference');
   });
-});
+});*/
