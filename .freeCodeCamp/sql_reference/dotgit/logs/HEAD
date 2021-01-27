@@ -57,3 +57,9 @@ f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7
 f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e 30edd7bf40172256465cdd342b2e8026950853a6 moT01 <20648924+moT01@users.noreply.github.com> 1622835690 -0500	commit: fix: add missing rename database reference
 30edd7bf40172256465cdd342b2e8026950853a6 2f25144232488d0014be3c2f19c867b4c3231abe moT01 <20648924+moT01@users.noreply.github.com> 1622835796 -0500	checkout: moving from fix/add-missing-rename-references to feat/add-column-references
 2f25144232488d0014be3c2f19c867b4c3231abe f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e moT01 <20648924+moT01@users.noreply.github.com> 1622835822 -0500	rebase: checkout main
+f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e 3a6cd7427235c52aaa57512345bff9309febe5b2 moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase: feat: add column reference
+3a6cd7427235c52aaa57512345bff9309febe5b2 2ab98abf91241b885bc54148d0d4b2a112452cb7 moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase: feat: add drop column reference
+2ab98abf91241b885bc54148d0d4b2a112452cb7 6c052709c270c2420f9916eaef2543dadf95a438 moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase: feat: add rename column reference
+6c052709c270c2420f9916eaef2543dadf95a438 eb2605851f3dab00fa9e9bb3f2edd2e9d52f1736 moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase: feat: add primary key reference
+eb2605851f3dab00fa9e9bb3f2edd2e9d52f1736 18e09bae51ce84e85a8775ab498299587052533f moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase: feat: add foreign key reference
+18e09bae51ce84e85a8775ab498299587052533f 18e09bae51ce84e85a8775ab498299587052533f moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase finished: returning to refs/heads/feat/add-column-references
