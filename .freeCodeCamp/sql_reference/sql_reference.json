@@ -8,6 +8,7 @@
     "drop": "DROP TABLE table_name;"
   },
   "row": {
-    "insert": "INSERT INTO table_name(columns) VALUES(values);"
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
   }
 }
