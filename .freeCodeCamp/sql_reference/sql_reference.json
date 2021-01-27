@@ -13,6 +13,10 @@
     "delete": "DELETE FROM table_name WHERE condition;"
   },
   "column": {
-    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
   }
 }
