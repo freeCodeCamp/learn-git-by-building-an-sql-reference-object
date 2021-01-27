@@ -1,4 +1,4 @@
-# Introduction
+# Learn Git by Building an SQL Reference Object
 
 > Welcome to the git lessons!
 
@@ -1046,7 +1046,7 @@ You created this branch and made a commit. Since then, a commit for a bug fix wa
 
 ### 790.1
 
-There was some fancy output there. Show me the log again with the same flag you have been using so you can see what happened.
+There was some fancy output there, but you can see the parenthesis were added to the `table.create` key. Show me the log again with the same flag you have been using so you can see what happened.
 
 #### HINTS
 
@@ -1057,7 +1057,7 @@ There was some fancy output there. Show me the log again with the same flag you 
 
 ### 800.1
 
-If you look at the logs, it added the bug fix commit from `main`, and then the commit you added to this branch on top of it. Now, when this branch is ready to be merged into `main`, it will have all the same features and fixes. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.
+The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have commit history. You should try to keep your branches up to date like this by rebasing them. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.
 
 #### HINTS
 
@@ -1069,7 +1069,7 @@ If you look at the logs, it added the bug fix commit from `main`, and then the c
   ```json
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
-    "drop": "ALTER TALBE table_name DROP COLUMN column_name;"
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;"
   }
   ```
 
@@ -1235,7 +1235,7 @@ Another commit was added to `main`. As a reminder, a rebase will add the new com
 
 ### 950.1
 
-The confict arose because the first commit you added to this branch changed the same lines as commit from `main`. So it tried to add the commit, but couldn't do it because something was already there. There are sections separated by characters (`<`, `>`, and `=`) that represent where you are (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again. 
+The confict arose because the first commit you added to this branch changed the same lines as commit from `main`. So it tried to add the commit, but couldn't do it because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again. 
 
 #### HINTS
 
@@ -1311,7 +1311,7 @@ The conflicts have been fixed, and the rebase is finished. View your log with th
 
 ### 980.1
 
-After all that, you can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now that this branch is up to date, you can continue working on it. Add a `rename` key to the `column`. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
+After all that, you can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now that this branch is up to date, you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
 
 #### HINTS
 
@@ -1350,14 +1350,1314 @@ Commit your changes with the message `feat: add rename column reference`
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
-## 1010. git checkout main
+## 1010. git checkout row references
 
 ### 1010.1
 
-Switch to your `main` branch.
+Switch to your branch for adding row references, There's some more of those to add.
 
 #### HINTS
 
 - Use the `git checkout` command
 - Here's an example: `git checkout branch_name`
-- Enter `git checkout main` into the terminal and press enter
+- Enter `git checkout feat/add-insert-row-reference` into the terminal and press enter
+
+## 1015. Add Update Row Reference
+
+### 1015.1
+
+Add update row command
+
+#### HINTS
+
+- Use the `git checkout` command
+- Here's an example: `git checkout branch_name`
+- Enter `git checkout feat/add-insert-row-reference` into the terminal and press enter
+
+## 1020. git stash
+
+### 1020.1
+
+Git stash
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1030. git stash list
+
+### 1030.1
+
+Git stash list - there's the stash
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1040. git stash pop
+
+### 1040.1
+
+Git stash pop - your code is back
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1050. git stash list
+
+### 1050.1
+
+Git stash list - it's gone
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1060. git stash
+
+### 1060.1
+
+Git stash again
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1070. git stash list
+
+### 1070.1
+
+Git stash list - it's stashed again
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1080. git stash apply
+
+### 1080.1
+
+Git stash apply
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1090. git stash list
+
+### 1090.1
+
+Git stash list - the stash is still there
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1100. git stash
+
+### 1100.1
+
+Git stash again
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1110. git stash list
+
+### 1110.1
+
+Git stash list - the stash is still there
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1120. git stash drop
+
+### 1120.1
+
+Git stash drop
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1130. git stash list
+
+### 1130.1
+
+Git stash list - now there's just one again
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1140. git checkout main
+
+### 1140.1
+
+checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1150. git branch -d insert row
+
+### 1150.1
+
+Just so you don't do that again. Delete the branch for inserting a row.
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1160. git checkout more row
+
+### 1160.1
+
+git checkout -b feat/add-more-row-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1170. git stash list
+
+### 1170.1
+
+Git stash list
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1180. git stash pop
+
+### 1180.1
+
+Git stash pop - the stash is still there
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1190. git stash list
+
+### 1190.1
+
+Git stash list - the stash is empty now
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1200. git status
+
+### 1200.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1210. git diff
+
+### 1210.1
+
+Git diff
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1220. git add
+
+### 1220.1
+
+Git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1230. git commit
+
+### 1230.1
+
+Git commit -m "feat: add update row reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1240. git checkout main
+
+### 1240.1
+
+Git checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1250. git merge row references
+
+### 1250.1
+
+git merge feat/add-more-row-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1260. git checkout column references
+
+### 1260.1
+
+git checkout feat/add-column-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1270. git rebase main
+
+### 1270.1
+
+git rebase main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1280. Fix Conflicts
+
+### 1280.1
+
+fix conflicts
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1290. git status
+
+### 1290.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1300. git add
+
+### 1300.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1310. git rebase continue
+
+### 1310.1
+
+git rebase --continue
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1320. git log
+
+### 1320.1
+
+git log --oneline
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1330. Add RENAME COLUMN Reference
+
+### 1330.1
+
+Add RENAME COLUMN command
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1340. git add
+
+### 1340.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1350. git commit RENAME COLUMN
+
+### 1350.1
+
+git commit -m "feat: add rename column reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1360. git checkout row references
+
+### 1360.1
+
+git checkout feat/add-more-row-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1370. Add DELETE ROW Reference
+
+### 1370.1
+
+Add DELETE ROW command
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1380. git add
+
+### 1380.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1390. git commit delete row
+
+### 1390.1
+
+git commit -m "feat: add delete row reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1400. git checkout main
+
+### 1400.1
+
+git checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1410. git merge row references
+
+### 1410.1
+
+git merge feat/add-more-row-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1420. git merge missing renames
+
+### 1420.1
+
+git checkout -b fix/add-missing-rename-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1430. Add RENAME DATABASE Reference
+
+### 1430.1
+
+Add rename database command
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1440. git add
+
+### 1440.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1450. git commit RENAME DATABASE
+
+### 1450.1
+
+git commit -m "fix: add missing rename database reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1460. git checkout COLUMN REFERENCES
+
+### 1460.1
+
+git checkout feat/add-column-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1470. git rebase main
+
+### 1470.1
+
+There was a commit to main since you last worked on this.
+git rebase main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1480. Fix Conflicts
+
+### 1480.1
+
+fix conflicts
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1490. git add
+
+### 1490.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1500. git rebase continue
+
+### 1500.1
+
+git rebase continue
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1510. Add PRIMARY KEY reference
+
+### 1510.1
+
+Add column.PRIMARY KEY command
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1520. git add
+
+### 1520.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1530. git commit PRIMARY KEY Reference
+
+### 1530.1
+
+git commit -m "feat: add primary key reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1540. git rebase interactive
+
+### 1540.1
+
+git rebase interactive root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1550. drop PRIMARY KEY commit
+
+### 1550.1
+
+Drop PRimary key commit
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1560. git rebase interactive
+
+### 1560.1
+
+git rebase --interactive --root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1570. Reword Column References Commit
+
+### 1570.1
+
+Reword column references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1580. git rebase interactive
+
+### 1580.1
+
+git rebase interactive root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1590. Squash Column Reference Commits
+
+### 1590.1
+
+Squash column reference commits
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1600. git log
+
+### 1600.1
+
+git log --oneline
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1610. git log
+
+### 1610.1
+
+git log - now it shows all the commits that were squashed into that one commit
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1620. git checkout main
+
+### 1620.1
+
+git checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1630. git merge column references
+
+### 1630.1
+
+git merge feat/add-column-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1640. git checkout missing renames
+
+### 1640.1
+
+git checkout fix/add-missing-rename-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1650. git rebase main
+
+### 1650.1
+
+git rebase main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1660. Fix Conflicts
+
+### 1660.1
+
+Fix Conflicts
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1670. git add
+
+### 1670.1
+
+git Add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1680. git rebase continue
+
+### 1680.1
+
+git rebase --continue
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1690. Add RENAME TABLE Reference
+
+### 1690.1
+
+Add rename table command
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1700. git add
+
+### 1700.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1710. git commit RENAME TABLE Reference
+
+### 1710.1
+
+git commit -m "fix: add missing rename table reference"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1720. git rebase interactive
+
+### 1720.1
+
+git rebase interactive root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1730. Squash commits
+
+### 1730.1
+
+Squash commits
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1740. git checkout main
+
+### 1740.1
+
+git checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1750. git merge rename references
+
+### 1750.1
+
+git merge fix/add-missing-rename-references
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1760. git branch
+
+### 1760.1
+
+git branch
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1770. Delete Branches
+
+### 1770.1
+
+Delete all the branches but main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1780. git log
+
+### 1780.1
+
+git log --oneline
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1790. git checkout gitignore
+
+### 1790.1
+
+git checkout -b feat/add-gitignore
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1800. Touch .env
+
+### 1800.1
+
+touch .env
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1810. Add SECRETS
+
+### 1810.1
+
+Add SECRET=MY_SECRET to .env
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1820. git status
+
+### 1820.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1830. Touch .gitignore
+
+### 1830.1
+
+Touch .gitignore
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1840. Add .env to .gitignore
+
+### 1840.1
+
+Add .env to .gitignore
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1850. git status
+
+### 1850.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1860. git add
+
+### 1860.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1870. git commit gitignore
+
+### 1870.1
+
+git commit -m "feat: add .gitignore"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1880. Touch sample.env
+
+### 1880.1
+
+Touch sample.env
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1890. git status
+
+### 1890.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1900. Add SECRET to sample.env
+
+### 1900.1
+
+Add `SECRET=` to `.env`
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1910. git status
+
+### 1910.1
+
+git status
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1920. git diff
+
+### 1920.1
+
+git diff
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1930. git add
+
+### 1930.1
+
+git add .
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1940. git commit sample.env
+
+### 1940.1
+
+git commit -m "feat: add sample.env"
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1950. git rebase interactive
+
+### 1950.1
+
+git rebase interactive root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1960. Squash Commit
+
+### 1960.1
+
+Squash one commit
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1970. git checkout main
+
+### 1970.1
+
+git checkout main
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1980. git merge gitignore
+
+### 1980.1
+
+git merge feat/add-gitignore
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1990. git branch -d gitignore
+
+### 1990.1
+
+git branch -d feat/add-gitignore
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 2000. git log
+
+### 2000.1
+
+git log
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
