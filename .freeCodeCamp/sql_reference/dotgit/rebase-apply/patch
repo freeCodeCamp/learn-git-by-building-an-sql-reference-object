@@ -1,0 +1,13 @@
+diff --git a/sql_reference.json b/sql_reference.json
+index b2920bd6ab7820085e2348822c7b662df317ed2c..cba5f005d8de7609b91615da883b7b4739de8a25 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -10,5 +10,8 @@
+   "row": {
+     "insert": "INSERT INTO table_name(columns) VALUES(values);",
+     "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
++  },
++  "column": {
++    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+   }
+ }
