@@ -1,0 +1,25 @@
+From dab77a2b01ed5b3eb45804f36d070495eb55af99 Mon Sep 17 00:00:00 2001
+From: moT01 <20648924+moT01@users.noreply.github.com>
+Date: Thu, 9 Sep 2021 22:41:13 -0500
+Subject: feat: add foreign key reference
+
+---
+ sql_reference.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/sql_reference.json b/sql_reference.json
+index d443b5719d3703888be1933ac148cb6e1f5cab44..a6fc72e18a79211af9a4bc7c5175662d34099e1b 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -15,6 +15,7 @@
+     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+     "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+     "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+-    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);"
++    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
++    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
+   }
+ }
+-- 
+2.17.2 (Apple Git-113)
+
