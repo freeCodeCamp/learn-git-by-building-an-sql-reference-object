@@ -103,3 +103,6 @@ d0afcab65991bd93e67b358aa15eac3e3590e2e8 7fc1825d5026ae819d75f884798bf77658c322d
 01d42fb888301d4cda137ee1eae1c45da8ec544a f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e moT01 <20648924+moT01@users.noreply.github.com> 1622837173 -0500	checkout: moving from feat/add-column-references to main
 f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e 01d42fb888301d4cda137ee1eae1c45da8ec544a moT01 <20648924+moT01@users.noreply.github.com> 1622837222 -0500	merge feat/add-column-references: Fast-forward
 01d42fb888301d4cda137ee1eae1c45da8ec544a 30edd7bf40172256465cdd342b2e8026950853a6 moT01 <20648924+moT01@users.noreply.github.com> 1622837288 -0500	checkout: moving from main to fix/add-missing-rename-references
+30edd7bf40172256465cdd342b2e8026950853a6 01d42fb888301d4cda137ee1eae1c45da8ec544a moT01 <20648924+moT01@users.noreply.github.com> 1622837329 -0500	rebase: checkout main
+01d42fb888301d4cda137ee1eae1c45da8ec544a 602258a8ff7e00173fb1b01044166ccc1ac8c326 moT01 <20648924+moT01@users.noreply.github.com> 1622837329 -0500	rebase: fix: add missing rename database reference
+602258a8ff7e00173fb1b01044166ccc1ac8c326 602258a8ff7e00173fb1b01044166ccc1ac8c326 moT01 <20648924+moT01@users.noreply.github.com> 1622837329 -0500	rebase finished: returning to refs/heads/fix/add-missing-rename-references
