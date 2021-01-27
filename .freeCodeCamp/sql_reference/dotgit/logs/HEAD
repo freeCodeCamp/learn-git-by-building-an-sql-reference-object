@@ -43,3 +43,7 @@ a72aceaad172418b6ac8f2e0db44c6e9bc45483e 88989a27ab2087f3aea1515c6f8ab4253f384a3
 88989a27ab2087f3aea1515c6f8ab4253f384a34 a72aceaad172418b6ac8f2e0db44c6e9bc45483e moT01 <20648924+moT01@users.noreply.github.com> 1631244827 -0500	merge feat/add-more-row-references: Fast-forward
 a72aceaad172418b6ac8f2e0db44c6e9bc45483e 458ea01cc9d7cee8608ebab3ef0e357c4671e582 moT01 <20648924+moT01@users.noreply.github.com> 1631244858 -0500	checkout: moving from main to feat/add-column-references
 458ea01cc9d7cee8608ebab3ef0e357c4671e582 a72aceaad172418b6ac8f2e0db44c6e9bc45483e moT01 <20648924+moT01@users.noreply.github.com> 1631244886 -0500	rebase: checkout main
+a72aceaad172418b6ac8f2e0db44c6e9bc45483e 0e874456c4590a4a7d4c5be9a7cfb2398a20dec2 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase: feat: add column reference
+0e874456c4590a4a7d4c5be9a7cfb2398a20dec2 c8ba85366e14dd35f45d4901f80baf65c34e0645 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase: feat: add drop column reference
+c8ba85366e14dd35f45d4901f80baf65c34e0645 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase: feat: add rename column reference
+fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase finished: returning to refs/heads/feat/add-column-references
