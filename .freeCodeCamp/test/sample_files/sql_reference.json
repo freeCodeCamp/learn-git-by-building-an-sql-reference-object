@@ -1,8 +1,7 @@
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;",
-    "rename": "ALTER DATABASE database_name RENAME TO new_name;"
+    "drop": "DROP DATABASE database_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name();",
@@ -12,5 +11,8 @@
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
     "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
     "delete": "DELETE FROM table_name WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
   }
 }
