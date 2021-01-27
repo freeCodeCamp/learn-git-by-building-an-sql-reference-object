@@ -1,18 +1,35 @@
+# This is a combination of 5 commits.
+# This is the 1st commit message:
+
 feat: add column references
+
+# This is the commit message #2:
+
+feat: add drop column reference
+
+# This is the commit message #3:
+
+feat: add rename column reference
+
+# This is the commit message #4:
+
+feat: add primary key reference
+
+# This is the commit message #5:
+
+feat: add foreign key reference
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
 # Date:      Thu Sep 9 22:04:50 2021 -0500
 #
-# interactive rebase in progress; onto 46779f6
-# Last commands done (10 commands done):
-#    pick 87db07c feat: add delete row reference
-#    reword 4e3d744 feat: add column reference
-# Next commands to do (4 remaining commands):
-#    pick bee4c3e feat: add drop column reference
-#    pick 2e8f5b4 feat: add rename column reference
-# You are currently editing a commit while rebasing branch 'feat/add-column-references' on '46779f6'.
+# interactive rebase in progress; onto 87db07c
+# Last commands done (5 commands done):
+#    squash 32ba022 feat: add primary key reference
+#    squash 513bb73 feat: add foreign key reference
+# No commands remaining.
+# You are currently rebasing branch 'feat/add-column-references' on '87db07c'.
 #
 # Changes to be committed:
 #	modified:   sql_reference.json
