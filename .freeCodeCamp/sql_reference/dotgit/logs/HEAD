@@ -48,3 +48,4 @@ a72aceaad172418b6ac8f2e0db44c6e9bc45483e 0e874456c4590a4a7d4c5be9a7cfb2398a20dec
 c8ba85366e14dd35f45d4901f80baf65c34e0645 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase: feat: add rename column reference
 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 moT01 <20648924+moT01@users.noreply.github.com> 1631245022 -0500	rebase finished: returning to refs/heads/feat/add-column-references
 fe84ffe3798ee74ceaa4fcaad15e0232cc2da1d5 d3036f515230bf8683740c499d15c57ed6055bd1 moT01 <20648924+moT01@users.noreply.github.com> 1631245188 -0500	commit: feat: add primary key reference
+d3036f515230bf8683740c499d15c57ed6055bd1 dab77a2b01ed5b3eb45804f36d070495eb55af99 moT01 <20648924+moT01@users.noreply.github.com> 1631245273 -0500	commit: feat: add foreign key reference
