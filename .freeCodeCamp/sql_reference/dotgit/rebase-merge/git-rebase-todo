@@ -1,0 +1,33 @@
+pick f61b864 Initial commit
+pick eebdfca feat: add create database reference
+pick 74969b5 feat: add drop database reference
+pick c808ee6 feat: add create table reference
+pick b33750d feat: add drop table reference
+pick d206dd6 fix: create table syntax
+pick 13ebfe8 feat: add insert row reference
+pick ab99606 feat: add update row reference
+pick f644e0b feat: add delete row reference
+pick 3a6cd74 feat: add column reference
+pick 2ab98ab feat: add drop column reference
+pick 6c05270 feat: add rename column reference
+pick eb26058 feat: add primary key reference
+pick 18e09ba feat: add foreign key reference
+
+# Rebase 18e09ba onto cabb55d (14 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
