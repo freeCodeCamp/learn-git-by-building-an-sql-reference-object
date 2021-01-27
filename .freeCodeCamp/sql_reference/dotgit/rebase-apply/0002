@@ -1,0 +1,26 @@
+From bc3136ef9594b4cd3550e439ce34e12a24d0a1b5 Mon Sep 17 00:00:00 2001
+From: moT01 <20648924+moT01@users.noreply.github.com>
+Date: Fri, 4 Jun 2021 13:38:34 -0500
+Subject: feat: add drop column reference
+
+---
+ sql_reference.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/sql_reference.json b/sql_reference.json
+index cba5f005d8de7609b91615da883b7b4739de8a25..d59d1391fd200aa1f4fdb25adb2b95263fc2df2c 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -12,6 +12,7 @@
+     "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+   },
+   "column": {
+-    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
++    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
++    "drop": "ALTER TABLE table_name DROP COLUMN column_name;"
+   }
+ }
+-- 
+2.17.2 (Apple Git-113)
+
+
