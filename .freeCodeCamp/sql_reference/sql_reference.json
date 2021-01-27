@@ -6,7 +6,8 @@
   },
   "table": {
     "create": "CREATE TABLE table_name();",
-    "drop": "DROP TABLE table_name;"
+    "drop": "DROP TABLE table_name;",
+    "rename": "ALTER TABLE table_name RENAME TO new_name;"
   },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
