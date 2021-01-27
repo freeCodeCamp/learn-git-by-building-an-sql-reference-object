@@ -119,3 +119,4 @@ f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e 01d42fb888301d4cda137ee1eae1c45da8ec544
 95a3d4da4ced2b585126fb17edb721f11770fdaf f4df10ab7ec3a1f8dfb9efcc1ab7995378a8e228 moT01 <20648924+moT01@users.noreply.github.com> 1622843877 -0500	rebase -i (squash): feat: add .gitignore and sample.env
 f4df10ab7ec3a1f8dfb9efcc1ab7995378a8e228 f4df10ab7ec3a1f8dfb9efcc1ab7995378a8e228 moT01 <20648924+moT01@users.noreply.github.com> 1622843917 -0500	rebase -i (finish): returning to refs/heads/feat/add-gitignore
 f4df10ab7ec3a1f8dfb9efcc1ab7995378a8e228 223cfcee33ac58b1f640453b6a0752df49d83287 moT01 <20648924+moT01@users.noreply.github.com> 1622843940 -0500	checkout: moving from feat/add-gitignore to main
+223cfcee33ac58b1f640453b6a0752df49d83287 f4df10ab7ec3a1f8dfb9efcc1ab7995378a8e228 moT01 <20648924+moT01@users.noreply.github.com> 1622843980 -0500	merge feat/add-gitignore: Fast-forward
