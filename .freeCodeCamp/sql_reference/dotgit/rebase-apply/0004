@@ -1,0 +1,26 @@
+From d3036f515230bf8683740c499d15c57ed6055bd1 Mon Sep 17 00:00:00 2001
+From: moT01 <20648924+moT01@users.noreply.github.com>
+Date: Thu, 9 Sep 2021 22:39:48 -0500
+Subject: feat: add primary key reference
+
+---
+ sql_reference.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/sql_reference.json b/sql_reference.json
+index 642ab9b3324f8a422eab5c1411b9e88113f82c5a..d443b5719d3703888be1933ac148cb6e1f5cab44 100644
+--- a/sql_reference.json
++++ b/sql_reference.json
+@@ -14,6 +14,7 @@
+   "column": {
+     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+     "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+-    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;"
++    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
++    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);"
+   }
+ }
+-- 
+2.17.2 (Apple Git-113)
+
+
