@@ -33,3 +33,4 @@ a6d541f7cb70526592a1c10bc95ffb1d1b06decc ec58b4f826c4067c91688e0ac113925d92fa617
 ec58b4f826c4067c91688e0ac113925d92fa617b ec58b4f826c4067c91688e0ac113925d92fa617b moT01 <20648924+moT01@users.noreply.github.com> 1631244033 -0500	rebase finished: returning to refs/heads/feat/add-column-references
 ec58b4f826c4067c91688e0ac113925d92fa617b 458ea01cc9d7cee8608ebab3ef0e357c4671e582 moT01 <20648924+moT01@users.noreply.github.com> 1631244163 -0500	commit: feat: add rename column reference
 458ea01cc9d7cee8608ebab3ef0e357c4671e582 88989a27ab2087f3aea1515c6f8ab4253f384a34 moT01 <20648924+moT01@users.noreply.github.com> 1631244196 -0500	checkout: moving from feat/add-column-references to feat/add-insert-row-reference
+88989a27ab2087f3aea1515c6f8ab4253f384a34 88989a27ab2087f3aea1515c6f8ab4253f384a34 moT01 <20648924+moT01@users.noreply.github.com> 1631244255 -0500	reset: moving to HEAD
