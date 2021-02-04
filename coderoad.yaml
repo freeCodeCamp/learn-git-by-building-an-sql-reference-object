@@ -1,4 +1,4 @@
-version: '0.1.3'
+version: '0.1.4'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-git-by-building-an-sql-reference-object
-    branch: v0.1.3
+    branch: v0.1.4
   dependencies:
     - name: node
       version: '>=10'
@@ -658,9 +658,21 @@ levels:
         setup:
           watchers:
             - ./sql_reference/sql_reference.json
+  - id: '1017'
+    steps:
+      - id: '1017.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1020'
     steps:
       - id: '1020.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1025'
+    steps:
+      - id: '1025.1'
         setup:
           watchers:
             - ../.bash_history
@@ -679,6 +691,12 @@ levels:
   - id: '1050'
     steps:
       - id: '1050.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1055'
+    steps:
+      - id: '1055.1'
         setup:
           watchers:
             - ../.bash_history
