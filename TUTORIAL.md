@@ -2079,11 +2079,11 @@ git rebase continue
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
-## 1510. Add SET UNIQUE command
+## 1510. Add UNIQUE command
 
 ### 1510.1
 
-Add SET UNIQUE command
+Add UNIQUE command `"unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"`
 
 #### HINTS
 
@@ -2092,11 +2092,11 @@ Add SET UNIQUE command
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
-## 1520. git add SET UNIQUE command
+## 1520. git add UNIQUE command
 
 ### 1520.1
 
-git add . (SET UNIQUE command)
+git add . (UNIQUE command)
 
 #### HINTS
 
@@ -2105,16 +2105,16 @@ git add . (SET UNIQUE command)
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
-## 1530. git commit feat: add set unique reference
+## 1530. git commit feat: add unique reference
 
 ### 1530.1
 
-git commit -m "feat: add set unique reference"
+git commit -m "feat: add unique reference"
 
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: add set unique reference"` into the terminal and press enter
+- Type `git commit -m "fix: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
@@ -2234,6 +2234,32 @@ git show -1
 - Type `git commit -m "fix: add set unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+
+## 1560. git rebase interactive root
+
+### 1560.1
+
+git rebase interactive root
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
+
+## 1563. Drop UNIQUE commits
+
+### 1563.1
+
+Drop UNIQUE commits
+
+#### HINTS
+
+- Use the `git add` command
+- Here's an example: `git add file_name`
+- You previously used `git add README.md` to add changes to staging
+- Type `git add sql_referenece.json` into the terminal and press enter
 
 ## 1567. git rebase interactive root
 
