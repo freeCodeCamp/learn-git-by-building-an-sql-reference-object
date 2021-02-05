@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getCommits } = require('./utils');
 
 describe('You', () => {
@@ -10,4 +10,4 @@ describe('You', () => {
   it('should commit the staged files with the correct message', async () => {
     assert(commits[0].message === 'feat: add unique reference');
   });
-});
+});*/
