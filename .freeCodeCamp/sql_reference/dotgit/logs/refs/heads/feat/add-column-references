@@ -8,3 +8,4 @@ cf46b7189d8a37b7395fee4f756d0e81372f0bcc 5285eb0ab364b962fc27866ed87dbe76a30f025
 3e71d18fa31800edf35c52c8e0a469db4cdcafb5 f6afe162f73cc06880365b94394c9a4b61971510 moT01 <20648924+moT01@users.noreply.github.com> 1622835178 -0500	commit: feat: add primary key reference
 f6afe162f73cc06880365b94394c9a4b61971510 2f25144232488d0014be3c2f19c867b4c3231abe moT01 <20648924+moT01@users.noreply.github.com> 1622835264 -0500	commit: feat: add foreign key reference
 2f25144232488d0014be3c2f19c867b4c3231abe 18e09bae51ce84e85a8775ab498299587052533f moT01 <20648924+moT01@users.noreply.github.com> 1622836031 -0500	rebase finished: refs/heads/feat/add-column-references onto f644e0ba9b9a0d8bcfb08d71076a4ea2db06aa7e
+18e09bae51ce84e85a8775ab498299587052533f 31a05708980bf60740b380875fbf180d76a558ca moT01 <20648924+moT01@users.noreply.github.com> 1622836125 -0500	commit: fix: add unique reference
