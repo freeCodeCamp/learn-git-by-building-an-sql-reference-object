@@ -1,4 +1,4 @@
-version: '0.1.4'
+version: '0.1.5'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-git-by-building-an-sql-reference-object
-    branch: v0.1.4
+    branch: v0.1.5
   dependencies:
     - name: node
       version: '>=10'
@@ -850,6 +850,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1305'
+    steps:
+      - id: '1305.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1310'
     steps:
       - id: '1310.1'
@@ -877,6 +883,24 @@ levels:
   - id: '1350'
     steps:
       - id: '1350.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1352'
+    steps:
+      - id: '1352.1'
+        setup:
+          watchers:
+            - ./sql_reference/sql_reference.json
+  - id: '1354'
+    steps:
+      - id: '1354.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1356'
+    steps:
+      - id: '1356.1'
         setup:
           watchers:
             - ../.bash_history
@@ -988,21 +1012,63 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '1540'
+  - id: '1533'
     steps:
-      - id: '1540.1'
+      - id: '1533.1'
         setup:
           watchers:
             - ../.bash_history
-  - id: '1550'
+  - id: '1536'
     steps:
-      - id: '1550.1'
+      - id: '1536.1'
         setup:
           watchers:
             - ../.bash_history
-  - id: '1560'
+  - id: '1539'
     steps:
-      - id: '1560.1'
+      - id: '1539.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1542'
+    steps:
+      - id: '1542.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1545'
+    steps:
+      - id: '1545.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1548'
+    steps:
+      - id: '1548.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1551'
+    steps:
+      - id: '1551.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1554'
+    steps:
+      - id: '1554.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1557'
+    steps:
+      - id: '1557.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1567'
+    steps:
+      - id: '1567.1'
         setup:
           watchers:
             - ../.bash_history
@@ -1165,6 +1231,12 @@ levels:
   - id: '1830'
     steps:
       - id: '1830.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1835'
+    steps:
+      - id: '1835.1'
         setup:
           watchers:
             - ../.bash_history
