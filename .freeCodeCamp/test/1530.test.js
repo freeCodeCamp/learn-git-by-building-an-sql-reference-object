@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getCommits } = require('./utils');
 
 describe('You', () => {
@@ -7,4 +7,4 @@ describe('You', () => {
 
     assert(commits[0].message === 'feat: add unique reference');
   });
-});
+});*/
