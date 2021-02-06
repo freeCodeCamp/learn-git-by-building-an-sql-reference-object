@@ -1122,7 +1122,7 @@ View your log again. Make sure you use my favorite flag.
 
 ### 840.1
 
-Switch to your `main` branch.
+Switch to your `main` branch, there's another feature that needs to be worked on. Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. That's why you need to switch to `main` before creating a new branch.
 
 #### HINTS
 
@@ -1134,7 +1134,7 @@ Switch to your `main` branch.
 
 ### 850.1
 
-Create and switch to a new branch named `feat/add-insert-row-reference`
+Create and switch to a new branch named `feat/add-insert-row-reference`.
 
 #### HINTS
 
@@ -1186,7 +1186,7 @@ Commit your changes with the message: `feat: add insert row reference`.
 
 ### 890.1
 
-Switch to your `main` branch.
+Switch to your `main` branch so you can merge this commit in.
 
 #### HINTS
 
@@ -1198,7 +1198,7 @@ Switch to your `main` branch.
 
 ### 900.1
 
-View your branches.
+View your branches to find the name of the branch you want to merge.
 
 #### HINTS
 
@@ -1209,7 +1209,7 @@ View your branches.
 
 ### 910.1
 
-Merge your branch with the `row` reference you were just working on into the `main` branch.
+Merge your branch with the `insert row` reference you were just working on into the `main` branch.
 
 #### HINTS
 
@@ -1222,10 +1222,11 @@ Merge your branch with the `row` reference you were just working on into the `ma
 
 ### 930.1
 
-Check your logs if you want to see the added commit. Then, switch to your branch to add column references.
+Check your logs to make sure the commit was added. Then, switch to your branch for adding column references.
 
 #### HINTS
 
+- Use the "git branch" command to find the name of the branch
 - Use the `git checkout` command
 - The branch you want to switch to is `feat/add-column-references`
 - Here's an example: `git checkout branch_name`
@@ -1235,7 +1236,7 @@ Check your logs if you want to see the added commit. Then, switch to your branch
 
 ### 940.1
 
-Another commit was added to `main`. As a reminder, a rebase will add the commits from `main` to this branch that are missing from this branch. They will be added in same order so that their commit history is the same. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
+Another commit was added to `main` with the merge you just did. As a reminder, a rebase will "rewind" this branch to where it last matched `main`, then, add the new commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
 
 #### HINTS
 
@@ -1301,7 +1302,7 @@ Check your status again.
 
 ### 960.1
 
-It says `all conflicts fixed: run "git rebase --continue"`. Continue the rebase.
+It says `all conflicts fixed: run "git rebase --continue"`. Run the suggested command to continue the rebase.
 
 #### HINTS
 
@@ -1311,7 +1312,7 @@ It says `all conflicts fixed: run "git rebase --continue"`. Continue the rebase.
 
 ### 970.1
 
-The conflicts have been fixed, and the rebase is finished. View your log with the `oneline` flag.
+The conflicts have been fixed, your two commits from this branch were added, and the rebase is finished. View your log with the `oneline` flag.
 
 #### HINTS
 
@@ -1322,7 +1323,7 @@ The conflicts have been fixed, and the rebase is finished. View your log with th
 
 ### 980.1
 
-After all that, you can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now that this branch is up to date, you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
+You can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now this branch is up to date and you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
 
 #### HINTS
 
@@ -1365,7 +1366,7 @@ Commit your changes with the message `feat: add rename column reference`
 
 ### 1010.1
 
-Switch to your branch for adding row references, There's some more of those to add.
+Switch to your branch for adding row references. There's some more of those to add.
 
 #### HINTS
 
@@ -1403,11 +1404,11 @@ Check your status.
 - Type `git status` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 
-## 1020. git stash 
+## 1020. git stash
 
 ### 1020.1
 
-I made a mistake. This branch was for the `insert` command, not the `update` command you added. You can put your changes aside with `git stash`. Stash your changes so you can add them to a different branch.
+I made a mistake. This branch was for the `insert` command, not the `update` command. You can put your changes aside with `git stash`. Stash your changes so you can add them to a different branch.
 
 #### HINTS
 
@@ -1417,7 +1418,7 @@ I made a mistake. This branch was for the `insert` command, not the `update` com
 
 ### 1025.1
 
-Check your status again.
+You might have noticed your uncommitted changes disappeared from the file. Check your status again.
 
 #### HINTS
 
@@ -1429,7 +1430,7 @@ Check your status again.
 
 ### 1030.1
 
-Your working tree is clean. The changes you made are stashed. View the things you have stashed with `git stash list`.
+Your working tree is clean and there's no changes git recognizes. The changes you made are stashed. View the things you have stashed with `git stash list`.
 
 #### HINTS
 
@@ -1451,7 +1452,7 @@ You can see one item there. Bring the changes back with `git stash pop`.
 
 ### 1050.1
 
-Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.
+The changes from the stash reappeared in the file and you are right where you left of before stashing them. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.
 
 #### HINTS
 
@@ -1462,7 +1463,7 @@ Popping a stash like that will remove the most recent stash and apply it to your
 
 ### 1055.1
 
-It's empty now. Check your status again.
+Now the list should be empty. Check your status again.
 
 #### HINTS
 
@@ -1492,11 +1493,31 @@ View the list of your stashed changes.
 - Use the "git stash list" command in your repo
 - Type `git stash list` in the terminal and press enter
 
+## 1073. git stash show
+
+### 1073.1
+
+git stash show
+
+#### HINTS
+
+- Type `git stash show` in the terminal and press enter
+
+## 1076. git stash show -p
+
+### 1076.1
+
+git stash show -p. `-p` stands for "patch".
+
+#### HINTS
+
+- Type `git stash show -p` in the terminal and press enter
+
 ## 1080. git stash apply
 
 ### 1080.1
 
-Your changes are stashed again. Popping the stash removed it from the stash list. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.
+Your changes are stashed again and the working tree is clean. Popping the stash removed it from the stash list. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.
 
 #### HINTS
 
@@ -1534,6 +1555,26 @@ View the list of your stashed changes again.
 
 - Use the "git stash list" command in your repo
 - Type `git stash list` in the terminal and press enter
+
+## 1113. git stash show stash@{1}
+
+### 1113.1
+
+git stash show stash@{1} - You can use that name at the front of each stash along with most of the stash commands to select one other than the last one. 
+
+#### HINTS
+
+- Type `git stash show` in the terminal and press enter
+
+## 1116. git stash show -p stash@{1}
+
+### 1116.1
+
+git stash show -p stash@{1}. `-p` stands for "patch".
+
+#### HINTS
+
+- Type `git stash show -p` in the terminal and press enter
 
 ## 1120. git stash drop
 
