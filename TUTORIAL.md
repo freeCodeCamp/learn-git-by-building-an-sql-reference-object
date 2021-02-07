@@ -103,7 +103,7 @@ Check your status again with `git status`.
 
 ### 90.1
 
-Now you are on the `main` branch. Use the touch command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.
+Now you are on the `main` branch. Use the `touch` command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.
 
 #### HINTS
 
@@ -352,11 +352,11 @@ Commit messages often start with `fix:` or `feat:` among others to help people u
 
 ### 280.1
 
-Now there's two commits in your history, the newest one is at the top :smile: Add `"drop": "DROP DATABASE database_name;"` to the `database` object in your `sql_reference.json` file. Don't forget the comma at the end of the previous line to make it a valid json object.
+Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object with the value: `"DROP DATABASE database_name;"`. Don't forget the comma at the end of the previous line to make it a valid json object.
 
 #### HINTS
 
-- Your database object should look like this:
+- Your database object should have these values:
   ```json
   {
     "create": "CREATE DATABASE database_name;",
@@ -468,7 +468,7 @@ You only have the `main` branch still. You can create a branch with `git branch 
 
 ### 360.1
 
-Your new branch is basically a fork of the `main` branch since that's the branch you were on when you created it. It will have the same code and commit history as `main` did at the time of the branch creation. View your branches again with `git branch`.
+Your new branch is a clone of the `main` branch since that's the branch you were on when you created it. It will have the same code and commit history as `main` did at the time of the branch creation. View your branches again with `git branch`.
 
 #### HINTS
 
@@ -624,7 +624,7 @@ That's better. Use `git checkout` to switch back to the `main` branch.
 
 ### 450.1
 
-You may have noticed that the code you added disappeared from the json file. Your changes were added on the `feat/add-create-table-reference` branch so they don't exist on this branch. Check the log of the main branch, use the `--oneline` flag again.
+You may have noticed that the code you added disappeared from the JSON file. Your changes were added on the `feat/add-create-table-reference` branch so they don't exist on this branch. Check the log of the main branch, use the `--oneline` flag again.
 
 #### HINTS
 
@@ -648,7 +648,7 @@ You can see three commits on this branch and four on the feature branch you were
 
 ### 470.1
 
-You created the `feat/add-create-table-reference` branch, made some commits, and now it's ready to be added to the `main` branch. You can use `git merge branch_name` to bring changes from a branch into the branch you are currently on. Merge the changes from your feature branch into the `main` branch.
+You created the `feat/add-create-table-reference` branch, made a commit, and now it's ready to be added to the `main` branch. You can use `git merge branch_name` to bring changes from a branch into the branch you are currently on. Merge the changes from your feature branch into the `main` branch.
 
 #### HINTS
 
@@ -703,11 +703,12 @@ You're just left with the `main` branch... Want to try it again? Last time you c
 
 ### 520.1
 
-Add a reference in the `table` object of your json file for dropping a table. It should look like this: `"drop": "DROP TABLE table_name;"`
+Add a `drop` key to the `table` object of your JSON file. Give it the value, `"DROP TABLE table_name;"`.
 
 #### HINTS
 
 - Don't forget the commas to make it a valid json object
+- The looks like this: `"drop": "DROP TABLE table_name;"`
 - The `table` object should look like this:
   ```json
   "table": {
@@ -831,7 +832,7 @@ You're getting the hang of it :smile: Create and checkout a new branch named `fe
 
 ### 610.1
 
-This branch will be a work in progress throughout much of the tutorial. Add a `column` key to your json object. Make it an object like the other two. Give it a single property and value of: `"add": "ALTER TABLE table_name ADD COLUMN column_name;"`
+This branch will be a work in progress throughout much of the tutorial. Add a `column` key to your JSON object. Make it an object like the other two. Give it a single property, `add`, that has the value `"ALTER TABLE table_name ADD COLUMN column_name;"`.
 
 #### HINTS
 
@@ -871,7 +872,7 @@ Add your changes to staging. Here's a tip: you can use `git add .` to add all fi
 
 ### 640.1
 
-Commit your staged changes with the message `"feat: add column reference"`
+Commit your staged changes with the message `feat: add column reference`.
 
 #### HINTS
 
@@ -907,7 +908,7 @@ The commit was added. I see an error in the syntax of one of the commands. You w
 
 ### 680.1
 
-Create and switch to a branch named `fix/create-table-syntax`
+Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. Create and switch to a branch named `fix/create-table-syntax`
 
 #### HINTS
 
@@ -918,13 +919,13 @@ Create and switch to a branch named `fix/create-table-syntax`
 
 ### 690.1
 
-The create table SQL command is a function, so it needs parenthesis `()` at the end. Add those to the end of the command.
+The create table command is a function, so it needs parenthesis `()` at the end. Add those to the end of the command.
 
 #### HINTS
 
 - It's the `table.create` key that you need to change
 - The value should look like this: `CREATE TABLE table_name();`
-- All together, it looks like this:
+- All together, `table` looks like this:
   ```json
   "table": {
     "create": "CREATE TABLE table_name();"
@@ -1044,7 +1045,7 @@ View your log with the oneline flag.
 
 ### 780.1
 
-You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is common with many people working on a codebase simultaneously. You need to update this branch so it has the same commits from `main`, but you can't just merge that branch into this one. You need that bug fix commit to be in the same order here as it is on main, right after the "drop table" commit. You need to `rebase` this branch against `main` to do that. Enter `git rebase main` to rebase this branch.
+You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is common with many people working on a codebase simultaneously. You need to update this branch so it has the same commits from `main`, but you can't just merge that branch into this one. You need that bug fix commit to be in the same order here as it is on `main`, right after the "drop table" commit. You need to `rebase` this branch against `main` to do that. Enter `git rebase main` to rebase this branch.
 
 #### HINTS
 
@@ -1123,7 +1124,7 @@ View your log again. Make sure you use my favorite flag.
 
 ### 840.1
 
-Switch to your `main` branch, there's another feature that needs to be worked on. Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. That's why you need to switch to `main` before creating a new branch.
+Switch to your `main` branch, there's another feature that needs to be worked on. Once again, when you create a branch, it will be a clone of whatever branch you are on when you create it. So you need to create the branch off of `main` cause that's where the branch will need to merged to when it's done.
 
 #### HINTS
 
@@ -1187,7 +1188,7 @@ Commit your changes with the message: `feat: add insert row reference`.
 
 ### 890.1
 
-Switch to your `main` branch so you can merge this commit in.
+This branch is finished. Switch to your `main` branch so you can merge this commit in.
 
 #### HINTS
 
@@ -1237,7 +1238,7 @@ Check your logs to make sure the commit was added. Then, switch to your branch f
 
 ### 940.1
 
-Another commit was added to `main` with the merge you just did. As a reminder, a rebase will "rewind" this branch to where it last matched `main`, then, add the new commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
+Another commit was added to `main` with the merge you just did. To be more specific, a rebase will "rewind" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
 
 #### HINTS
 
@@ -1303,7 +1304,7 @@ Check your status again.
 
 ### 960.1
 
-It says `all conflicts fixed: run "git rebase --continue"`. Run the suggested command to continue the rebase.
+You fixed the conflicts that arose from trying to add this commit and added them to staging. It says `all conflicts fixed: run "git rebase --continue"`. Run the suggested command to continue the rebase.
 
 #### HINTS
 
@@ -1313,7 +1314,7 @@ It says `all conflicts fixed: run "git rebase --continue"`. Run the suggested co
 
 ### 970.1
 
-The conflicts have been fixed, your two commits from this branch were added, and the rebase is finished. View your log with the `oneline` flag to make sure.
+The last commit was added after you continued the rebase. The rebase is now finished. View your log with the `oneline` flag.
 
 #### HINTS
 
@@ -1324,7 +1325,7 @@ The conflicts have been fixed, your two commits from this branch were added, and
 
 ### 980.1
 
-You can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now this branch is up to date and you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`
+You can see the "insert row" commit from `main` was added to this branch before the two commits you made here. Now this branch is up to date and you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `"ALTER TABLE table_name RENAME COLUMN column_name TO new_name;"`
 
 #### HINTS
 
@@ -1367,7 +1368,7 @@ Commit your changes with the message `feat: add rename column reference`
 
 ### 1010.1
 
-Switch to the branch for adding row references. That imaginary person is still working on it.
+There's now three commits that are unique to this branch, you will come back to it later. Switch to the branch for adding row references.
 
 #### HINTS
 
@@ -1381,7 +1382,7 @@ Switch to the branch for adding row references. That imaginary person is still w
 
 ### 1015.1
 
-This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `UPDATE table_name SET column_name = new_value WHERE condition;` as it's value.
+This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `"UPDATE table_name SET column_name = new_value WHERE condition;"` as it's value.
 
 #### HINTS
 
@@ -1464,24 +1465,12 @@ The changes from the stash reappeared in the file and git showed the status for 
 
 ### 1055.1
 
-You are right where you left off before the stash. The code is back and git recognizes the changes again. Put the changes back in the stash.
+The list is empty again. Put the changes back in the stash.
 
 #### HINTS
 
 - Use the "git stash" command
 - Type `git stash` in the terminal and press enter
-
-## 1060. git status
-
-### 1060.1
-
-Now the list should be empty. Check your status again.
-
-#### HINTS
-
-- Use the "git status" command in your repo
-- Type `git status` into the terminal and press enter
-- Make sure you are in your `sql_reference` repo folder
 
 ## 1070. git stash list
 
@@ -1498,7 +1487,7 @@ View the list of your stashed changes.
 
 ### 1073.1
 
-The changes are stashed again. View a condensed version of the changes in the latest stash with `git stash show`.
+The changes are stashed again. View a condensed version of the changes in the **latest** stash with `git stash show`.
 
 #### HINTS
 
@@ -1528,7 +1517,7 @@ Now you can see the actual changes that are stored in the stash. Before, you use
 
 ### 1090.1
 
-View your stash list again.
+Git showed you your status after applying the stash. The one file is unstaged again. View your stash list.
 
 #### HINTS
 
@@ -1561,7 +1550,7 @@ View the list of your stashed changes again.
 
 ### 1113.1
 
-Now there's two things stashed. You can use the name at the front of each stash (`stash@{#}`) with many of the stash commands to select one other than the latest one. You can see that the latest one is `stash@{0}`. View the condensed changes of the oldest stash with the `git stash show` command.
+Now there's two things stashed. You can use the name at the front of each stash (`stash@{#}`) with many of the stash commands to select one other than the latest one. You can see that the latest one is `stash@{0}`. View the condensed changes of the **oldest** stash with the `git stash show` command by putting the name of the stash after it.
 
 #### HINTS
 
@@ -1573,7 +1562,7 @@ Now there's two things stashed. You can use the name at the front of each stash 
 
 ### 1116.1
 
-Next, using a similar method, show the full changes of the oldest stash with the "patch" flag you used earlier.
+Next, using a similar method, **show** the full changes of the **oldest** stash with the "patch" flag you used earlier.
 
 #### HINTS
 
@@ -1587,11 +1576,11 @@ Next, using a similar method, show the full changes of the oldest stash with the
 
 ### 1120.1
 
-There's two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop stash@{#}`.
+There's two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.
 
 #### HINTS
 
-- Drop your latest stash with the suggested command
+- Drop one of the stashed changes with the suggested command
 - Type `git stash drop` in the terminal and press enter
 
 ## 1130. git stash list
@@ -1669,7 +1658,7 @@ It's still there. Pop the stash so the code gets added to this new branch.
 
 ### 1190.1
 
-Git showed you your status, and it looks like it recognizes that the file has new changes after adding the stash. View the stash list to verify that it's empty.
+Git showed you your status again, and it looks like it recognizes that the file has new changes after adding the stash. View the stash list to verify that it's empty.
 
 #### HINTS
 
@@ -1680,7 +1669,7 @@ Git showed you your status, and it looks like it recognizes that the file has ne
 
 ### 1210.1
 
-View the diff of your changes so you can make sure they are what you expect.
+The list is empty. View the diff of your changes so you can make sure they are what you expect.
 
 #### HINTS
 
@@ -1718,7 +1707,7 @@ View your status, then commit the staged changes with the message `feat: add upd
 
 ### 1240.1
 
-Switch to your `main` branch so you can merge the commit you just made.
+Your work on this branch is done for now. Switch to your `main` branch so you can merge the commit you just made.
 
 #### HINTS
 
@@ -1744,7 +1733,7 @@ Merge your branch for adding row references that you just added a commit to.
 
 ### 1260.1
 
-Go back to your branch for the column references so you can add some of those.
+Switch to your branch for the column references so you can continue working on that.
 
 #### HINTS
 
@@ -1841,7 +1830,7 @@ View your log with the oneline flag.
 
 ### 1330.1
 
-The rebase added the commits where they are supposed to be. Add a reference to the column object for setting a column as the primary key. Give it a key of `primary_key` and a value of `ALTER TABLE table_name ADD PRIMARY KEY(column_name);`
+The rebase added the "row" commits where they are supposed to be, then the "column" commits from this branch on top. Excellent. Now you can continue working on it. Add a reference to the column object for setting a column as the primary key. Give it a key of `primary_key` and a value of `"ALTER TABLE table_name ADD PRIMARY KEY(column_name);"`
 
 #### HINTS
 
@@ -1877,7 +1866,7 @@ Commit your staged files with `feat: add primary key reference` as the message.
 
 ### 1352.1
 
-Add `foreign_key` to the `column` object for another commmand. It's value should be `ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);`.
+Add `foreign_key` to the `column` object for another commmand. It's value should be `"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name)";`.
 
 #### HINTS
 
@@ -1930,10 +1919,11 @@ Go to your branch for the row references so you can continue work on those.
 
 ### 1370.1
 
-Add DELETE ROW command
+In your JSON file, add a `delete` key to the `row` object. Take a guess at the value, it should include the `DELETE FROM` and `WHERE` keywords. The whole value is in the hints.
 
 #### HINTS
 
+- The `row.delete` value should be `"DELETE FROM table_name WHERE condition;"`
 - The `row` key should look like this:
   ```json
   "row": {
@@ -1995,11 +1985,25 @@ Merge the branch for the row commands into `main`.
 - It's the `feat/add-more-row-references` branch
 - Type `git merge feat/add-more-row-references` into the terminal and press enter
 
+## 1416. git branch -d feat/add-more-row-references
+
+### 1416.1
+
+You merged the branch and are done with it. Delete the branch for the row references.
+
+#### HINTS
+
+- Use the `git branch` command with the `-d` flag
+- Here's an example: `git branch -d branch_name`
+- View your branches if you need to find the name
+- The branch name is `feat/add-more-row-references`
+- Type `git branch -d feat/add-more-row-references` into the terminal and press enter
+
 ## 1420. git checkout -b fix/add-missing-rename-references
 
 ### 1420.1
 
-Create and checkout a branch named `fix/add-missing-rename-references`. This will be to add a reference in the object for how to rename things that are missing. Assume there is another person working on this while you are still working on the column branch.
+Create and checkout a branch named `fix/add-missing-rename-references`. This will be to add a reference in the object for how to rename things that are missing.
 
 #### HINTS
 
@@ -2011,11 +2015,18 @@ Create and checkout a branch named `fix/add-missing-rename-references`. This wil
 
 ### 1430.1
 
-Add rename database command
+I forgot to add a command for how to rename a database. In your JSON file, add a `rename` key to the `database` object. The value should be `"ALTER DATABASE database_name RENAME TO new_name;"`
 
 #### HINTS
 
-- Add the RENAME DATABASE command
+- The `database` object should look like this:
+  ```json
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;",
+    "rename": "ALTER DATABASE database_name RENAME TO new_name;"
+  }
+  ```
 
 ## 1440. git add RENAME DATABASE command
 
@@ -2047,8 +2058,7 @@ Commmit your stages changes with `fix: add missing rename database reference` fo
 
 ### 1460.1
 
-Switch back to your branch for the column references so you can hopefully finish it.
-git checkout feat/add-column-references
+Leave this branch for now. Switch back to your branch for the column references so you can hopefully finally finish it.
 
 #### HINTS
 
@@ -2062,7 +2072,7 @@ git checkout feat/add-column-references
 
 ### 1470.1
 
-There was a commit to main since you last worked on this. Rebase this branch against `main`.
+There was a commit to `main` since you last worked on this from when you merged the "add more row references" branch. Rebase this branch against `main`.
 
 #### HINTS
 
@@ -2085,7 +2095,7 @@ fix conflicts
 
 ### 1490.1
 
-Add your files to staging.
+You fixed the conflicts. Check your status, then add your files to staging.
 
 #### HINTS
 
@@ -2098,7 +2108,7 @@ Add your files to staging.
 
 ### 1495.1
 
-Check your status.
+Check your status again.
 
 #### HINTS
 
@@ -2110,7 +2120,7 @@ Check your status.
 
 ### 1500.1
 
-Continue your rebase.
+Use the suggested command to continue your rebase.
 
 #### HINTS
 
@@ -2122,11 +2132,22 @@ Continue your rebase.
 
 ### 1510.1
 
-Add UNIQUE command `"unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"`
+There was a conflict when it tried to add the first commit from this branch on top of the one that was brought in from `main`. The rest of the commits were added without conflicts. In your JSON file, add a `unique` key to the `column` object. Give it a value of `"ALTER TABLE table_name ADD UNIQUE(column_name);"`
 
 #### HINTS
 
-- ADD UNIQUE to JSON
+- The should be `"unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"` in your `column` object
+- The `column` object should look like this:
+  ```json
+  "column": {
+		"add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+		"rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);",
+    "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"
+	}
+  ```
 
 ## 1520. git add UNIQUE command
 
@@ -2158,7 +2179,7 @@ Commit the stages files with `feat: add unique reference` for the message.
 
 ### 1533.1
 
-I'm going to show you a few ways to remove or undo a commit. The first is to simply "travel back in time". You can use the `git reset` command to travel to any point in your commit history. Your current `HEAD` is a reference to the last commit you made. Use `git reset HEAD~1` to go back one before `HEAD`.
+I'm going to show you a few ways to remove or undo a commit. The first is to simply "travel back in time". You can use the `git reset` command to travel to any point in your commit history. Your current `HEAD` is a reference to the last commit you just made. Use `git reset HEAD~1` to go back one before `HEAD`.
 
 #### HINTS
 
@@ -2188,11 +2209,22 @@ Your commit for how to set a column to unique is gone. View your status.
 - Type `git status` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 
+## 1540. git diff
+
+### 1540.1
+
+View the diff.
+
+#### HINTS
+
+- Use the "git diff" command
+- Type `git diff` into the terminal and press enter
+
 ## 1542. git add SET UNIQUE command
 
 ### 1542.1
 
-And the changes from commit that commit are back in the working tree. If you used the `--hard` flag with your reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
+And the changes from that commit are back in the working tree. If you used the `--hard` flag with your reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
 
 #### HINTS
 
@@ -2205,12 +2237,12 @@ And the changes from commit that commit are back in the working tree. If you use
 
 ### 1545.1
 
-Commit the change staged files with `feat: add set unique reference` for its message.
+Commit the change staged files with `feat: add unique reference` for its message.
 
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: add set unique reference"` into the terminal and press enter
+- Type `git commit -m "fix: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
@@ -2247,6 +2279,7 @@ Using revert to undo that commit added another commit that is the exact opposite
 
 - Enter the suggested command
 - Type `git show` in the terminal and press enter
+- Press enter until you have seen the whole message
 
 ## 1557. git show HEAD~1
 
@@ -2296,7 +2329,7 @@ View your log. Use the `--oneline` flag.
 
 ### 1567.1
 
-Enter another `--interactive` rebase that goes back to the `--root`, I am going to show you how to change a commit message.
+Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root`, I am going to show you how to change a commit message.
 
 #### HINTS
 
@@ -2330,18 +2363,18 @@ View your log. Use the `--oneline` flag.
 
 ### 1580.1
 
-Enter another `--interactive` rebase. Instead of going to the root that goes back to the `--root`, I am going to show you how to change a commit message.
+Enter another `--interactive` rebase. Instead of going to the `--root` do `HEAD~5`. The will start the interactive rebase five commits before `HEAD`, where the `main` branch currently is. Effectively, showing you only the commits you have made to this branch.
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
-- Enter `git rebase --interactive --root` into the terminal and press enter
+- Enter `git rebase --interactive HEAD~5` into the terminal and press enter
 
 ## 1590. Squash feat/add-column-references Commits
 
 ### 1590.1
 
-Squash column reference commits into one
+Squash column reference commits into one.
 
 #### HINTS
 
@@ -2354,7 +2387,7 @@ Squash column reference commits into one
 
 ### 1600.1
 
-git log --oneline
+View your log with the oneline flag.
 
 #### HINTS
 
@@ -2366,7 +2399,7 @@ git log --oneline
 
 ### 1610.1
 
-View the log again, but without the flag this time. You can see more details about the commits that were sqashed into one commit.
+Now all the commits you made to this branch have been "sqashed" into just the one commit. View the log again, but without the flag this time. You will see that the first entry in the log shows all the commits that were squashed.
 
 #### HINTS
 
@@ -2377,7 +2410,7 @@ View the log again, but without the flag this time. You can see more details abo
 
 ### 1620.1
 
-git checkout main
+I think you are finally done with this branch. Go to your `main` branch so it can get merged.
 
 #### HINTS
 
@@ -2389,7 +2422,7 @@ git checkout main
 
 ### 1630.1
 
-git merge feat/add-column-references
+Merge your branch for adding column commands into this one.
 
 #### HINTS
 
@@ -2440,68 +2473,41 @@ git rebase main
 - Here's an example: `git rebase branch_name`
 - Type `git rebase main` into the terminal and press enter
 
-## 1660. Fix Conflicts
-
-### 1660.1
-
-Fix Conflicts
-
-#### HINTS
-
-- FIX CONFLICTS
-
-## 1670. git add Fixed Conflicts
-
-### 1670.1
-
-git Add .
-
-#### HINTS
-
-- Use the `git add` command
-- Here's an example: `git add file_name`
-- You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
-
-## 1675. git status
-
-### 1675.1
-
-Check your status.
-
-#### HINTS
-
-- Use the "git status" command in your repo
-- Type `git status` into the terminal and press enter
-- Make sure you are in your `sql_reference` repo folder
-
-## 1680. git rebase continue
+## 1680. git log oneline
 
 ### 1680.1
 
-git rebase --continue
+View the log with the oneline flag.
 
 #### HINTS
 
-- View the output in the terminal to find the command
-- It's the "git rebase continue" command
-- Enter `git rebase --continue` in the terminal and press enter
+- Use the `git log` command with the correct flag
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
 
 ## 1690. Add RENAME TABLE Command
 
 ### 1690.1
 
-Add rename table command
+Looks like there was no conflicts this time :smile: In your JSON file, add a `rename` key to the `table` object. The value is in the hints, but give it a try first. It follows a similar structure as the rest of them.
 
 #### HINTS
 
-- Add RENAME TABLE command
+- The value is `"ALTER TABLE table_name RENAME_TO new_name;"`
+- The `table` object should look like this:
+  ```json
+  {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;",
+    "rename": "ALTER TABLE table_name RENAME_TO new_name;"
+  }
+  ```
 
 ## 1700. git add RENAME TABLE command
 
 ### 1700.1
 
-Add your changes to staging.
+Check the diff of your changes, then add them changes to staging.
 
 #### HINTS
 
@@ -2514,7 +2520,7 @@ Add your changes to staging.
 
 ### 1710.1
 
-Commit your staged changes with `fix: add missing rename table reference`
+Commit your staged changes with the message, `fix: add missing rename table reference`.
 
 #### HINTS
 
@@ -2527,7 +2533,7 @@ Commit your staged changes with `fix: add missing rename table reference`
 
 ### 1720.1
 
-git rebase interactive root. so you can squash the commits
+git rebase interactive HEAD~2. so you can squash the commits
 
 #### HINTS
 
@@ -2548,7 +2554,7 @@ Squash missing rename commits into one - place an s next to the commits
 
 ### 1740.1
 
-git checkout main
+I think this branch is ready to go. Switch to `main` so you can merge it.
 
 #### HINTS
 
@@ -2560,7 +2566,7 @@ git checkout main
 
 ### 1750.1
 
-git merge fix/add-missing-rename-references
+Merge your branch for adding the rename commands into `main`.
 
 #### HINTS
 
@@ -2598,7 +2604,7 @@ Delete all the branches but main
 
 ### 1780.1
 
-git log --oneline
+I think the file is complete, thanks for making this for me. View the log with the oneline flag.
 
 #### HINTS
 
@@ -2610,7 +2616,7 @@ git log --oneline
 
 ### 1790.1
 
-There's one more thing you should learn. Create and checkout a branch named `feat/add-gitignore`.
+That's a nice looking commit history. There's one more thing you should learn. Create and checkout a branch named `feat/add-gitignore`.
 
 #### HINTS
 
@@ -2672,7 +2678,7 @@ You can see the `.env` file is new. Use `touch` again to create another file nam
 
 ### 1835.1
 
-View the status.
+View the status again.
 
 #### HINTS
 
@@ -2695,7 +2701,7 @@ Now there's two new files that aren't tracked yet. Add the text `.env` to your `
 
 ### 1850.1
 
-View the status again. git status - now your .env won't be tracked by git or added to any commits so you can keep secrets or modules
+View the status again.
 
 #### HINTS
 
@@ -2707,7 +2713,7 @@ View the status again. git status - now your .env won't be tracked by git or add
 
 ### 1860.1
 
-Now the `.env` file is being ignored by git. When you add the files or make commits, it won't include anything in the `.gitignore` file. Add you new changes to staging.
+Now the `.env` file is being ignored by git because you added it to the `.gitignore` file. There are often a number of things you don't want to include in a repository, especially if it's publicly visible. Now, you know how to keep them from being tracked by git. Add your new changes to staging.
 
 #### HINTS
 
@@ -2771,7 +2777,7 @@ Git won't ignore this file. Sensitive information can be stored in the `.env` fi
 
 ### 1910.1
 
-git status
+Check your status.
 
 #### HINTS
 
@@ -2779,23 +2785,11 @@ git status
 - Type `git status` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 
-## 1920. git diff
-
-### 1920.1
-
-git diff
-
-#### HINTS
-
-- Use the "git diff" command
-- Type `git diff` into the terminal and press enter
-- Make sure you are in your repo folder first
-
 ## 1930. git add sample.env
 
 ### 1930.1
 
-git add .
+Add your new files to staging.
 
 #### HINTS
 
@@ -2808,18 +2802,20 @@ git add .
 
 ### 1940.1
 
-git commit -m "feat: add sample.env"
+Commit the new changes with the message `feat: add sample.env`.
 
 #### HINTS
 
-- Add `.env` to the `.gitignore` file
-- Make sure there's nothing else in the file
+- Commit changes with `git commit -m "message"`
+- Type `git commit -m "feat: add sample.env"` into the terminal and press enter
+- View your `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
 ## 1945. git log oneline
 
 ### 1945.1
 
-View you log. Use the `--oneline` flag.
+View your log. Use the `--oneline` flag.
 
 #### HINTS
 
@@ -2830,18 +2826,18 @@ View you log. Use the `--oneline` flag.
 
 ### 1950.1
 
-git rebase interactive root - no, not root - just do the ones from the branch
+Do an interactive rebase that goes back to all the commits on this branch (`HEAD~2`).
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
-- Enter `git rebase --interactive --root` into the terminal and press enter
+- Enter `git rebase --interactive HEAD~2` into the terminal and press enter
 
 ## 1960. Squash feat/add-gitignore Commits
 
 ### 1960.1
 
-Squash add .gitignore and add sample.env into one commit
+Squash add .gitignore and add sample.env into one commit and change the message to `feat: add .gitignore and sample.env`
 
 #### HINTS
 
