@@ -9,6 +9,7 @@
   },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
-    "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+    "delete": "DELETE FROM table_name WHERE condition;"
   }
 }
