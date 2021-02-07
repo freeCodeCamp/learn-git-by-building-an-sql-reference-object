@@ -81,3 +81,9 @@ edf32d01a3b281737ed00f8b3f433363ca856ef0 2bdbcb8ac8aeeda89875b301af5f357cb4d4e58
 c42a1274d0b84515f6672cef7c4009f9cdad7532 9b70f9a693b175b15e117e340809f4c3367b2d88 moT01 <20648924+moT01@users.noreply.github.com> 1622836746 -0500	rebase -i (pick): feat: add update row reference
 9b70f9a693b175b15e117e340809f4c3367b2d88 fc0540a3a8520ee00f578f820babcd19456f1aec moT01 <20648924+moT01@users.noreply.github.com> 1622836746 -0500	rebase -i (pick): feat: add delete row reference
 fc0540a3a8520ee00f578f820babcd19456f1aec cbc3c9729eaf1e1a8bebbb0d12b6af46190bcbf6 moT01 <20648924+moT01@users.noreply.github.com> 1622836746 -0500	rebase -i (reword): feat: add column reference
+cbc3c9729eaf1e1a8bebbb0d12b6af46190bcbf6 015efa4df6158e26642e06212e3679c42ab8e303 moT01 <20648924+moT01@users.noreply.github.com> 1622836746 -0500	rebase -i (reword): feat: add column references
+015efa4df6158e26642e06212e3679c42ab8e303 32aa47c2dde7fa56c0f4a867d770383ec2763591 moT01 <20648924+moT01@users.noreply.github.com> 1622836789 -0500	rebase -i (pick): feat: add drop column reference
+32aa47c2dde7fa56c0f4a867d770383ec2763591 7395c765aaa12a28291212f0795096ca18158e97 moT01 <20648924+moT01@users.noreply.github.com> 1622836789 -0500	rebase -i (pick): feat: add rename column reference
+7395c765aaa12a28291212f0795096ca18158e97 6e521a7d2f7c1a3f189fe9dabbeaef767fc4dd1e moT01 <20648924+moT01@users.noreply.github.com> 1622836789 -0500	rebase -i (pick): feat: add primary key reference
+6e521a7d2f7c1a3f189fe9dabbeaef767fc4dd1e 873cf951031b422cc575cafffd15c84b7d13cd2e moT01 <20648924+moT01@users.noreply.github.com> 1622836789 -0500	rebase -i (pick): feat: add foreign key reference
+873cf951031b422cc575cafffd15c84b7d13cd2e 873cf951031b422cc575cafffd15c84b7d13cd2e moT01 <20648924+moT01@users.noreply.github.com> 1622836790 -0500	rebase -i (finish): returning to refs/heads/feat/add-column-references
