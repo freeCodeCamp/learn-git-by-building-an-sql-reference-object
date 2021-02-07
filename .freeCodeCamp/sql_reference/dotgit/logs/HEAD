@@ -69,3 +69,21 @@ b0a93b6eb229138574247abd4b0f31c9fdeeb0c2 1e3a1786b845fef00b384d3ad34bf877940e043
 7f4443692a682f14c68f524c4600a67e2318e908 d0c82e41793a483527b3c213694dcf9f43ac6116 moT01 <20648924+moT01@users.noreply.github.com> 1631246097 -0500	revert: Revert "feat: add unique reference"
 d0c82e41793a483527b3c213694dcf9f43ac6116 1e3a1786b845fef00b384d3ad34bf877940e0430 moT01 <20648924+moT01@users.noreply.github.com> 1631246473 -0500	rebase -i (start): checkout HEAD~2
 1e3a1786b845fef00b384d3ad34bf877940e0430 1e3a1786b845fef00b384d3ad34bf877940e0430 moT01 <20648924+moT01@users.noreply.github.com> 1631246473 -0500	rebase -i (finish): returning to refs/heads/feat/add-column-references
+1e3a1786b845fef00b384d3ad34bf877940e0430 46779f680029f808e44ea7ca778d424614c4ee7c moT01 <20648924+moT01@users.noreply.github.com> 1631246868 -0500	rebase -i (start): checkout 46779f680029f808e44ea7ca778d424614c4ee7c
+46779f680029f808e44ea7ca778d424614c4ee7c 723e2829a8b792fde20bb4199f2743c9a2167464 moT01 <20648924+moT01@users.noreply.github.com> 1631246868 -0500	rebase -i (pick): Initial commit
+723e2829a8b792fde20bb4199f2743c9a2167464 c6cebc69f0c1f2c92e1c8603a1cf8aadb09a70e0 moT01 <20648924+moT01@users.noreply.github.com> 1631246868 -0500	rebase -i (pick): Initial commit
+c6cebc69f0c1f2c92e1c8603a1cf8aadb09a70e0 41d4374a88f4df88819cb3c32af6fb03008c94fc moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add create database reference
+41d4374a88f4df88819cb3c32af6fb03008c94fc 6d6ce0a3fd29d55d6bb146e36423665de4fe8f4f moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add drop database reference
+6d6ce0a3fd29d55d6bb146e36423665de4fe8f4f 263ed658e5094ce698890bcbadafa13314f0446a moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add create table reference
+263ed658e5094ce698890bcbadafa13314f0446a bcc2ca1ebf06a9466f8e7d8de956d0b232aecc69 moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add drop table reference
+bcc2ca1ebf06a9466f8e7d8de956d0b232aecc69 701f14ba92f643bea9a8b21177bb3ad6fffede94 moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): fix: create table syntax
+701f14ba92f643bea9a8b21177bb3ad6fffede94 7f7f17ffa05c863fd23a10e4d8001270c33b03a7 moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add insert row reference
+7f7f17ffa05c863fd23a10e4d8001270c33b03a7 d6cec108dd9bc3c60a389c39f8265245feca5fb2 moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add update row reference
+d6cec108dd9bc3c60a389c39f8265245feca5fb2 6e11f2c479803304c3ba5ac0753e0db705862e9a moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (pick): feat: add delete row reference
+6e11f2c479803304c3ba5ac0753e0db705862e9a 12e24ca02631d9cce17a5673e5394f5d6d864b5a moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (reword): feat: add column reference
+12e24ca02631d9cce17a5673e5394f5d6d864b5a 72815b608c5b4858914289e5cb4deca768dd3622 moT01 <20648924+moT01@users.noreply.github.com> 1631246869 -0500	rebase -i (reword): feat: add column references
+72815b608c5b4858914289e5cb4deca768dd3622 5e431859211b7ee6ff3b50aaaf65dc2c34c14afb moT01 <20648924+moT01@users.noreply.github.com> 1631246913 -0500	rebase -i (pick): feat: add drop column reference
+5e431859211b7ee6ff3b50aaaf65dc2c34c14afb fd19b53720c032de648fcef25a1990f59c9f7497 moT01 <20648924+moT01@users.noreply.github.com> 1631246913 -0500	rebase -i (pick): feat: add rename column reference
+fd19b53720c032de648fcef25a1990f59c9f7497 7533aafb785319ac13f32ee7441e48842fef9fa6 moT01 <20648924+moT01@users.noreply.github.com> 1631246913 -0500	rebase -i (pick): feat: add primary key reference
+7533aafb785319ac13f32ee7441e48842fef9fa6 367290e4e2dc01a60c9c459d53b324a3da989844 moT01 <20648924+moT01@users.noreply.github.com> 1631246913 -0500	rebase -i (pick): feat: add foreign key reference
+367290e4e2dc01a60c9c459d53b324a3da989844 367290e4e2dc01a60c9c459d53b324a3da989844 moT01 <20648924+moT01@users.noreply.github.com> 1631246913 -0500	rebase -i (finish): returning to refs/heads/feat/add-column-references
