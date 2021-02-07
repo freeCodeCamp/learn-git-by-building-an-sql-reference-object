@@ -2815,6 +2815,17 @@ git commit -m "feat: add sample.env"
 - Add `.env` to the `.gitignore` file
 - Make sure there's nothing else in the file
 
+## 1945. git log oneline
+
+### 1945.1
+
+View you log. Use the `--oneline` flag.
+
+#### HINTS
+
+- Use the `git log` command
+- Type `git log --oneline` into the terminal and press enter
+
 ## 1950. git rebase interactive root
 
 ### 1950.1
