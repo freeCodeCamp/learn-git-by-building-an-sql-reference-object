@@ -1,11 +1,19 @@
-Revert "feat: add unique reference"
-
-This reverts commit 7f4443692a682f14c68f524c4600a67e2318e908.
+feat: add column references
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
-# On branch feat/add-column-references
+# Date:      Thu Sep 9 22:04:50 2021 -0500
+#
+# interactive rebase in progress; onto 46779f6
+# Last commands done (10 commands done):
+#    pick 87db07c feat: add delete row reference
+#    reword 4e3d744 feat: add column reference
+# Next commands to do (4 remaining commands):
+#    pick bee4c3e feat: add drop column reference
+#    pick 2e8f5b4 feat: add rename column reference
+# You are currently editing a commit while rebasing branch 'feat/add-column-references' on '46779f6'.
+#
 # Changes to be committed:
 #	modified:   sql_reference.json
 #
