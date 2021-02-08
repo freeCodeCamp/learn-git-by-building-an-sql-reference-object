@@ -4404,7 +4404,7 @@
     },
     {
       "id": "1542",
-      "title": "git add SET UNIQUE command",
+      "title": "git add UNIQUE command",
       "summary": "",
       "content": "",
       "steps": [
@@ -4430,7 +4430,7 @@
     },
     {
       "id": "1545",
-      "title": "git commit feat: add set unique reference",
+      "title": "git commit feat: add unique reference",
       "summary": "",
       "content": "",
       "steps": [
