@@ -2220,7 +2220,7 @@ View the diff.
 - Use the "git diff" command
 - Type `git diff` into the terminal and press enter
 
-## 1542. git add SET UNIQUE command
+## 1542. git add UNIQUE command
 
 ### 1542.1
 
@@ -2233,7 +2233,7 @@ And the changes from that commit are back in the working tree. If you used the `
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
-## 1545. git commit feat: add set unique reference
+## 1545. git commit feat: add unique reference
 
 ### 1545.1
 
