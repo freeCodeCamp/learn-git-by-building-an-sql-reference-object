@@ -2257,6 +2257,20 @@ Reverting is a good way to undo a commit because you don't lose the commit from 
 - Enter the suggested command
 - Enter `git revert HEAD` in the terminal
 
+## 1549. git revert HEAD
+
+### 1549.1
+
+Don't change anything in nano. Save and exit the file.
+
+#### HINTS
+
+- Press `crtl+o` to save the file
+- Press `ctrl+x` to exit nano
+- Your last commit message should be `Revert "feat: add unique reference"`
+- View your log to make sure the message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, then make a commit like this: `git commit -m 'Revert "feat: add unique reference"'`. Notice the single and double quotes.
+
 ## 1551. git log oneline
 
 ### 1551.1

@@ -1078,6 +1078,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1549'
+    steps:
+      - id: '1549.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1551'
     steps:
       - id: '1551.1'
