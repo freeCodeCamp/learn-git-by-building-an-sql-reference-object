@@ -1,8 +1,3 @@
-pick 7043e45 feat: add column references
-pick 8b13b3f feat: add drop column reference
-pick 2805954 feat: add rename column reference
-pick 4d40b15 feat: add primary key reference
-pick 5229798 feat: add foreign key reference
 
 # Rebase f644e0b..5229798 onto f644e0b (5 commands)
 #

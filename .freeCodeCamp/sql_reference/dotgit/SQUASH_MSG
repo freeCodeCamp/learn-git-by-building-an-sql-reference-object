@@ -1,0 +1,20 @@
+# This is a combination of 5 commits.
+# This is the 1st commit message:
+
+feat: add column references
+
+# This is the commit message #2:
+
+feat: add drop column reference
+
+# This is the commit message #3:
+
+feat: add rename column reference
+
+# This is the commit message #4:
+
+feat: add primary key reference
+
+# This is the commit message #5:
+
+feat: add foreign key reference

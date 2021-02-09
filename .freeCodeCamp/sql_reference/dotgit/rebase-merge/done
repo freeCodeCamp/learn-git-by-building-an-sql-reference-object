@@ -1,0 +1,5 @@
+pick 7043e45e22c5e00b28ec78c8acb2deaa5f79a50d feat: add column references
+squash 8b13b3f15d695aa85d1484a995ed234926f7d603 feat: add drop column reference
+squash 2805954d21ea7fffdf6b6c5bd5a40730b8d7a07d feat: add rename column reference
+squash 4d40b15d6092153e85652ae2c0c27e25962be6db feat: add primary key reference
+squash 52297988573b4ba255fce39f8ae90988853ac450 feat: add foreign key reference
