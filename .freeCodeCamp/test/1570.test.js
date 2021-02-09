@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getFileContents } = require('./utils');
 
 describe('You', () => {
@@ -10,4 +10,4 @@ describe('You', () => {
   it('should use the "reword" option', async () => {
     assert(/^(r|reword) /gm.test(rebaseFile));
   });
-});
+});*/
