@@ -1,0 +1,8 @@
+# This is a combination of 2 commits.
+# This is the 1st commit message:
+
+feat: add .gitignore
+
+# This is the commit message #2:
+
+feat: add sample.env
