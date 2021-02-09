@@ -1,1 +1,11 @@
-fix: add unique reference
+Revert "fix: add unique reference"
+
+This reverts commit 8a59d51294fb73c8159accc6ac0f51106faba654.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch feat/add-column-references
+# Changes to be committed:
+#	modified:   sql_reference.json
+#
