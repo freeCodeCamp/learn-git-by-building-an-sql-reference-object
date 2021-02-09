@@ -1,17 +1,7 @@
-pick f61b864 Initial commit
-pick eebdfca feat: add create database reference
-pick 74969b5 feat: add drop database reference
-pick c808ee6 feat: add create table reference
-pick b33750d feat: add drop table reference
-pick d206dd6 fix: create table syntax
-pick 13ebfe8 feat: add insert row reference
-pick ab99606 feat: add update row reference
-pick f644e0b feat: add delete row reference
-pick 3a6cd74 feat: add column reference
-pick 2ab98ab feat: add drop column reference
-pick 6c05270 feat: add rename column reference
-pick eb26058 feat: add primary key reference
-pick 18e09ba feat: add foreign key reference
+pick 2ab98abf91241b885bc54148d0d4b2a112452cb7 feat: add drop column reference
+pick 6c052709c270c2420f9916eaef2543dadf95a438 feat: add rename column reference
+pick eb2605851f3dab00fa9e9bb3f2edd2e9d52f1736 feat: add primary key reference
+pick 18e09bae51ce84e85a8775ab498299587052533f feat: add foreign key reference
 
 # Rebase 18e09ba onto cabb55d (14 commands)
 #
