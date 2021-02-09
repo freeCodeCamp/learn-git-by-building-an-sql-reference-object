@@ -1,0 +1,8 @@
+# This is a combination of 2 commits.
+# This is the 1st commit message:
+
+fix: add missing rename database reference
+
+# This is the commit message #2:
+
+fix: add missing rename table reference
