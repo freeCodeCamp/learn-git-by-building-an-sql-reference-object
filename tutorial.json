@@ -3733,7 +3733,7 @@
               "439c3d7e4aad92f51e5aca8c476672896b0cb118"
             ]
           },
-          "content": "Add `foreign_key` to the `column` object for another commmand. It's value should be `\"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name)\";`.",
+          "content": "Add `foreign_key` to the `column` object for another commmand. It's value should be `\"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"`.",
           "hints": [
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
