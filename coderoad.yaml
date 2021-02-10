@@ -1,4 +1,4 @@
-version: '0.1.7'
+version: '0.1.8'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-git-by-building-an-sql-reference-object
-    branch: v0.1.7
+    branch: v0.1.8
   dependencies:
     - name: node
       version: '>=10'
@@ -1132,9 +1132,27 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1572'
+    steps:
+      - id: '1572.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1575'
     steps:
       - id: '1575.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1576'
+    steps:
+      - id: '1576.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1578'
+    steps:
+      - id: '1578.1'
         setup:
           watchers:
             - ../.bash_history
@@ -1147,6 +1165,12 @@ levels:
   - id: '1590'
     steps:
       - id: '1590.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1595'
+    steps:
+      - id: '1595.1'
         setup:
           watchers:
             - ../.bash_history
@@ -1216,6 +1240,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1715'
+    steps:
+      - id: '1715.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1720'
     steps:
       - id: '1720.1'
@@ -1225,6 +1255,12 @@ levels:
   - id: '1730'
     steps:
       - id: '1730.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1735'
+    steps:
+      - id: '1735.1'
         setup:
           watchers:
             - ../.bash_history
@@ -1369,6 +1405,12 @@ levels:
   - id: '1960'
     steps:
       - id: '1960.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1962'
+    steps:
+      - id: '1962.1'
         setup:
           watchers:
             - ../.bash_history

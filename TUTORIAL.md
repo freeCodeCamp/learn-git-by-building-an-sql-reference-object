@@ -2349,7 +2349,7 @@ Both, the commit to add the unique command and the one to revert it were dropped
 
 - Enter `git rebase --interactive --root` into the terminal and press enter
 
-## 1570. Reword Column References Commit
+## 1570. Nano: Select Reword Column References Commit
 
 ### 1570.1
 
@@ -2361,9 +2361,44 @@ s the one at the bottom of the list of commits). When you are done, save the fil
 - Place an r next to the 
 - save the file with crtl+o
 
+## 1572. Nano: Change Column References Commit Message
+
+### 1572.1
+
+Add an `s` at the end of the commit message so it is `feat: add column references`.
+
+#### HINTS
+
+- HINTS
+
 ## 1575. git log oneline
 
 ### 1575.1
+
+View your log. Use the `--oneline` flag.
+
+#### HINTS
+
+- Use the `git log` command with the correct flag
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
+
+## 1576. git rebase main
+
+### 1576.1
+
+git rebase main
+
+#### HINTS
+
+- Use the "git rebase" command
+- Add the branch after the command that you want to rebase against
+- Here's an example: `git rebase branch_name`
+- Type `git rebase main` into the terminal and press enter
+
+## 1578. git log oneline
+
+### 1578.1
 
 View your log. Use the `--oneline` flag.
 
@@ -2397,6 +2432,16 @@ Squash column reference commits into one.
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
+## 1595. Nano: Save and Exit to Squash
+
+### 1595.1
+
+You can see the commit messages you used. Don't change anything in nano. Save and exit the file to finish the rebase and squash the commits
+
+#### HINTS
+
+- HINTS
+
 ## 1600. git log oneline
 
 ### 1600.1
@@ -2409,9 +2454,11 @@ View your log with the oneline flag.
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
 
-## 1610. git log
+## 1610. git log -1
 
 ### 1610.1
+
+Change this to git log -1.
 
 Now all the commits you made to this branch have been "sqashed" into just the one commit. View the log again, but without the flag this time. You will see that the first entry in the log shows all the commits that were squashed.
 
@@ -2543,6 +2590,18 @@ Commit your staged changes with the message, `fix: add missing rename table refe
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
+## 1715. git log oneline
+
+### 1715.1
+
+View your log with the oneline flag.
+
+#### HINTS
+
+- Use the `git log` command with the correct flag
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
+
 ## 1720. git rebase interactive root
 
 ### 1720.1
@@ -2563,6 +2622,16 @@ Squash missing rename commits into one - place an s next to the commits
 #### HINTS
 
 - Place an s next to the commits
+
+## 1735. Nano: Change Column References Commit Message
+
+### 1735.1
+
+Add a new message at the top. `feat: add missing rename references`. When you are done, save and exit the file.
+
+#### HINTS
+
+- HINTS
 
 ## 1740. git checkout main
 
@@ -2857,6 +2926,16 @@ Squash add .gitignore and add sample.env into one commit and change the message 
 
 - Place an `s` next to the suggest commit
 - When you are done, save the file and exit nano
+
+## 1962. Nano: Add Message + Save and Exit
+
+### 1962.1
+
+Add a new message at the top. `feat: add .gitignore and sample.env`. When you are done, save and exit the file.
+
+#### HINTS
+
+- HINTS
 
 ## 1970. git checkout main
 
