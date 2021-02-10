@@ -1866,7 +1866,7 @@ Commit your staged files with `feat: add primary key reference` as the message.
 
 ### 1352.1
 
-Add `foreign_key` to the `column` object for another commmand. It's value should be `"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name)";`.
+Add `foreign_key` to the `column` object for another commmand. It's value should be `"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"`.
 
 #### HINTS
 
