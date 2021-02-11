@@ -352,10 +352,12 @@ Commit messages often start with `fix:` or `feat:` among others to help people u
 
 ### 280.1
 
-Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object with the value: `"DROP DATABASE database_name;"`. Don't forget the comma at the end of the previous line to make it a valid json object.
+Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the create value. The syntax is in the hints.
 
 #### HINTS
 
+- The value should be `"DROP DATABASE database_name;"`
+- Don't forget the comma at the end of the previous line to make it a valid json object.
 - Your database object should have these values:
   ```json
   {
@@ -517,17 +519,17 @@ Like I said, you often don't want to make commits directly to the main branch of
 - Make sure to add commas to keep it a valid json object
 - The `table` key should be on the same level as the `database` key
 - The whole file should look like this:
-  ```json
-  {
-    "database": {
-      "create": "CREATE DATABASE database_name;",
-      "drop": "DROP DATABASE database_name;",
-    },
-    "table": {
-      "create": "CREATE TABLE table_name;"
-    }
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;",
+  },
+  "table": {
+    "create": "CREATE TABLE table_name;"
   }
-  ```
+}
+```
 
 ## 400. git status
 
@@ -703,12 +705,13 @@ You're just left with the `main` branch... Want to try it again? Last time you c
 
 ### 520.1
 
-Add a `drop` key to the `table` object of your JSON file. Give it the value, `"DROP TABLE table_name;"`.
+Add a `drop` key to the `table` object of your JSON file. Give it a value for how to drop a table. The syntax is in the hints.
 
 #### HINTS
 
+- The value should be `"DROP TABLE table_name;"`
 - Don't forget the commas to make it a valid json object
-- The looks like this: `"drop": "DROP TABLE table_name;"`
+- The key looks like this: `"drop": "DROP TABLE table_name;"`
 - The `table` object should look like this:
   ```json
   "table": {
@@ -772,7 +775,7 @@ Commit your staged changes with the message `feat: add drop table reference`.
 
 ### 560.1
 
-Switch back your `main` branch.
+Switch back your `main` branch so you can merge in these changes.
 
 #### HINTS
 
@@ -821,7 +824,7 @@ The commit from your feature branch was added to the `main` branch so you can sa
 
 ### 600.1
 
-You're getting the hang of it :smile: Create and checkout a new branch named `feat/add-column-references`
+You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into branch you started on. Pretty simple, lets keep going. Create and checkout a new branch named `feat/add-column-references`
 
 #### HINTS
 
@@ -832,7 +835,7 @@ You're getting the hang of it :smile: Create and checkout a new branch named `fe
 
 ### 610.1
 
-This branch will be a work in progress throughout much of the tutorial. Add a `column` key to your JSON object. Make it an object like the other two. Give it a single property, `add`, that has the value `"ALTER TABLE table_name ADD COLUMN column_name;"`.
+This branch will be a work in progress. Add a `column` key to your JSON object. Make it an object like the other two. Give it a single property, `add`, that has the value `"ALTER TABLE table_name ADD COLUMN column_name;"`.
 
 #### HINTS
 
@@ -908,7 +911,7 @@ The commit was added. I see an error in the syntax of one of the commands. You w
 
 ### 680.1
 
-Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. Create and switch to a branch named `fix/create-table-syntax`
+Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. That's why you switched to `main` first. Create and switch to a branch named `fix/create-table-syntax`.
 
 #### HINTS
 
@@ -1025,6 +1028,7 @@ Your bug fix is merged into the `main` branch. Switch back to your feature branc
 #### HINTS
 
 - Check your branches if you need to get the name of the branch
+- You can view your branches with `git branch`
 - Use `git checkout branch_name` to switch to a branch
 - It's the `feat/add-column-references` branch
 - Enter `git checkout feat/add-column-references` into the terminal and press enter
@@ -1124,7 +1128,7 @@ View your log again. Make sure you use my favorite flag.
 
 ### 840.1
 
-Switch to your `main` branch, there's another feature that needs to be worked on. Once again, when you create a branch, it will be a clone of whatever branch you are on when you create it. So you need to create the branch off of `main` cause that's where the branch will need to merged to when it's done.
+Switch to your `main` branch, there's another feature that needs to be worked on.
 
 #### HINTS
 
@@ -1238,7 +1242,7 @@ Check your logs to make sure the commit was added. Then, switch to your branch f
 
 ### 940.1
 
-Another commit was added to `main` with the merge you just did. To be more specific, a rebase will "rewind" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
+Another commit was added to `main`, you should update this branch again. To be more specific, a rebase will "rewind" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
 
 #### HINTS
 
@@ -1314,7 +1318,7 @@ You fixed the conflicts that arose from trying to add this commit and added them
 
 ### 970.1
 
-The last commit was added after you continued the rebase. The rebase is now finished. View your log with the `oneline` flag.
+The last commit was added after you continued the rebase without conflict. The rebase is now finished. View your log with the `oneline` flag.
 
 #### HINTS
 
@@ -1550,7 +1554,7 @@ View the list of your stashed changes again.
 
 ### 1113.1
 
-Now there's two things stashed. You can use the name at the front of each stash (`stash@{#}`) with many of the stash commands to select one other than the latest one. You can see that the latest one is `stash@{0}`. View the condensed changes of the **oldest** stash with the `git stash show` command by putting the name of the stash after it.
+Now there's two things stashed. You can use the name at the front of each stash (`stash@{#}`) with many of the stash commands to select one other than the latest one. The most recent stash is the one at the top, `stash@{0}`. View the condensed changes of the **oldest** stash with the `git stash show` command by putting the name of the stash after it.
 
 #### HINTS
 
@@ -1781,7 +1785,7 @@ View the status of your repo.
 
 ### 1300.1
 
-You are still rebasing. You fixed the conflicts, add your changes to staging.
+You are still rebasing. You fixed the conflicts for the commit trying to be added. It looks like it was the "add column" commit that had the conflict. Add your changes to staging.
 
 #### HINTS
 
@@ -1818,7 +1822,7 @@ Continue your rebase.
 
 ### 1320.1
 
-View your log with the oneline flag.
+The rest of the commits were added without conflict. View your log with the oneline flag.
 
 #### HINTS
 
@@ -1963,7 +1967,7 @@ Commit the staged changes with the message `feat: add delete row reference`.
 
 ### 1400.1
 
-Go to the `main` branch.
+Go to the `main` branch so you can merge these commits.
 
 #### HINTS
 
@@ -2003,7 +2007,7 @@ You merged the branch and are done with it. Delete the branch for the row refere
 
 ### 1420.1
 
-Create and checkout a branch named `fix/add-missing-rename-references`. This will be to add a reference in the object for how to rename things that are missing.
+I missed a bunch of the rename commands when I had you work on a few of the objects. Create and checkout a branch named `fix/add-missing-rename-references`.
 
 #### HINTS
 
@@ -2072,7 +2076,7 @@ Leave this branch for now. Switch back to your branch for the column references 
 
 ### 1470.1
 
-There was a commit to `main` since you last worked on this from when you merged the "add more row references" branch. Rebase this branch against `main`.
+There was a commit to `main` since you last worked on this from when you merged the "add more row references" branch. Rebase this branch against `main` so it's up to date and you can finish working on it.
 
 #### HINTS
 
@@ -2189,7 +2193,7 @@ I'm going to show you a few ways to remove or undo a commit. The first is to sim
 
 ### 1536.1
 
-This is a "soft" reset and will put the changes from the commit in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.
+This is a "soft" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.
 
 #### HINTS
 
@@ -2224,7 +2228,7 @@ View the diff.
 
 ### 1542.1
 
-And the changes from that commit are back in the working tree. If you used the `--hard` flag with your reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
+So you `reset` to one commit before `HEAD`. Which removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
 
 #### HINTS
 
@@ -2257,16 +2261,15 @@ Reverting is a good way to undo a commit because you don't lose the commit from 
 - Enter the suggested command
 - Enter `git revert HEAD` in the terminal
 
-## 1549. git revert HEAD
+## 1549. Nano: Enter git revert HEAD Message
 
 ### 1549.1
 
-Don't change anything in nano. Save and exit the file.
+Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just save and exit the file. You can save and exit the file by pressing `ctrl+x`, then `y`, then `enter`.
 
 #### HINTS
 
-- Press `crtl+o` to save the file
-- Press `ctrl+x` to exit nano
+- Save and exit Nano by pressing `ctrl+x` then `y` then `enter`
 - Your last commit message should be `Revert "feat: add unique reference"`
 - View your log to make sure the message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, then make a commit like this: `git commit -m 'Revert "feat: add unique reference"'`. Notice the single and double quotes.
@@ -2282,6 +2285,7 @@ View the log with that flag I like again.
 - Use the `git log` command with the correct flag
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
+- Press enter until you have seen the whole log
 
 ## 1554. git show
 
@@ -2310,22 +2314,27 @@ Type `git show HEAD~1` to take a look at the details of the original commit that
 
 ### 1560.1
 
-You can see that the two commits make changes that the exact opposite of each other. Effectively, undoing the changes. You've used rebase to add changes from `main` into this branch, but you can enter an "interactive" mode to manipulate commits. Type `git rebase --interactive --root` into the terminal to enter this mode. The `--root` means you want to see all the commits back to the beginning of the repo.
+If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. Effectively, undoing the changes. You've used rebase to update this branch, but you can enter an "interactive" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.
 
 #### HINTS
 
 - Enter the suggested command
-- Type `git rebase --interactive --root` into the terminal and press enter
+- Type `git rebase --interactive HEAD~2` into the terminal and press enter
+- If you entered the wrong command, save and exit Nano. Then try again
+- You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`
 
 ## 1563. Drop UNIQUE commits
 
 ### 1563.1
 
-If you scroll down in Nano, you will see a number of options to work with commits. One of them is `d, drop = remove commit`. Place a `d` next to the top two commits, the "revert" commit you added and the one before it that it reverts. Be careful not to place the `d` next to the wrong commits. When you are done, save the file and exit nano.
+At the top of Nano, you can see the two commits with `pick` next to them. If you scroll down, you will see some options to work with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
 
 #### HINTS
 
-- If you messed up, type `git rebase --interactive --root` into the terminal and try again
+- You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`
+- If you forgot to drop the two commits, type `git rebase --interactive HEAD~2` into the terminal and try again
+- If you accidentally dropped only one commit, type `git rebase --interactive HEAD~1` into the terminal and drop the other one
+- The most recent commit message should be `feat: add foreign key reference`
 
 ## 1564. git log oneline
 
@@ -2338,12 +2347,13 @@ View your log. Use the `--oneline` flag.
 - Use the `git log` command with the correct flag
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
+- Press enter until you have seen the whole history
 
 ## 1567. git rebase interactive root
 
 ### 1567.1
 
-Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root`, I am going to show you how to change a commit message.
+Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root`, I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.
 
 #### HINTS
 
@@ -2353,13 +2363,12 @@ Both, the commit to add the unique command and the one to revert it were dropped
 
 ### 1570.1
 
-At the bottom of Nano, it says `r, reword = use commit, but edit the commit message`. Place an `r` next to the latest commit (it
-s the one at the bottom of the list of commits). When you are done, save the file and exit Nano.
+You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Place an `r` next to the commit with the message `feat: add column reference`, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.
 
 #### HINTS
 
-- Place an r next to the 
-- save the file with crtl+o
+- Replace `pick` with an `r` next to the suggested commit
+- Save and exit the file by pressing `ctrl+x` then `y` then `enter`
 
 ## 1572. Nano: Change Column References Commit Message
 
@@ -2382,12 +2391,13 @@ View your log. Use the `--oneline` flag.
 - Use the `git log` command with the correct flag
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
+- Press enter until you have seen the whole history
 
 ## 1576. git rebase main
 
 ### 1576.1
 
-git rebase main
+Look at the commit hash for your `Initial commit` from the last two times you viewed the log, it's that string left of the log. They aren't the same anymore since you rebased back to the root. Same goes for the rest of the commits. When you rebase like that, it changes all those so git sees it as a whole new history. If you were to try and merge this into `main`, it wouldn't work because they don't share the same history anymore. For this reason, you don't want to do an interactive rebase where you go back passed the commits unique to the branch you are on. Fortunately, you can fix this. Enter `git rebase main` to realign the history of the two branches.
 
 #### HINTS
 
@@ -2400,7 +2410,7 @@ git rebase main
 
 ### 1578.1
 
-View your log. Use the `--oneline` flag.
+View your log again. Use the `--oneline` flag.
 
 #### HINTS
 
@@ -2412,35 +2422,36 @@ View your log. Use the `--oneline` flag.
 
 ### 1580.1
 
-Enter another `--interactive` rebase. Instead of going to the `--root` do `HEAD~5`. The will start the interactive rebase five commits before `HEAD`, where the `main` branch currently is. Effectively, showing you only the commits you have made to this branch.
+Now the hashes are the same as they were before you rebased back to `--root`, which is what they are on `main`. Enter another `--interactive` rebase. Go back to the first commit you added to this branch, it's `HEAD~5`.
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
 - Enter `git rebase --interactive HEAD~5` into the terminal and press enter
+- If you entered the wrong command, save and exit nano without changing anything. Then try again.
+- You can save and exit nano by pressing `ctrl+x` then `y` then `enter`.
 
 ## 1590. Squash feat/add-column-references Commits
 
 ### 1590.1
 
-Squash column reference commits into one.
+Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file.
 
 #### HINTS
 
-- Use the `git add` command
-- Here's an example: `git add file_name`
-- You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Replace `pick` with an `s` next to the suggested commits
+- Save and exit the file by pressing `ctrl+x` then `y` then `enter`
+- The most recent commit message should be `feat: add column references`
 
 ## 1595. Nano: Save and Exit to Squash
 
 ### 1595.1
 
-You can see the commit messages you used. Don't change anything in nano. Save and exit the file to finish the rebase and squash the commits
+Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just save and exit the file to finish the squashing the commits
 
 #### HINTS
 
-- HINTS
+- Press `ctrl+x` to exit the file
 
 ## 1600. git log oneline
 
@@ -2458,20 +2469,17 @@ View your log with the oneline flag.
 
 ### 1610.1
 
-Change this to git log -1.
-
-Now all the commits you made to this branch have been "sqashed" into just the one commit. View the log again, but without the flag this time. You will see that the first entry in the log shows all the commits that were squashed.
+Now all the "column" commits you made to this branch have been squashed into just the one commit at the top. View the log again. Don't use the `--oneline` flag this time, but add a `-1` to just see the last commit.
 
 #### HINTS
 
-- Type `git log` into the terminal and press enter
-- Press enter until you have seen the whole log
+- Type `git log -1` into the terminal and press enter
 
 ## 1620. git checkout main
 
 ### 1620.1
 
-I think you are finally done with this branch. Go to your `main` branch so it can get merged.
+You can see that your one commit has all the messages that were in Nano, which are all of the commits you made to this branch squashed into one commit. I think you are finally done with this branch. Go to your `main` branch so it can get merged.
 
 #### HINTS
 
@@ -2497,7 +2505,7 @@ Merge your branch for adding column commands into this one.
 
 ### 1635.1
 
-Delete your branch for adding information about column commands.
+Hopefully, there was no conflicts. Delete your branch for adding information about column commands since you are done with it.
 
 #### HINTS
 
@@ -2511,7 +2519,7 @@ Delete your branch for adding information about column commands.
 
 ### 1640.1
 
-git checkout fix/add-missing-rename-references
+Go to your branch for adding the commands that were missing. There's one more to add.
 
 #### HINTS
 
@@ -2525,7 +2533,7 @@ git checkout fix/add-missing-rename-references
 
 ### 1650.1
 
-git rebase main
+There was added a commit to `main` since you last worked on this. Update this branch with a rebase against main.
 
 #### HINTS
 
@@ -2534,23 +2542,23 @@ git rebase main
 - Here's an example: `git rebase branch_name`
 - Type `git rebase main` into the terminal and press enter
 
-## 1680. git log oneline
+## 1680. git log -5 oneline
 
 ### 1680.1
 
-View the log with the oneline flag.
+You viewed the most recent log with a `-1` flag. You can view the last `x` number of commits with any number instead of `1`. View the last five commits with the oneline flag.
 
 #### HINTS
 
-- Use the `git log` command with the correct flag
-- It's the `--oneline` flag
+- Use the `git log` command with the correct two arguments
+- Add `-5` and `--oneline` after the command
 - Type `git log --oneline` into the terminal and press enter
 
 ## 1690. Add RENAME TABLE Command
 
 ### 1690.1
 
-Looks like there was no conflicts this time :smile: In your JSON file, add a `rename` key to the `table` object. The value is in the hints, but give it a try first. It follows a similar structure as the rest of them.
+This branch is up to date now. In your JSON file, add a `rename` key to the `table` object. The value is in the hints, but give it a try first. It follows a similar structure as the rest of them.
 
 #### HINTS
 
@@ -2590,11 +2598,11 @@ Commit your staged changes with the message, `fix: add missing rename table refe
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
-## 1715. git log oneline
+## 1715. git log -5 oneline
 
 ### 1715.1
 
-View your log with the oneline flag.
+View your last five logs with the oneline flag again.
 
 #### HINTS
 
@@ -2602,36 +2610,41 @@ View your log with the oneline flag.
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
 
-## 1720. git rebase interactive root
+## 1720. git rebase interactive HEAD~2
 
 ### 1720.1
 
-git rebase interactive HEAD~2. so you can squash the commits
+You have two commits on this branch that could be squashed. Enter an interactive rebase that goes back to `HEAD~2`.
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
-- Enter `git rebase --interactive --root` into the terminal and press enter
+- The two arguments and `--interactive` and `HEAD~2`
+- Enter `git rebase --interactive HEAD~2` into the terminal and press enter
+- If you entered the wrong command, save and exit nano without changing anything. Then try again
+- You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 
 ## 1730. Squash feat/add-missing-rename-references Commits
 
 ### 1730.1
 
-Squash missing rename commits into one - place an s next to the commits
+Replace `pick` with `s` next to your commit for adding the rename table reference to squash it. Be careful not to do the wrong one. When you are done, save and exit Nano.
 
 #### HINTS
 
-- Place an s next to the commits
+- Replace `pick` with `s` next to your `fix: add missing rename table reference` commit
+- You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 
 ## 1735. Nano: Change Column References Commit Message
 
 ### 1735.1
 
-Add a new message at the top. `feat: add missing rename references`. When you are done, save and exit the file.
+The lines that don't start with a `#` will be the commit messages. Add a new message at the top on it's own line. Give it the text, `feat: add missing rename references`. It can be anywhere above the other two messages. When you are done, save and exit the file.
 
 #### HINTS
 
-- HINTS
+- You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
+- The most recent commit message should be `fix: add missing rename references`
 
 ## 1740. git checkout main
 
@@ -2894,54 +2907,58 @@ Commit the new changes with the message `feat: add sample.env`.
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
-## 1945. git log oneline
+## 1945. git log -5 oneline
 
 ### 1945.1
 
-View your log. Use the `--oneline` flag.
+View the last five commits in your log with the oneline flag.
 
 #### HINTS
 
-- Use the `git log` command
-- Type `git log --oneline` into the terminal and press enter
+- Use the `git log` command with two flags
+- Use `-5` and `--oneline` with the command
+- Type `git log -5 --oneline` into the terminal and press enter
 
-## 1950. git rebase interactive root
+## 1950. git rebase HEAD~2
 
 ### 1950.1
 
-Do an interactive rebase that goes back to all the commits on this branch (`HEAD~2`).
+These two commits can be squashed. Do an interactive rebase that goes back to all the commits unique to this branch (`HEAD~2`).
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
+- Use `--interactive` and `HEAD~2` with the command
 - Enter `git rebase --interactive HEAD~2` into the terminal and press enter
 
-## 1960. Squash feat/add-gitignore Commits
+## 1960. Nano: Squash feat/add-gitignore Commits
 
 ### 1960.1
 
-Squash add .gitignore and add sample.env into one commit and change the message to `feat: add .gitignore and sample.env`
+Squash your commit that was for adding the `sample.env` file. When you are done, save the file and exit Nano.
 
 #### HINTS
 
-- Place an `s` next to the suggest commit
-- When you are done, save the file and exit nano
+- Replace `pick` with `s` next to the suggested commit
+- You can save and exit by pressing `ctrl+x` then `y` then `enter`
 
 ## 1962. Nano: Add Message + Save and Exit
 
 ### 1962.1
 
-Add a new message at the top. `feat: add .gitignore and sample.env`. When you are done, save and exit the file.
+Add a new message at the top. `feat: add .gitignore and sample.env`. Make sure there's at least one empty line between it and the next message. When you are done, save and exit the file.
 
 #### HINTS
 
-- HINTS
+- Add the suggested message on it's own line above the other messages
+- You can save and exit by pressing `ctrl+x` then `y` then `enter`
+- The most recent commit message should be `feat: add .gitignore and sample.env`
 
 ## 1970. git checkout main
 
 ### 1970.1
 
-Switch back to `main`.
+Switch back to `main` so you can add this in.
 
 #### HINTS
 
@@ -2953,7 +2970,7 @@ Switch back to `main`.
 
 ### 1980.1
 
-git merge feat/add-gitignore
+Merge the branch you just made into here.
 
 #### HINTS
 
@@ -2967,7 +2984,7 @@ git merge feat/add-gitignore
 
 ### 1990.1
 
-git branch -d feat/add-gitignore
+Delete the feature branch you just merged.
 
 #### HINTS
 
@@ -2981,7 +2998,7 @@ git branch -d feat/add-gitignore
 
 ### 2000.1
 
-View the log one last time to see your whole commit history. Congratulations, you are finished with your repo for now. 
+View the log one last time to see your whole commit history, don't use any flags this time. Congratulations, you are finished with your repo for now. 
 
 #### HINTS
 
