@@ -1264,6 +1264,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1737'
+    steps:
+      - id: '1737.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '1740'
     steps:
       - id: '1740.1'
@@ -1372,12 +1378,6 @@ levels:
         setup:
           watchers:
             - ./sql_reference/sample.env
-  - id: '1910'
-    steps:
-      - id: '1910.1'
-        setup:
-          watchers:
-            - ../.bash_history
   - id: '1930'
     steps:
       - id: '1930.1'
@@ -1411,6 +1411,12 @@ levels:
   - id: '1962'
     steps:
       - id: '1962.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1964'
+    steps:
+      - id: '1964.1'
         setup:
           watchers:
             - ../.bash_history

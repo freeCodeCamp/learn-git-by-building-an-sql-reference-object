@@ -2646,6 +2646,19 @@ The lines that don't start with a `#` will be the commit messages. Add a new mes
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `fix: add missing rename references`
 
+## 1737. git log -1
+
+### 1737.1
+
+View the last commit in your log.
+
+#### HINTS
+
+- Use the `git log` command with two flags
+- View the last `x` number of commits with `-x`
+- Use `-1` with the command
+- Type `git log -1` into the terminal and press enter
+
 ## 1740. git checkout main
 
 ### 1740.1
@@ -2869,18 +2882,6 @@ Git won't ignore this file. Sensitive information can be stored in the `.env` fi
 - You previously used `git add README.md` to add changes to staging
 - Type `git add sql_referenece.json` into the terminal and press enter
 
-## 1910. git status
-
-### 1910.1
-
-Check your status.
-
-#### HINTS
-
-- Use the "git status" command in your repo
-- Type `git status` into the terminal and press enter
-- Make sure you are in your `sql_reference` repo folder
-
 ## 1930. git add sample.env
 
 ### 1930.1
@@ -2953,6 +2954,19 @@ Add a new message at the top. `feat: add .gitignore and sample.env`. Make sure t
 - Add the suggested message on it's own line above the other messages
 - You can save and exit by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `feat: add .gitignore and sample.env`
+
+## 1964. git log -1
+
+### 1964.1
+
+View the last commit in your log.
+
+#### HINTS
+
+- Use the `git log` command with two flags
+- View the last `x` number of commits with `-x`
+- Use `-1` with the command
+- Type `git log -1` into the terminal and press enter
 
 ## 1970. git checkout main
 
