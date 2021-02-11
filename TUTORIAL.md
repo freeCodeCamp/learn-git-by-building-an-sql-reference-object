@@ -2552,7 +2552,7 @@ You viewed the most recent log with a `-1` flag. You can view the last `x` numbe
 
 - Use the `git log` command with the correct two arguments
 - Add `-5` and `--oneline` after the command
-- Type `git log --oneline` into the terminal and press enter
+- Type `git log -5 --oneline` into the terminal and press enter
 
 ## 1690. Add RENAME TABLE Command
 
