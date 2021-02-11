@@ -1,1 +1,25 @@
+fix: add missing rename references
+# This is a combination of 2 commits.
+# This is the 1st commit message:
+
+fix: add missing rename database reference
+
+# This is the commit message #2:
+
 fix: add missing rename table reference
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Sep 9 22:47:21 2021 -0500
+#
+# interactive rebase in progress; onto 193e3a2
+# Last commands done (2 commands done):
+#    pick 0e082fc fix: add missing rename database reference
+#    squash 1cf7083 fix: add missing rename table reference
+# No commands remaining.
+# You are currently rebasing branch 'fix/add-missing-rename-references' on '193e3a2'.
+#
+# Changes to be committed:
+#	modified:   sql_reference.json
+#
