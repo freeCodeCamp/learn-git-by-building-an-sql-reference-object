@@ -1,1 +1,26 @@
+feat: add .gitignore and sample.env
+# This is a combination of 2 commits.
+# This is the 1st commit message:
+
+feat: add .gitignore
+
+# This is the commit message #2:
+
 feat: add sample.env
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Sep 9 23:32:11 2021 -0500
+#
+# interactive rebase in progress; onto 353d656
+# Last commands done (2 commands done):
+#    pick 6917b2c feat: add .gitignore
+#    squash f4a726f feat: add sample.env
+# No commands remaining.
+# You are currently rebasing branch 'feat/add-gitignore' on '353d656'.
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   sample.env
+#
