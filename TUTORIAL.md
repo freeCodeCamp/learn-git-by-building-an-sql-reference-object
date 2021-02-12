@@ -11,7 +11,7 @@ The first thing you need to do is start the terminal. Open a new one by clicking
 #### HINTS
 
 - Follow the directions closely
-- If the tests don't pass, trash all the terminals and redo those instructions
+- If the tests don't pass, trash all the terminals with the trash can icon at the top right of the terminal. Then, redo those instructions
 
 ## 20. Make Directory
 
@@ -265,10 +265,9 @@ You can see the commit you made. It shows the message you gave with the commit, 
     "create": "CREATE DATABASE database_name;"
   }
 }
-
 ```
 
-Make sure there's an empty line at the bottom of the file and no extra spaces after any of the values or curly brackets.
+Make sure there's one empty line at the bottom of the file and no extra spaces after the value or any of the curly brackets.
 
 #### HINTS
 
@@ -356,7 +355,7 @@ Commit messages often start with `fix:` or `feat:`, among others, to help people
 
 ### 280.1
 
-Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints.
+Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.
 
 #### HINTS
 
@@ -379,6 +378,8 @@ Now there's two commits in your history, the newest one is at the top :smile: In
 }
 
 ```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 290. git status
 
@@ -534,7 +535,10 @@ Like I said, you often don't want to make commits directly to the main branch of
     "create": "CREATE TABLE table_name;"
   }
 }
+
 ```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 400. git status
 
@@ -696,7 +700,7 @@ It said it was deleted, but view your branches again for me to verify that it's 
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 510. git checkout -b feat/add-drop-table-refernece
+## 510. git checkout -b feat/add-drop-table-reference
 
 ### 510.1
 
@@ -718,12 +722,28 @@ Add a `drop` key to the `table` object of your JSON file. Give it a value for ho
 - Don't forget the commas to make it a valid json object
 - The key looks like this: `"drop": "DROP TABLE table_name;"`
 - The `table` object should look like this:
-  ```json
+```json
+"table": {
+  "create": "CREATE TABLE table_name;",
+  "drop": "DROP TABLE table_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;",
+  },
   "table": {
     "create": "CREATE TABLE table_name;",
     "drop": "DROP TABLE table_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 530. git status
 
@@ -846,11 +866,30 @@ This branch will be a work in progress. Add a `column` key to your JSON object. 
 
 - The `column` key should be on the same level as the `table` key
 - The `column` object should look like this:
-  ```json
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;",
+  },
+  "table": {
+    "create": "CREATE TABLE table_name;",
+    "drop": "DROP TABLE table_name;"
+  },
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 620. git diff
 
@@ -933,12 +972,29 @@ The create table command is a function, so it needs parenthesis `()` at the end.
 
 - It's the `table.create` key that you need to change
 - The value should look like this: `CREATE TABLE table_name();`
-- All together, `table` looks like this:
-  ```json
+- The `table` object should look like this:
+```json
+"table": {
+  "create": "CREATE TABLE table_name();",
+  "drop": "DROP TABLE table_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;",
+  },
   "table": {
-    "create": "CREATE TABLE table_name();"
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 700. git add FIX CREATE TABLE command
 
@@ -1085,12 +1141,32 @@ The logs show that the bug fix commit from `main` was added, and then the commit
 - Here's the syntax: `ALTER TABLE table_name DROP COLUMN column_name;`
 - Make sure the above value is in the `column.drop` key
 - Here's what the `column` object should look like:
-  ```json
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+  "drop": "ALTER TABLE table_name DROP COLUMN column_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
     "drop": "ALTER TABLE table_name DROP COLUMN column_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 810. git add DROP COLUMN command
 
@@ -1161,12 +1237,31 @@ Pretend that this branch is for someone else working on a new feature at the sam
 #### HINTS
 
 - Your JSON oject should have this:
-  ```json
+```json
+"row": {
+  "insert": "INSERT INTO table_name(columns) VALUES(values);"
+}
+```
+- The `row` key should be a on the same level as the `table` key
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);"
   }
-  ```
-- The `row` key should be a on the same level as the `table` key
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 870. git add INSERT ROW command
 
@@ -1264,14 +1359,36 @@ The confict arose because the first commit you added to this branch changed the 
 
 - Be sure to remove all those special characters
 - The part of the JSON object with conflicts should look like this:
-  ```json
+```json
+"row": {
+  "insert": "INSERT INTO table_name(columns) VALUES(values);"
+},
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);"
   },
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 953. git status
 
@@ -1339,13 +1456,38 @@ You can see the "insert row" commit from `main` was added to this branch before 
 #### HINTS
 
 - The `column` key should look like this:
-  ```json
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+  "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+  "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);"
+  },
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
     "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
     "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
+
 
 ## 990. git add RENAME COLUMN command
 
@@ -1396,12 +1538,32 @@ This branch is still up to date since no commits have been added to `main` since
 #### HINTS
 
 - The `row` key should look like this:
-  ```json
+```json
+"row": {
+  "insert": "INSERT INTO table_name(columns) VALUES(values);",
+  "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
     "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1017. git status
 
@@ -1772,7 +1934,30 @@ This conflict is a little trickier. Make the JSON object whole again so you can 
 
 #### HINTS
 
-- FIX CONFLICTS
+- There may be one duplicate command in there you need to delete
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+  }
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1290. git status
 
@@ -1843,7 +2028,41 @@ The rebase added the "row" commits where they are supposed to be, then the "colu
 
 #### HINTS
 
-- Add PRIMARY KEY JSON
+- The `column` key should look like this:
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+  "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+  "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+  "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);"
+  }
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1340. git diff PRIMARY KEY command
 
@@ -1879,10 +2098,43 @@ Add `foreign_key` to the `column` object for another commmand. It's value should
 
 #### HINTS
 
-- Use the `git add` command
-- Here's an example: `git add file_name`
-- You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- The `column` key should look like this:
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+  "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+  "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+  "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+  "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
+  }
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1354. git add FOREIGN command
 
@@ -1934,13 +2186,34 @@ In your JSON file, add a `delete` key to the `row` object. Take a guess at the v
 
 - The `row.delete` value should be `"DELETE FROM table_name WHERE condition;"`
 - The `row` key should look like this:
-  ```json
+```json
+"row": {
+  "insert": "INSERT INTO table_name(columns) VALUES(values);",
+  "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+  "delete": "DELETE FROM table_name WHERE condition;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
     "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
     "delete": "DELETE FROM table_name WHERE condition;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1380. git add DELETE ROW command
 
@@ -2029,13 +2302,35 @@ I forgot to add a command for how to rename a database. In your JSON file, add a
 #### HINTS
 
 - The `database` object should look like this:
-  ```json
+```json
+"database": {
+  "create": "CREATE DATABASE database_name;",
+  "drop": "DROP DATABASE database_name;",
+  "rename": "ALTER DATABASE database_name RENAME TO new_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
   "database": {
     "create": "CREATE DATABASE database_name;",
     "drop": "DROP DATABASE database_name;",
     "rename": "ALTER DATABASE database_name RENAME TO new_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+    "delete": "DELETE FROM table_name WHERE condition;"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1440. git add RENAME DATABASE command
 
@@ -2094,11 +2389,44 @@ There was a commit to `main` since you last worked on this from when you merged 
 
 ### 1480.1
 
-fix conflicts
+Fix the conflicts so that all the commands are in their correct objects.
 
 #### HINTS
 
-- FIX CONFLICTS
+- Be sure to delete any special characters
+- The order of the keys should be:
+```json
+{
+  "database": {},
+  "table": {},
+  "row": {},
+  "column": {}
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+    "delete": "DELETE FROM table_name WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;"
+  }
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1490. git add Fixed Conflicts
 
@@ -2147,16 +2475,45 @@ There was a conflict when it tried to add the first commit from this branch on t
 
 - The should be `"unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"` in your `column` object
 - The `column` object should look like this:
-  ```json
+```json
+"column": {
+  "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+  "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+  "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+  "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+  "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);",
+  "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
+    "create": "CREATE TABLE table_name();",
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+    "delete": "DELETE FROM table_name WHERE condition;"
+  },
   "column": {
-		"add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
     "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
-		"rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
     "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
     "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);",
     "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"
-	}
-  ```
+  }
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1520. git add UNIQUE command
 
@@ -2233,7 +2590,7 @@ View the diff.
 
 ### 1542.1
 
-So you `reset` to one commit before `HEAD`. Which removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
+And the changes from the reset are back in the working tree. So when you `reset` to one commit before `HEAD`, it removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.
 
 #### HINTS
 
@@ -2270,11 +2627,12 @@ Reverting is a good way to undo a commit because you don't lose the commit from 
 
 ### 1549.1
 
-Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just save and exit the file. You can save and exit the file by pressing `ctrl+x`, then `y`, then `enter`.
+Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.
 
 #### HINTS
 
-- Save and exit Nano by pressing `ctrl+x` then `y` then `enter`
+- Exit the file by pressing `ctrl+x`
+- If you accidentally changed something in Nano, press `n` after `ctrl+x` to discard the changes
 - Your last commit message should be `Revert "feat: add unique reference"`
 - View your log to make sure the message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, then make a commit like this: `git commit -m 'Revert "feat: add unique reference"'`. Notice the single and double quotes.
@@ -2332,7 +2690,7 @@ If you look at the bottom of those two messages, it shows the diff. The diff of 
 
 ### 1563.1
 
-At the top of Nano, you can see the two commits with `pick` next to them. If you scroll down, you will see some options to work with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
+At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2358,17 +2716,19 @@ View your log. Use the `--oneline` flag.
 
 ### 1567.1
 
-Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root`, I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.
+Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.
 
 #### HINTS
 
+- The command is `git rebase` with two arguments
+- The two arguments are `--interactive` and `--root`
 - Enter `git rebase --interactive --root` into the terminal and press enter
 
 ## 1570. Nano: Select Reword Column References Commit
 
 ### 1570.1
 
-You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Place an `r` next to the commit with the message `feat: add column reference`, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.
+You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2379,11 +2739,11 @@ You can see that the latest commit is at the bottom here. Be careful not to chan
 
 ### 1572.1
 
-Add an `s` at the end of the commit message so it is `feat: add column references`.
+Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
 
 #### HINTS
 
-- HINTS
+- Save and exit the file by pressing `ctrl+x` then `y` then `enter`
 
 ## 1575. git log oneline
 
@@ -2402,7 +2762,7 @@ View your log. Use the `--oneline` flag.
 
 ### 1576.1
 
-Look at the commit hash for your `Initial commit` from the last two times you viewed the log, it's that string left of the log. They aren't the same anymore since you rebased back to the root. Same goes for the rest of the commits. When you rebase like that, it changes all those so git sees it as a whole new history. If you were to try and merge this into `main`, it wouldn't work because they don't share the same history anymore. For this reason, you don't want to do an interactive rebase where you go back passed the commits unique to the branch you are on. Fortunately, you can fix this. Enter `git rebase main` to realign the history of the two branches.
+The message was reworded, but there's a problem. Look at the commit hash for your `Initial commit` from the last two times you viewed the log, it's that string left of the log. They aren't the same anymore since you rebased back to the root. Same goes for the rest of the commits. When you rebase interactively it changes all those hashes, so git sees them as different commits. If you were to try and merge this into `main`, it wouldn't work because they don't share the same history anymore. For this reason, you don't want to do an interactive rebase where you go back passed commits unique to the branch you are on. Fortunately, you can fix this. Enter `git rebase main` to realign the history of the two branches.
 
 #### HINTS
 
@@ -2427,14 +2787,16 @@ View your log again. Use the `--oneline` flag.
 
 ### 1580.1
 
-Now the hashes are the same as they were before you rebased back to `--root`, which is what they are on `main`. Enter another `--interactive` rebase. Go back to the first commit you added to this branch, it's `HEAD~5`.
+Now the hashes are the same as they were before you rebased back to `--root`, which is what they are on `main`. Enter another interactive rebase. Go back to the first commit you added to this branch, it's `HEAD~5`.
 
 #### HINTS
 
 - It's the `git rebase` command with two arguments
+- The two arguments are `--interactive` and `HEAD~5`
 - Enter `git rebase --interactive HEAD~5` into the terminal and press enter
-- If you entered the wrong command, save and exit nano without changing anything. Then try again.
-- You can save and exit nano by pressing `ctrl+x` then `y` then `enter`.
+- If you entered the wrong command, exit nano without changing anything. Then try again.
+- You can exit nano by pressing `ctrl+x`
+- If you accidentally changes something in Nano, press `n` after `ctrl+x` to discard the changes
 
 ## 1590. Squash feat/add-column-references Commits
 
@@ -2452,7 +2814,7 @@ Squashing commits means that you will take a bunch of commits and turn them into
 
 ### 1595.1
 
-Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just save and exit the file to finish the squashing the commits
+Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file use those message and finish squashing the commits.
 
 #### HINTS
 
@@ -2474,10 +2836,11 @@ View your log with the oneline flag.
 
 ### 1610.1
 
-Now all the "column" commits you made to this branch have been squashed into just the one commit at the top. View the log again. Don't use the `--oneline` flag this time, but add a `-1` to just see the last commit.
+Now all the "column" commits you made to this branch have been squashed into just the one commit at the top. View the log again, but use `-1` instead of `--oneline` this time to view only the last commit.
 
 #### HINTS
 
+- Use `git log` with the suggested argument
 - Type `git log -1` into the terminal and press enter
 
 ## 1620. git checkout main
@@ -2556,7 +2919,7 @@ You viewed the most recent log with a `-1` flag. You can view the last `x` numbe
 #### HINTS
 
 - Use the `git log` command with the correct two arguments
-- Add `-5` and `--oneline` after the command
+- The two arguments are `-5` and `--oneline`
 - Type `git log -5 --oneline` into the terminal and press enter
 
 ## 1690. Add RENAME TABLE Command
@@ -2569,13 +2932,42 @@ This branch is up to date now. In your JSON file, add a `rename` key to the `tab
 
 - The value is `"ALTER TABLE table_name RENAME_TO new_name;"`
 - The `table` object should look like this:
-  ```json
-  {
+```json
+{
+  "create": "CREATE TABLE table_name();",
+  "drop": "DROP TABLE table_name;",
+  "rename": "ALTER TABLE table_name RENAME_TO new_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
+    "create": "CREATE DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
+  },
+  "table": {
     "create": "CREATE TABLE table_name();",
-    "drop": "DROP TABLE table_name;",
-    "rename": "ALTER TABLE table_name RENAME_TO new_name;"
+    "drop": "DROP TABLE table_name;"
+  },
+  "row": {
+    "insert": "INSERT INTO table_name(columns) VALUES(values);",
+    "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
+    "delete": "DELETE FROM table_name WHERE condition;"
+  },
+  "column": {
+    "add": "ALTER TABLE table_name ADD COLUMN column_name;",
+    "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
+    "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
+    "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
+    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);",
+    "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"
   }
-  ```
+}
+
+```
+- Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets
+- You can view the `git diff` to see if there's any extra spaces
 
 ## 1700. git add RENAME TABLE command
 
@@ -2619,7 +3011,7 @@ View your last five logs with the oneline flag again.
 
 ### 1720.1
 
-You have two commits on this branch that could be squashed. Enter an interactive rebase that goes back to `HEAD~2`.
+You have two commits on this branch that could be squashed. Enter an interactive rebase that goes back to `HEAD~2` so you can squash them.
 
 #### HINTS
 
@@ -2644,7 +3036,7 @@ Replace `pick` with `s` next to your commit for adding the rename table referenc
 
 ### 1735.1
 
-The lines that don't start with a `#` will be the commit messages. Add a new message at the top on it's own line. Give it the text, `feat: add missing rename references`. It can be anywhere above the other two messages. When you are done, save and exit the file.
+The lines that don't start with a `#` will be the commit messages. Add a new message at the top of the file on it's own line. Give it the text, `feat: add missing rename references`. When you are done, save and exit the file.
 
 #### HINTS
 
@@ -2655,11 +3047,11 @@ The lines that don't start with a `#` will be the commit messages. Add a new mes
 
 ### 1737.1
 
-View the last commit in your log.
+View only the last commit in your log to see your squashed commit.
 
 #### HINTS
 
-- Use the `git log` command with two flags
+- Use the `git log` command
 - View the last `x` number of commits with `-x`
 - Use `-1` with the command
 - Type `git log -1` into the terminal and press enter
@@ -2705,13 +3097,13 @@ View your branches.
 
 ### 1770.1
 
-Delete all the branches but main
+Delete all your branches except `main`.
 
 #### HINTS
 
 - Use the `git branch` command with the `-d` flag
-- The branch name is `fix/add-missing-rename-references`
 - Here's an example: `git branch -d branch_name`
+- The branch name is `fix/add-missing-rename-references`
 - Type `git branch -d fix/add-missing-rename-references` into the terminal and press enter
 
 ## 1780. git log oneline
@@ -2882,16 +3274,13 @@ Git won't ignore this file. Sensitive information can be stored in the `.env` fi
 
 #### HINTS
 
-- Use the `git add` command
-- Here's an example: `git add file_name`
-- You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Add the suggested text to the `sample.env` file
 
 ## 1930. git add sample.env
 
 ### 1930.1
 
-Add your new files to staging.
+Now, when someone wants to run your repo, they will know that they need to create a `.env` file and add a value in it for `SECRET`. Add your new file to staging.
 
 #### HINTS
 
@@ -2929,7 +3318,7 @@ View the last five commits in your log with the oneline flag.
 
 ### 1950.1
 
-These two commits can be squashed. Do an interactive rebase that goes back to all the commits unique to this branch (`HEAD~2`).
+The two commits you made to this branch can be squashed. Do an interactive rebase that goes back to all the commits unique to this branch (`HEAD~2`).
 
 #### HINTS
 
@@ -2952,7 +3341,7 @@ Squash your commit that was for adding the `sample.env` file. When you are done,
 
 ### 1962.1
 
-Add a new message at the top. `feat: add .gitignore and sample.env`. Make sure there's at least one empty line between it and the next message. When you are done, save and exit the file.
+Add a new message at the very top of the file, `feat: add .gitignore and sample.env`. When you are done, save and exit the file.
 
 #### HINTS
 
@@ -2964,11 +3353,11 @@ Add a new message at the top. `feat: add .gitignore and sample.env`. Make sure t
 
 ### 1964.1
 
-View the last commit in your log.
+View only the last commit in your log.
 
 #### HINTS
 
-- Use the `git log` command with two flags
+- Use the `git log` command with the correct argument
 - View the last `x` number of commits with `-x`
 - Use `-1` with the command
 - Type `git log -1` into the terminal and press enter
@@ -2998,6 +3387,7 @@ Merge the branch you just made into here.
 - Use the `git branch` command if you need to find the branch name
 - It's the `feat/add-gitignore` branch
 - Type `git merge feat/add-gitignore` into the terminal and press enter
+- If you get an error, switch back to the `feat/add-gitignore` branch, type `git rebase main` to realign the history. Then come back to `main` and try again.
 
 ## 1990. git branch -d feat/add-gitignore
 
@@ -3013,11 +3403,23 @@ Delete the feature branch you just merged.
 - The branch name is `feat/add-gitignore`
 - Type `git branch -d feat/add-gitignore` into the terminal and press enter
 
+## 1995. git log oneline
+
+### 1995.1
+
+I think it's all finished. View your log with the oneline flag to see your whole history.
+
+#### HINTS
+
+- Use the `git log` command with the correct flag
+- It's the `--oneline` flag
+- Type `git log --oneline` into the terminal and press enter
+
 ## 2000. git log
 
 ### 2000.1
 
-View the log one last time to see your whole commit history, don't use any flags this time. Congratulations, you are finished with your repo for now. 
+View the log one last time without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
 
 #### HINTS
 

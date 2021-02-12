@@ -1077,7 +1077,7 @@ levels:
       - id: '1548.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./.freeCodeCamp/test/.next_command
   - id: '1549'
     steps:
       - id: '1549.1'
@@ -1435,6 +1435,12 @@ levels:
   - id: '1990'
     steps:
       - id: '1990.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1995'
+    steps:
+      - id: '1995.1'
         setup:
           watchers:
             - ../.bash_history
