@@ -232,7 +232,7 @@ Now you have two files in staging. To commit them, you can use `git commit -m "I
 
 ### 190.1
 
-When you make a commit, whatever is in the staging area will be added to your git history. You can see some info in the terminal ouput about the commit. Check your status again to see what's there.
+When you make a commit, whatever is in the staging area will be added to your git history. You can see some info in the terminal output about the commit. Check your status again to see what's there.
 
 #### HINTS
 
@@ -300,7 +300,7 @@ Git recognizes new unstaged changes to your file. Notice that it says that file 
 
 ### 240.1
 
-The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to at the end of the command.
+The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.
 
 #### HINTS
 
@@ -340,7 +340,7 @@ Your new changes are staged and ready to be committed. Commit them with the mess
 
 ### 270.1
 
-Commit messages often start with `fix:` or `feat:` among others to help people understand what your commit is doing. Check your `git log` again to see the new commit added.
+Commit messages often start with `fix:` or `feat:`, among others, to help people understand what your commit was for. Check your `git log` again to see the new commit added.
 
 #### HINTS
 
@@ -352,7 +352,7 @@ Commit messages often start with `fix:` or `feat:` among others to help people u
 
 ### 280.1
 
-Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the create value. The syntax is in the hints.
+Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints.
 
 #### HINTS
 
@@ -482,7 +482,7 @@ Your new branch is a clone of the `main` branch since that's the branch you were
 
 ### 370.1
 
-You can see your new branch, but you are still on the `main` branch as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.
+You can see your new branch, but you are still on the `main` branch, as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.
 
 #### HINTS
 
