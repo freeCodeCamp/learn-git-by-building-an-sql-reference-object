@@ -265,11 +265,15 @@ You can see the commit you made. It shows the message you gave with the commit, 
     "create": "CREATE DATABASE database_name;"
   }
 }
+
 ```
+
+Make sure there's an empty line at the bottom of the file and no extra spaces after any of the values or curly brackets.
 
 #### HINTS
 
 - Add the suggested object to your `sql_reference.json` file
+- Double check for those extra spaces and the empty line
 
 ## 220. git status
 
