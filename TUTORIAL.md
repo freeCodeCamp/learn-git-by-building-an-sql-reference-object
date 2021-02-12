@@ -363,21 +363,22 @@ Now there's two commits in your history, the newest one is at the top :smile: In
 - The value should be `"DROP DATABASE database_name;"`
 - Don't forget the comma at the end of the previous line to make it a valid json object.
 - Your database object should have these values:
-  ```json
-  {
+```json
+{
+  "create": "CREATE DATABASE database_name;",
+  "drop": "DROP DATABASE database_name;"
+}
+```
+- The whole file should look like this:
+```json
+{
+  "database": {
     "create": "CREATE DATABASE database_name;",
     "drop": "DROP DATABASE database_name;"
   }
-  ```
-- The whole file should look like this:
-  ```json
-  {
-    "database": {
-      "create": "CREATE DATABASE database_name;",
-      "drop": "DROP DATABASE database_name;"
-    }
-  }
-  ```
+}
+
+```
 
 ## 290. git status
 
