@@ -743,8 +743,8 @@
           "hints": [
             "The value should be `\"DROP DATABASE database_name;\"`",
             "Don't forget the comma at the end of the previous line to make it a valid json object.",
-            "Your database object should have these values:\n  ```json\n  {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\"\n  }\n  ```",
-            "The whole file should look like this:\n  ```json\n  {\n    \"database\": {\n      \"create\": \"CREATE DATABASE database_name;\",\n      \"drop\": \"DROP DATABASE database_name;\"\n    }\n  }\n  ```"
+            "Your database object should have these values:\n```json\n{\n  \"create\": \"CREATE DATABASE database_name;\",\n  \"drop\": \"DROP DATABASE database_name;\"\n}\n```",
+            "The whole file should look like this:\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\"\n  }\n}\n\n```"
           ]
         }
       ]
