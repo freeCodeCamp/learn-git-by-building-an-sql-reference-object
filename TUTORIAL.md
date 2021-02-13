@@ -529,7 +529,7 @@ Like I said, you often don't want to make commits directly to the main branch of
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name;"
@@ -733,7 +733,7 @@ Add a `drop` key to the `table` object of your JSON file. Give it a value for ho
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name;",
@@ -876,7 +876,7 @@ This branch will be a work in progress. Add a `column` key to your JSON object. 
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name;",
@@ -984,7 +984,7 @@ The create table command is a function, so it needs parenthesis `()` at the end.
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;",
+    "drop": "DROP DATABASE database_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name();",
@@ -1071,13 +1071,13 @@ View your log with the oneline flag.
 
 ### 755.1
 
-The bug fix is in and you can safely delete the branch. Go ahead and do that now. View your branches if you need to find the name.
+The bug fix is in and you can safely delete the branch. Go ahead and delete the branch that was for that fix. View your branches if you need to find the name.
 
 #### HINTS
 
 - Use the `git branch` command with the `-d` flag
-- The branch name is `fix/create-table-syntax`
 - Here's an example: `git branch -d branch_name`
+- The branch name is `fix/create-table-syntax`
 - Type `git branch -d fix/create-table-syntax` into the terminal and press enter
 
 ## 760. git checkout feat/add-column-references
@@ -1930,11 +1930,10 @@ Once again, commits have been added to `main` so you should update this branch. 
 
 ### 1280.1
 
-This conflict is a little trickier. Make the JSON object whole again so you can add the changes and finish rebasing. Make sure you put all the references in their correct objects and delete any lines if you need to.
+This conflict is a little trickier. Make the JSON object whole again so you can add the changes and finish rebasing. Make sure you put all the references in their correct objects, and in the same order they were originally in. There may be a duplicate line you need to delete.
 
 #### HINTS
 
-- There may be one duplicate command in there you need to delete
 - The whole file should look like this:
 ```json
 {
@@ -2000,7 +1999,7 @@ View the status again.
 
 ### 1310.1
 
-Continue your rebase.
+Continue your rebase with the suggested command.
 
 #### HINTS
 
@@ -2783,7 +2782,7 @@ View your log again. Use the `--oneline` flag.
 - It's the `--oneline` flag
 - Type `git log --oneline` into the terminal and press enter
 
-## 1580. git rebase interactive root
+## 1580. git rebase interactive HEAD~5
 
 ### 1580.1
 
@@ -2796,7 +2795,7 @@ Now the hashes are the same as they were before you rebased back to `--root`, wh
 - Enter `git rebase --interactive HEAD~5` into the terminal and press enter
 - If you entered the wrong command, exit nano without changing anything. Then try again.
 - You can exit nano by pressing `ctrl+x`
-- If you accidentally changes something in Nano, press `n` after `ctrl+x` to discard the changes
+- If you accidentally changed something in Nano, press `n` after `ctrl+x` to discard the changes
 
 ## 1590. Nano: Squash feat/add-column-references Commits
 
@@ -2868,6 +2867,7 @@ Merge your branch for adding column commands into this one.
 - Use the `git branch` command if you need to find the branch name
 - It's the `feat/add-column-references` branch
 - Type `git merge feat/add-column-references` into the terminal and press enter
+- If you got `fatal: refusing to merge unrelated histories`, you need to switch back to the feature branch, enter `git rebase main` to align the histories, then come back to `main` and try again
 
 ## 1635. git branch -d feat/add-column-references
 
@@ -2944,11 +2944,13 @@ This branch is up to date now. In your JSON file, add a `rename` key to the `tab
 {
   "database": {
     "create": "CREATE DATABASE database_name;",
-    "drop": "DROP DATABASE database_name;"
+    "drop": "DROP DATABASE database_name;",
+    "rename": "ALTER DATABASE database_name RENAME TO new_name;"
   },
   "table": {
     "create": "CREATE TABLE table_name();",
-    "drop": "DROP TABLE table_name;"
+    "drop": "DROP TABLE table_name;",
+    "rename": "ALTER TABLE table_name RENAME TO new_name;"
   },
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
@@ -2960,8 +2962,7 @@ This branch is up to date now. In your JSON file, add a `rename` key to the `tab
     "drop": "ALTER TABLE table_name DROP COLUMN column_name;",
     "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
     "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
-    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);",
-    "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);"
+    "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
   }
 }
 
@@ -3036,12 +3037,13 @@ Replace `pick` with `s` next to your commit for adding the rename table referenc
 
 ### 1735.1
 
-The lines that don't start with a `#` will be the commit messages. Add a new message at the top of the file on it's own line. Give it the text, `feat: add missing rename references`. When you are done, save and exit the file.
+The lines that don't start with a `#` will be the commit messages. Add a new message at the top of the file on it's own line. Give it the text, `fix: add missing rename references`. When you are done, save and exit the file.
 
 #### HINTS
 
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `fix: add missing rename references`
+- Enter another rebase with `git rebase --interactive HEAD~1` to change the message if it's wrong
 
 ## 1737. git log -1
 
@@ -3387,7 +3389,7 @@ Merge the branch you just made into here.
 - Use the `git branch` command if you need to find the branch name
 - It's the `feat/add-gitignore` branch
 - Type `git merge feat/add-gitignore` into the terminal and press enter
-- If you get an error, switch back to the `feat/add-gitignore` branch, type `git rebase main` to realign the history. Then come back to `main` and try again.
+- If you got `fatal: refusing to merge unrelated histories`, you need to switch back to the feature branch, enter `git rebase main` to align the histories, then come back to `main` and try again
 
 ## 1990. git branch -d feat/add-gitignore
 
@@ -3419,7 +3421,7 @@ I think it's all finished. View your log with the oneline flag to see your whole
 
 ### 2000.1
 
-View the log one last time without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
+Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
 
 #### HINTS
 
