@@ -224,9 +224,9 @@ Now you have two files in staging. To commit them, you can use `git commit -m "I
 
 #### HINTS
 
-- Type `git commit -m "initial commit"` in the terminal and press enter
-- Make sure you are in your `sql_reference` repo folder
-- Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
+- Type `git commit -m "Initial commit"` in the terminal and press enter
+- Enter `git log` to see if your message is correct
+- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
 ## 190. git status
 
