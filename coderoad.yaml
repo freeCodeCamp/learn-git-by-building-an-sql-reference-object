@@ -1131,7 +1131,7 @@ levels:
       - id: '1570.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/.git/rebase-merge/done
   - id: '1572'
     steps:
       - id: '1572.1'
@@ -1167,7 +1167,7 @@ levels:
       - id: '1590.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/.git/rebase-merge/done
   - id: '1595'
     steps:
       - id: '1595.1'
@@ -1257,7 +1257,7 @@ levels:
       - id: '1730.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/.git/rebase-merge/done
   - id: '1735'
     steps:
       - id: '1735.1'
@@ -1407,7 +1407,7 @@ levels:
       - id: '1960.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./sql_reference/.git/rebase-merge/done
   - id: '1962'
     steps:
       - id: '1962.1'

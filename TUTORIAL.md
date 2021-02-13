@@ -2798,7 +2798,7 @@ Now the hashes are the same as they were before you rebased back to `--root`, wh
 - You can exit nano by pressing `ctrl+x`
 - If you accidentally changes something in Nano, press `n` after `ctrl+x` to discard the changes
 
-## 1590. Squash feat/add-column-references Commits
+## 1590. Nano: Squash feat/add-column-references Commits
 
 ### 1590.1
 
@@ -3021,7 +3021,7 @@ You have two commits on this branch that could be squashed. Enter an interactive
 - If you entered the wrong command, save and exit nano without changing anything. Then try again
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 
-## 1730. Squash feat/add-missing-rename-references Commits
+## 1730. Nano: Squash feat/add-missing-rename-references Commits
 
 ### 1730.1
 
