@@ -2686,7 +2686,7 @@ If you look at the bottom of those two messages, it shows the diff. The diff of 
 - If you entered the wrong command, save and exit Nano. Then try again
 - You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`
 
-## 1563. Drop UNIQUE commits
+## 1563. Nano: Drop UNIQUE commits
 
 ### 1563.1
 
