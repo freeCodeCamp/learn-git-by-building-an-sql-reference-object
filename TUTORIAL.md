@@ -3033,7 +3033,7 @@ Replace `pick` with `s` next to your commit for adding the rename table referenc
 - Replace `pick` with `s` next to your `fix: add missing rename table reference` commit
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 
-## 1735. Nano: Change Column References Commit Message
+## 1735. Nano: Add Missing Renames Commit Message
 
 ### 1735.1
 
