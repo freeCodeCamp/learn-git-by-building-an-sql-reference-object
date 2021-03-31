@@ -2093,7 +2093,7 @@ Commit your staged files with `feat: add primary key reference` as the message.
 
 ### 1352.1
 
-Add `foreign_key` to the `column` object for another commmand. It's value should be `"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"`.
+Add `foreign_key` to the `column` object for another command. It's value should be `"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"`.
 
 #### HINTS
 
@@ -2348,7 +2348,7 @@ View the diff of your changes to make sure you like them, then add them to stagi
 
 ### 1450.1
 
-Commmit your stages changes with `fix: add missing rename database reference` for the message.
+Commit your stages changes with `fix: add missing rename database reference` for the message.
 
 #### HINTS
 
