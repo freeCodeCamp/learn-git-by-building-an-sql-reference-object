@@ -3771,7 +3771,7 @@
               "4f13b47a853203af1af3b1cd9f213cf4937676d8"
             ]
           },
-          "content": "Add `foreign_key` to the `column` object for another commmand. It's value should be `\"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"`.",
+          "content": "Add `foreign_key` to the `column` object for another command. It's value should be `\"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"`.",
           "hints": [
             "The `column` key should look like this:\n```json\n\"column\": {\n  \"add\": \"ALTER TABLE table_name ADD COLUMN column_name;\",\n  \"drop\": \"ALTER TABLE table_name DROP COLUMN column_name;\",\n  \"rename\": \"ALTER TABLE table_name RENAME COLUMN column_name TO new_name;\",\n  \"primary_key\": \"ALTER TABLE table_name ADD PRIMARY KEY(column_name);\",\n  \"foreign_key\": \"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"\n}\n```",
             "The whole file should look like this:\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\"\n  },\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name();\",\n    \"drop\": \"DROP TABLE table_name;\"\n  },\n  \"row\": {\n    \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\",\n    \"update\": \"UPDATE table_name SET column_name = new_value WHERE condition;\"\n  },\n  \"column\": {\n    \"add\": \"ALTER TABLE table_name ADD COLUMN column_name;\",\n    \"drop\": \"ALTER TABLE table_name DROP COLUMN column_name;\",\n    \"rename\": \"ALTER TABLE table_name RENAME COLUMN column_name TO new_name;\",\n    \"primary_key\": \"ALTER TABLE table_name ADD PRIMARY KEY(column_name);\",\n    \"foreign_key\": \"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"\n  }\n}\n\n```",
@@ -4111,7 +4111,7 @@
               "88ea559994d09b304258fac6b82328087197f804"
             ]
           },
-          "content": "Commmit your stages changes with `fix: add missing rename database reference` for the message.",
+          "content": "Commit your stages changes with `fix: add missing rename database reference` for the message.",
           "hints": [
             "Commit changes with `git commit -m \"message\"`",
             "Type `git commit -m \"fix: add missing rename database reference\"` into the terminal and press enter",
@@ -4927,7 +4927,7 @@
               "375589bc7b9614f9b0d6c2c237868d304d5368d8"
             ]
           },
-          "content": "Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file use those message and finish squashing the commits.",
+          "content": "Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those message and finish squashing the commits.",
           "hints": [
             "Press `ctrl+x` to exit the file"
           ]
@@ -6099,12 +6099,7 @@
               "a818990ca35e64aada7102301599bed8d242f623"
             ]
           },
-          "content": "Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now.",
-          "hints": [
-            "Use the `git log` command",
-            "Don't use any flags with the command",
-            "Press enter until you have seen the whole log"
-          ]
+          "content": "Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now."
         }
       ]
     }

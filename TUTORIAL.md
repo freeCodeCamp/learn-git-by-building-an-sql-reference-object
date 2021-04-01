@@ -3422,3 +3422,7 @@ I think it's all finished. View your log with the oneline flag to see your whole
 ### 2000.1
 
 Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
+
+#### HINTS
+
+- Use the `git log` command
