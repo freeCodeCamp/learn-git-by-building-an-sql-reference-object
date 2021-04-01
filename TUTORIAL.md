@@ -3414,8 +3414,6 @@ I think it's all finished. View your log with the oneline flag to see your whole
 #### HINTS
 
 - Use the `git log` command with the correct flag
-- It's the `--oneline` flag
-- Type `git log --oneline` into the terminal and press enter
 
 ## 2000. git log
 
