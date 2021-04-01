@@ -2813,7 +2813,7 @@ Squashing commits means that you will take a bunch of commits and turn them into
 
 ### 1595.1
 
-Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file use those message and finish squashing the commits.
+Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those message and finish squashing the commits.
 
 #### HINTS
 
