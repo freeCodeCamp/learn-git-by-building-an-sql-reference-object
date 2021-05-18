@@ -638,7 +638,7 @@
           "content": "The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.",
           "hints": [
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter",
+            "Type `git add sql_reference.json` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -1107,7 +1107,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter",
+            "Type `git add sql_reference.json` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
@@ -1486,7 +1486,7 @@
           "content": "Add your changes to staging.",
           "hints": [
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter",
+            "Type `git add sql_reference.json` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder"
           ]
         }
@@ -1716,7 +1716,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -1868,7 +1868,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -2173,7 +2173,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -2296,8 +2296,8 @@
           },
           "content": "Pretend that this branch is for someone else working on a new feature at the same time you are working on the column commands. Add a `row` key to your JSON object. Make it an object with an `insert` key whose value is `\"INSERT INTO table_name(columns) VALUES(values);\"`",
           "hints": [
-            "Your JSON oject should have this:\n```json\n\"row\": {\n  \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\"\n}\n```",
-            "The `row` key should be a on the same level as the `table` key",
+            "Your JSON object should have this:\n```json\n\"row\": {\n  \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\"\n}\n```",
+            "The `row` key should be on the same level as the `table` key",
             "The whole file should look like this:\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\"\n  },\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name();\",\n    \"drop\": \"DROP TABLE table_name;\"\n  },\n  \"row\": {\n    \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\"\n  }\n}\n\n```",
             "Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets",
             "You can view the `git diff` to see if there's any extra spaces"
@@ -2325,7 +2325,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -2554,7 +2554,7 @@
           "hints": [
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -2678,7 +2678,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -3391,7 +3391,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -3597,7 +3597,7 @@
             "Use the \"git add\" command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -3724,7 +3724,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -3802,7 +3802,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -3908,7 +3908,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -4090,7 +4090,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -4222,7 +4222,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -4325,7 +4325,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -4474,7 +4474,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -5189,7 +5189,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
@@ -5695,7 +5695,7 @@
           "hints": [
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
-            "You previously used `git add sql_referenece.json` to add changes to staging",
+            "You previously used `git add sql_reference.json` to add changes to staging",
             "Type `git add .gitignore` into the terminal and press enter"
           ]
         }
@@ -5822,7 +5822,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add README.md` to add changes to staging",
-            "Type `git add sql_referenece.json` into the terminal and press enter"
+            "Type `git add sql_reference.json` into the terminal and press enter"
           ]
         }
       ]
