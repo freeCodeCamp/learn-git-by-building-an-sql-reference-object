@@ -308,7 +308,7 @@ The lines with `+` in front means that those lines were added. Add your new chan
 #### HINTS
 
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -576,7 +576,7 @@ You made new changes so the file shows up as not staged. Add the file to staging
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -779,7 +779,7 @@ Add your changes to staging.
 #### HINTS
 
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 - Make sure you are in your `sql_reference` repo folder
 
 ## 550. git commit feat: add drop table reference
@@ -913,7 +913,7 @@ Add your changes to staging. Here's a tip: you can use `git add .` to add all fi
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 640. git commit feat: add column reference
 
@@ -1006,7 +1006,7 @@ Check your status and diff to see your new changes. Then, add your files to stag
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 710. git commit fix: create table syntax
 
@@ -1178,7 +1178,7 @@ Check your status and diff to see your new changes. Then, add your changes to st
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 820. git commit feat: drop column reference
 
@@ -1236,13 +1236,13 @@ Pretend that this branch is for someone else working on a new feature at the sam
 
 #### HINTS
 
-- Your JSON oject should have this:
+- Your JSON object should have this:
 ```json
 "row": {
   "insert": "INSERT INTO table_name(columns) VALUES(values);"
 }
 ```
-- The `row` key should be a on the same level as the `table` key
+- The `row` key should be on the same level as the `table` key
 - The whole file should look like this:
 ```json
 {
@@ -1273,7 +1273,7 @@ Check your status and diff so you can see your new changes. Then, add your chang
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 880. git commit feat: add insert row reference
 
@@ -1412,7 +1412,7 @@ It says that you are still in the middle of rebasing and there's one file that n
 
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 958. git status
 
@@ -1500,7 +1500,7 @@ Check your status and diff to see your new changes. Then, add the file to stagin
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1000. git commit feat: add rename column reference
 
@@ -1859,7 +1859,7 @@ It looks good. Add the changes to staging.
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1230. git commit feat: add update row reference
 
@@ -1981,7 +1981,7 @@ You are still rebasing. You fixed the conflicts for the commit trying to be adde
 - Use the "git add" command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1305. git status
 
@@ -2074,7 +2074,7 @@ Check the diff to make sure you like your changes. Then, add the changes to stag
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1350. git commit feat: add primary key reference
 
@@ -2146,7 +2146,7 @@ Check the diff to make sure you like the changes, then add the changes to stagin
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1356. git commit feat: add foreign key reference
 
@@ -2225,7 +2225,7 @@ View the diff of your changes, then add them to staging.
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1390. git commit feat: add delete row reference
 
@@ -2342,7 +2342,7 @@ View the diff of your changes to make sure you like them, then add them to stagi
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1450. git commit fix: add missing rename database reference
 
@@ -2438,7 +2438,7 @@ You fixed the conflicts. Check your status, then add your files to staging.
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1495. git status
 
@@ -2525,7 +2525,7 @@ View the diff to make sure you like the changes, then add the changes to staging
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1530. git commit feat: add unique reference
 
@@ -2596,7 +2596,7 @@ And the changes from the reset are back in the working tree. So when you `reset`
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1545. git commit feat: add unique reference
 
@@ -2981,7 +2981,7 @@ Check the diff of your changes, then add them changes to staging.
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1710. git commit fix: add missing rename table reference
 
@@ -3227,7 +3227,7 @@ Now the `.env` file is being ignored by git because you added it to the `.gitign
 
 - Use the `git add` command
 - Here's an example: `git add file_name`
-- You previously used `git add sql_referenece.json` to add changes to staging
+- You previously used `git add sql_reference.json` to add changes to staging
 - Type `git add .gitignore` into the terminal and press enter
 
 ## 1870. git commit feat: add .gitignore
@@ -3289,7 +3289,7 @@ Now, when someone wants to run your repo, they will know that they need to creat
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add README.md` to add changes to staging
-- Type `git add sql_referenece.json` into the terminal and press enter
+- Type `git add sql_reference.json` into the terminal and press enter
 
 ## 1940. git commit feat: add sample.env
 
