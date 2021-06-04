@@ -854,7 +854,7 @@ You're getting the hang of it :smile: The process is to create a branch, make th
 #### HINTS
 
 - You can create and checkout a branch with `git checkout -b branch_name`
-- Type `git checkout -b feat/add-column-reference` into the terminal and press enter
+- Type `git checkout -b feat/add-column-references` into the terminal and press enter
 
 ## 610. Add ADD COLUMN command
 
@@ -2290,7 +2290,7 @@ I missed a bunch of the rename commands when I had you work on a few of the obje
 
 - Use the `git checkout` command with the `-b` flag
 - Here's an example: `git checkout -b branch_name`
-- Type `git checkout -b feat/add-more-row-references` into the terminal and press enter
+- Type `git checkout -b fix/add-missing-rename-references` into the terminal and press enter
 
 ## 1430. Add RENAME DATABASE command
 
@@ -2368,8 +2368,8 @@ Leave this branch for now. Switch back to your branch for the column references 
 - Use the `git checkout` command
 - Here's an example: `git checkout branch_name`
 - Use the `git branch` command to find the name of the branch
-- It's the `feat/add-more-row-references` branch
-- Enter `git checkout feat/add-more-row-references` into the terminal and press enter
+- It's the `feat/add-column-references` branch
+- Enter `git checkout feat/add-column-references` into the terminal and press enter
 
 ## 1470. git rebase main
 
@@ -2548,7 +2548,7 @@ I'm going to show you a few ways to remove or undo a commit. The first is to sim
 
 #### HINTS
 
-- GIT RESET HEAD
+- Enter `git reset HEAD~1` in the terminal
 
 ## 1536. git log oneline
 
@@ -3130,7 +3130,7 @@ That's a nice looking commit history. There's one more thing you should learn. C
 
 - Use the `git checkout` command with the `-b` flag
 - Here's an example: `git checkout -b branch_name`
-- Type `git checkout -b feat/add-more-row-references` into the terminal and press enter
+- Type `git checkout -b feat/add-gitignore` into the terminal and press enter
 
 ## 1800. touch .env
 
@@ -3239,7 +3239,7 @@ Commit your changes with `feat: add .gitignore` for the message.
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: add .gitignore"` into the terminal and press enter
+- Type `git commit -m "feat: add .gitignore"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
