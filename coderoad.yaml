@@ -1,4 +1,4 @@
-version: '0.2.0'
+version: '0.2.1'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-git-by-building-an-sql-reference-object
-    branch: v0.2.0
+    branch: v0.2.1
   dependencies:
     - name: node
       version: '>=10'
