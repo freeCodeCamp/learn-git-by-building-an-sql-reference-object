@@ -2536,7 +2536,7 @@ Commit the stages files with `feat: add unique reference` for the message.
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: add unique reference"` into the terminal and press enter
+- Type `git commit -m "feat: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
@@ -2607,7 +2607,7 @@ Commit the change staged files with `feat: add unique reference` for its message
 #### HINTS
 
 - Commit changes with `git commit -m "message"`
-- Type `git commit -m "fix: add unique reference"` into the terminal and press enter
+- Type `git commit -m "feat: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
 
