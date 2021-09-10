@@ -227,6 +227,7 @@ Now you have two files in staging. To commit them, you can use `git commit -m "I
 - Type `git commit -m "Initial commit"` in the terminal and press enter
 - Enter `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 190. git status
 
@@ -336,6 +337,7 @@ Your new changes are staged and ready to be committed. Commit them with the mess
 - Type `git commit -m "feat: add create database reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -432,6 +434,7 @@ Commit your staged changes with the message, `feat: add drop database reference`
 - Type `git commit -m "feat: add drop database reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -592,6 +595,7 @@ The changes are now in staging. Commit your staged changes with the message `fea
 - Type `git commit -m "feat: add create table reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
@@ -794,6 +798,7 @@ Commit your staged changes with the message `feat: add drop table reference`.
 - Type `git commit -m "feat: add drop table reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 - Make sure you are in your `sql_reference` repo folder
 
 ## 560. git checkout main
@@ -927,6 +932,7 @@ Commit your staged changes with the message `feat: add column reference`.
 - Type `git commit -m "feat: add column reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 650. git log oneline
 
@@ -1020,6 +1026,7 @@ Commit your changes with the message `fix: create table syntax`.
 - Type `git commit -m "fix: create table syntax"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 720. git checkout main
 
@@ -1192,6 +1199,7 @@ Commit your changes with the message: `feat: add drop column reference`.
 - Type `git commit -m "feat: add drop column reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 830. git log oneline
 
@@ -1287,6 +1295,7 @@ Commit your changes with the message: `feat: add insert row reference`.
 - Type `git commit -m "feat: add insert row reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 890. git checkout main
 
@@ -1514,6 +1523,7 @@ Commit your changes with the message `feat: add rename column reference`
 - Type `git commit -m "feat: add rename column reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1010. git checkout feat/add-insert-row-reference
 
@@ -1873,6 +1883,7 @@ View your status, then commit the staged changes with the message `feat: add upd
 - Type `git commit -m "feat: add update row reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1240. git checkout main
 
@@ -2088,6 +2099,7 @@ Commit your staged files with `feat: add primary key reference` as the message.
 - Type `git commit -m "feat: add primary key reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1352. Add FOREIGN KEY command
 
@@ -2160,6 +2172,7 @@ Commit the changes with `feat: add foreign key reference` as its message.
 - Type `git commit -m "feat: add foreign key reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1360. git checkout feat/add-more-row-references
 
@@ -2239,6 +2252,7 @@ Commit the staged changes with the message `feat: add delete row reference`.
 - Type `git commit -m "feat: add delete row reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1400. git checkout main
 
@@ -2356,6 +2370,7 @@ Commit your stages changes with `fix: add missing rename database reference` for
 - Type `git commit -m "fix: add missing rename database reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1460. git checkout feat/add-column-references
 
@@ -2539,6 +2554,7 @@ Commit the stages files with `feat: add unique reference` for the message.
 - Type `git commit -m "feat: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1533. git reset HEAD~1
 
@@ -2610,6 +2626,7 @@ Commit the change staged files with `feat: add unique reference` for its message
 - Type `git commit -m "feat: add unique reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1548. git revert HEAD
 
@@ -2634,7 +2651,7 @@ Git put you into Nano and is asking you enter a commit message for the revert, b
 - If you accidentally changed something in Nano, press `n` after `ctrl+x` to discard the changes
 - Your last commit message should be `Revert "feat: add unique reference"`
 - View your log to make sure the message is correct
-- If the message is wrong, enter `git reset HEAD~1`, then `git add .`, then make a commit like this: `git commit -m 'Revert "feat: add unique reference"'`. Notice the single and double quotes.
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git revert HEAD` after it's done resetting
 
 ## 1551. git log oneline
 
@@ -2672,7 +2689,7 @@ Type `git show HEAD~1` to take a look at the details of the original commit that
 - Enter the suggested command
 - Type `git show` in the terminal and press enter
 
-## 1560. git rebase interactive root
+## 1560. git rebase interactive HEAD~2
 
 ### 1560.1
 
@@ -2694,9 +2711,8 @@ At the top of Nano, you can see the two commits with `pick` next to them. Below 
 #### HINTS
 
 - You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`
-- If you forgot to drop the two commits, type `git rebase --interactive HEAD~2` into the terminal and try again
-- If you accidentally dropped only one commit, type `git rebase --interactive HEAD~1` into the terminal and drop the other one
 - The most recent commit message should be `feat: add foreign key reference`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~2` after it's done resetting
 
 ## 1564. git log oneline
 
@@ -2733,6 +2749,7 @@ You can see that the latest commit is at the bottom here. Be careful not to chan
 
 - Replace `pick` with an `r` next to the suggested commit
 - Save and exit the file by pressing `ctrl+x` then `y` then `enter`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive --root` after it's done resetting
 
 ## 1572. Nano: Change Column References Commit Message
 
@@ -2743,6 +2760,7 @@ Add an `s` at the end of the commit message so it is `feat: add column reference
 #### HINTS
 
 - Save and exit the file by pressing `ctrl+x` then `y` then `enter`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive --root` after it's done resetting. Then, in nano, replace `pick` with an `r` next to the `feat: add column reference` commit, and save and exit
 
 ## 1575. git log oneline
 
@@ -2808,6 +2826,7 @@ Squashing commits means that you will take a bunch of commits and turn them into
 - Replace `pick` with an `s` next to the suggested commits
 - Save and exit the file by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `feat: add column references`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~5` after it's done resetting
 
 ## 1595. Nano: Save and Exit to Squash
 
@@ -2818,6 +2837,7 @@ Nano brought up a list of all the commit messages you used for the commits. Don'
 #### HINTS
 
 - Press `ctrl+x` to exit the file
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~5` after it's done resetting. Then, in nano, replace `pick` with an `s` next to all the commits except the `feat: add column reference` commit, and save and exit
 
 ## 1600. git log oneline
 
@@ -2995,6 +3015,7 @@ Commit your staged changes with the message, `fix: add missing rename table refe
 - Type `git commit -m "fix: add missing rename table reference"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1715. git log -5 oneline
 
@@ -3032,6 +3053,7 @@ Replace `pick` with `s` next to your commit for adding the rename table referenc
 
 - Replace `pick` with `s` next to your `fix: add missing rename table reference` commit
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~2` after it's done resetting
 
 ## 1735. Nano: Add Missing Renames Commit Message
 
@@ -3043,7 +3065,7 @@ The lines that don't start with a `#` will be the commit messages. Add a new mes
 
 - You can save and exit nano by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `fix: add missing rename references`
-- Enter another rebase with `git rebase --interactive HEAD~1` to change the message if it's wrong
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~2` after it's done resetting. Then, in nano, replace `pick` with `s` next to your `fix: add missing rename table reference` commit, and save and exit
 
 ## 1737. git log -1
 
@@ -3242,6 +3264,7 @@ Commit your changes with `feat: add .gitignore` for the message.
 - Type `git commit -m "feat: add .gitignore"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1880. touch sample.env
 
@@ -3288,8 +3311,8 @@ Now, when someone wants to run your repo, they will know that they need to creat
 
 - Use the `git add` command
 - Here's an example: `git add file_name`
-- You previously used `git add README.md` to add changes to staging
-- Type `git add sql_reference.json` into the terminal and press enter
+- You previously used `git add sql_reference.json` to add changes to staging
+- Type `git add .env` into the terminal and press enter
 
 ## 1940. git commit feat: add sample.env
 
@@ -3303,6 +3326,7 @@ Commit the new changes with the message `feat: add sample.env`.
 - Type `git commit -m "feat: add sample.env"` into the terminal and press enter
 - View your `git log` to see if your message is correct
 - If the message is wrong, enter `git reset HEAD~1`, then `git add .`, and then you can try to make the commit again
+- Or, reset the lesson and try again
 
 ## 1945. git log -5 oneline
 
@@ -3337,7 +3361,9 @@ Squash your commit that was for adding the `sample.env` file. When you are done,
 #### HINTS
 
 - Replace `pick` with `s` next to the suggested commit
+- It's the `feat: add sample.env` commit
 - You can save and exit by pressing `ctrl+x` then `y` then `enter`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~2` after it's done resetting
 
 ## 1962. Nano: Add Message + Save and Exit
 
@@ -3350,6 +3376,7 @@ Add a new message at the very top of the file, `feat: add .gitignore and sample.
 - Add the suggested message on it's own line above the other messages
 - You can save and exit by pressing `ctrl+x` then `y` then `enter`
 - The most recent commit message should be `feat: add .gitignore and sample.env`
+- To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~2` after it's done resetting. Then, in nano, replace `pick` with `s` next to your `feat: add sample.env` commit, and save and exit
 
 ## 1964. git log -1
 
