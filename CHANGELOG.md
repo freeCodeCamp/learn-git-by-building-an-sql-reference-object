@@ -9,3 +9,7 @@ Whenever something on the version branch gets changed, add the new branch name a
 ## [v1.0.0]
 
 - Initial soft release with news article
+
+## [v1.0.1]
+
+- Add in `.vscode/settings.json` setting to use spaces for indentation
