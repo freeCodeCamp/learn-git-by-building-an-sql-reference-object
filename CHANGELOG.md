@@ -13,3 +13,8 @@ Whenever something on the version branch gets changed, add the new branch name a
 ## [v1.0.1]
 
 - Add in `.vscode/settings.json` setting to use spaces for indentation
+
+## [v1.0.2]
+
+- Move setup commands from `coderoad.yaml` to `setup.sh`
+- Add creation `.bash_history` in setup commands so CodeRoad watchers recognize it when the first command is entered

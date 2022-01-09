@@ -1,9 +1,9 @@
-version: '1.0.1'
+version: '1.0.2'
 config:
   setup:
     commands:
-    - sudo cp ~/project/.freeCodeCamp/.bashrc ~
-    - cd .freeCodeCamp && npm install
+      - ./.freeCodeCamp/setup.sh
+      - cd .freeCodeCamp && npm install
   testRunner:
     command: npm run programmatic-test
     args:
@@ -11,9 +11,10 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/freeCodeCamp/learn-git-by-building-an-sql-reference-object
-    branch: v1.0.1
+    branch: v1.0.2
   reset:
     commands:
+      - './.freeCodeCamp/setup.sh'
       - './.freeCodeCamp/reset.sh'
   dependencies:
     - name: node
