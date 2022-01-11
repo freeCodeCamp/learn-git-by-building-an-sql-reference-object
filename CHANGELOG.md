@@ -18,3 +18,7 @@ Whenever a new version is created, add the new branch name and the changes here
 
 - Move setup commands from `coderoad.yaml` to `setup.sh`
 - Add creation of `.bash_history` in setup commands so CodeRoad watchers recognize it when the first command is entered
+
+## [v1.0.3]
+
+- Fix reset commands so it works everywhere
