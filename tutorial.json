@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": {
     "title": "Learn Git by Building an SQL Reference Object",
     "description": "> Welcome to the git lessons!"
@@ -11,7 +11,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "491f1d4caa88c8fa12902ceebba7c6265d1b2b72"
+        "0a28591b3d22b0eb7490301824f8248ffb9a8040"
       ]
     },
     "testRunner": {
@@ -23,7 +23,7 @@
     },
     "repo": {
       "uri": "https://github.com/freeCodeCamp/learn-git-by-building-an-sql-reference-object",
-      "branch": "v1.0.2"
+      "branch": "v1.0.3"
     },
     "reset": {
       "commands": [
@@ -62,7 +62,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "06bbcc9d6f3548a52bf6022fe6b821c088da252c"
+              "9e32c1aea93523a1f8ae2675aa79d7a9fb7d7eb6"
             ]
           },
           "content": "The first thing you need to do is start the terminal. Open a new one by clicking the \"hamburger\" menu at the top left of the window, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello git` into the terminal and press enter.",
@@ -86,7 +86,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6faa9631935cd95d7ae02f6907607b391b183758"
+              "b2c61076b61ac50f75626891e58e8a02355ed39f"
             ]
           },
           "content": "You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `sql_reference` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.",
@@ -111,7 +111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c38c853817386c5a69306938771dac9aa3768d8"
+              "1ca1b7eb3629284b13e2d09e16af513dfca8f54b"
             ]
           },
           "content": "Use the \"change directory\" command in the terminal to change to your new folder.",
@@ -136,7 +136,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3000d8a488e62983f26904aa336104ab88cf3f89"
+              "e3c60f6c88f7fcf9eb1ffb7fc1d1c761ac6a28a4"
             ]
           },
           "content": "Git is a version control system to keep track of your code. This folder will be your git repository. Turn it into one by typing `git init` in the terminal from this folder.",
@@ -161,7 +161,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ce6020847bcf7acc0eebc5d6d5c1523e2bcb9e64"
+              "ac246af4510ce6e341e1ebc28d556a119361fbf4"
             ]
           },
           "content": "Use the list command with the `-a` flag to list the hidden folders and files.",
@@ -187,7 +187,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ad3e0c30c25d9db202542dd4be033b2601a64f0e"
+              "b4767893cb704fd286f33267fb0b186670804c57"
             ]
           },
           "content": "The `git init` command created that `.git` folder for you. It's what keeps track of all the things in your repository. Use `git status` to see the status of where you are. This command will be your best friend.",
@@ -212,7 +212,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1a624e7bc46017fe908902be4f2b3cd22075e926"
+              "1d861858e1e57a0f9a0f5c3adface56759c60bfd"
             ]
           },
           "content": "A git repository has branches to help keep track of things you are doing with your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You can create and go to a new branch with `git checkout -b new_branch`. The `-b` stands for \"branch\". Use that command to switch to a new branch named `main`.",
@@ -238,7 +238,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0ea657c836e4538028dc7a47ec0970b1fe8fbfaa"
+              "c70ce4673ac363df27057d1b8b6c66e3c38dcd4e"
             ]
           },
           "content": "Check your status again with `git status`.",
@@ -263,7 +263,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "637174a10544a7237128a53c296507d5d34236a1"
+              "07124c584f7ba60e903caa0c7087f6ffbd5f8afd"
             ]
           },
           "content": "Now you are on the `main` branch. Use the `touch` command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.",
@@ -290,7 +290,7 @@
               "./sql_reference/README.md"
             ],
             "commits": [
-              "3da63bae2424d4f4df24a0783d1cffc9e80f7950"
+              "a2e3beacdb6a79310ccfa239000c4dd7b56c7846"
             ]
           },
           "content": "Add the text `SQL Reference` at the top of your new file to let people know what your repo is for.",
@@ -313,7 +313,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a82521e255916c3cc1b86ec7433e3e91a1de51f9"
+              "8d91df065fdb669393c70247742fadbc1b236054"
             ]
           },
           "content": "Check the status of your repo again.",
@@ -339,7 +339,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3dc2adbda157819fa456c585af3c4f28eb7a88b0"
+              "343205702bb05897ce6439ff2b6259ff673dc97c"
             ]
           },
           "content": "The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.",
@@ -365,7 +365,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff18b78f311fc888c4a199a9e93d3416478b8013"
+              "c2e94302064bed9e11d69ff68e9b53c98bcea5f5"
             ]
           },
           "content": "Check your status again.",
@@ -391,7 +391,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2d2129591682eb9d306c3903bdf54435967b0802"
+              "3e9053b767c929cae82ef1e0efd67b8ff8719a08"
             ]
           },
           "content": "Now your file is in staging and will be added with the next commit. You aren't quite ready to commit this yet though. Use `touch` again to create `sql_reference.json` in your repo.",
@@ -418,7 +418,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "696201395d495760b05744725df9a8a8c923c498"
+              "2fa6b935e599eb84df46b27fd7a49e93dc1dddf0"
             ]
           },
           "content": "Check your status again.",
@@ -444,7 +444,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "51b93ce7be014bb7c5f25b49391be7fb0f83d285"
+              "837ecc50b3c0109602177df4aab35f3bf8edf271"
             ]
           },
           "content": "You now have one file in staging and one that is untracked. Add the new file you created to the staging area.",
@@ -471,7 +471,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9698cdf958a29b3565cd7135f1b70ba4c948cb2d"
+              "32fa4ef5234fdc46a31b8d55a26ca17754180122"
             ]
           },
           "content": "Check your status one more time please :grin:",
@@ -497,7 +497,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ed03907a7542e14cbaaf301296fb1275cb701c00"
+              "86c6cec397016b84c96f1681314c794de5f4e812"
             ]
           },
           "content": "Now you have two files in staging. To commit them, you can use `git commit -m \"Initial commit\"`. The `-m` stands for \"message\". Often times, the first commit of a repo will have the message \"Initial commit\". Commit your two files with the message `Initial commit`.",
@@ -523,7 +523,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3a9717480d8a290ca7adefcde00a4f5742f90fc1"
+              "38d54e0814ebda9d0a19532dc6b2d861a21e05ff"
             ]
           },
           "content": "When you make a commit, whatever is in the staging area will be added to your git history. You can see some info in the terminal output about the commit. Check your status again to see what's there.",
@@ -549,7 +549,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "59a0d85e4e9bf69b5959905fb9f49e6f4a7bedb0"
+              "e45e53e926a4988b7e82571e7303f8adbb7f91db"
             ]
           },
           "content": "Your \"working tree\" is clean, the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.",
@@ -574,7 +574,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "cf4781da9076c6b919e2ed9a24dc6e3f0c1506f9"
+              "88c9724f88afde0329a09c1dc2a1bc2f4e312e71"
             ]
           },
           "content": "You can see the commit you made. It shows the message you gave with the commit, along with your username, email, the date, and a commit hash. The hash is that long string of characters. Open up your `.json` file and create an object with a reference for how to create a database that looks like this:\n\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\"\n  }\n}\n```\n\nMake sure there's one empty line at the bottom of the file and no extra spaces after the value or any of the curly brackets.",
@@ -598,7 +598,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b9f984a28aac6dbb463215e540a056eacf193052"
+              "a6bb87820a5d4986162c3fd78da86f99d5637927"
             ]
           },
           "content": "Check your status again.",
@@ -624,7 +624,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3be80b629b54f1c7e23da35b8622209b974492df"
+              "e527980c5824789b3b8965eac7ec9616d608d33b"
             ]
           },
           "content": "Git recognizes new unstaged changes to your file. Notice that it says that file is modified instead of untracked because the file has been previously committed. You can see the changes you made with `git diff`. Take a look at the new changes.",
@@ -649,7 +649,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "aefe74a5ea073f0a1c95967cd6b9066fe37dfddc"
+              "49e7084eae7b726ac89e2a45525c6c994051c1ba"
             ]
           },
           "content": "The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.",
@@ -675,7 +675,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ed89b1a0cb78ec004583b4057f6b7767c2df2c80"
+              "71e3a95ded79907b2ceb6a825d6742d965dea05c"
             ]
           },
           "content": "Check your status.",
@@ -701,7 +701,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "38277dc89cc5e5e7f1cbb0b29f9800a9e9be8bfd"
+              "9d917ee077929d4886b013cf849cfd83b515e8a3"
             ]
           },
           "content": "Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what the command to commit looks like: `git commit -m \"message\"`.",
@@ -729,7 +729,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "df97398ff6c6118e0b2f01555a4eb94c5e2485e1"
+              "f60166b783e51de76491e1f12ed3d0f2de630335"
             ]
           },
           "content": "Commit messages often start with `fix:` or `feat:`, among others, to help people understand what your commit was for. Check your `git log` again to see the new commit added.",
@@ -754,7 +754,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "144abede46f40a31b6015a5b4bd40b2df300b4ca"
+              "701a5bc10f3bac2189df7c9373b4fc3e96f8ea7b"
             ]
           },
           "content": "Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.",
@@ -782,7 +782,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "22b05d53c51e0ccd0652d78d51e695f3a77ad5ae"
+              "97fb2351c3bc0250d1a678397f59e8ef0e408fb1"
             ]
           },
           "content": "Check your status.",
@@ -808,7 +808,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9bac0e3bc70b1c2cbc84b7fdb87b7c7ab3fb6b78"
+              "9fcf52ed0a45190a702531a2b947809a7262a379"
             ]
           },
           "content": "Changes not staged. Check the `diff` quick.",
@@ -834,7 +834,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "12e50c20d6aff313f68139aa0d41699361af2d99"
+              "dbdfc4178fe96b99336d1b8d53d3589281c1d799"
             ]
           },
           "content": "It should show one line removed and two lines added. Add your changes to the staging area.",
@@ -860,7 +860,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "88b95f396d35752b97da65cd5ac61255e0400223"
+              "efbcefdf0b3dde4b0dac8a4b729390e1377c7b09"
             ]
           },
           "content": "Commit your staged changes with the message, `feat: add drop database reference`",
@@ -889,7 +889,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bbc74c78aa89f59c3a83132cd3c9790204113f22"
+              "ff66b7a558fd96a014eb05188156dc96ad382c49"
             ]
           },
           "content": "I think you're catching on :smile: Check the `log` again.",
@@ -915,7 +915,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dff5ade624f9a152f69e4ee64765d6bec936cb43"
+              "f1c6831dbe66f87af8bb4c97fb77509e04127fbe"
             ]
           },
           "content": "Now there's three commits :smile: You have been making changes to your `main` branch. You actually want to try and avoid that. Type `git branch` to see the current branches in your repo.",
@@ -940,7 +940,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "376c4a58673cd53a9a64166af1137449c625b83b"
+              "559dcfb7e361b3263ddce804a567b3ec281d847f"
             ]
           },
           "content": "You only have the `main` branch still. You can create a branch with `git branch branch_name`. Branches often start with `fix/` or `feat/`, among others, like commit messages, but they use a forward slash and can't contain spaces. Create a new branch named `feat/add-create-table-reference`.",
@@ -965,7 +965,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6c22bf85072dd84b9a9ad5f6123905f691b93216"
+              "2d10c460c152a2ae9bd65841f22e6f76495537a1"
             ]
           },
           "content": "Your new branch is a clone of the `main` branch since that's the branch you were on when you created it. It will have the same code and commit history as `main` did at the time of the branch creation. View your branches again with `git branch`.",
@@ -990,7 +990,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "75eade90fede6e0ba6e8d0a8d226c6fa524d5ac7"
+              "39118776b76bbe0dbb36c230b8d70547c28b887e"
             ]
           },
           "content": "You can see your new branch, but you are still on the `main` branch, as denoted with the `*`. To switch to a branch use: `git checkout branch_name`. Switch to your new branch.",
@@ -1015,7 +1015,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e8a83caeabac33691318601561d0165241aaa761"
+              "7c7b1344cff8e38690b34e16420ab245bc95392a"
             ]
           },
           "content": "It says you switched to your new branch. Type `git branch` so I can make sure the `*` switched.",
@@ -1040,7 +1040,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "dc5e1107483d352eeb7d8464b0372e9445b04a43"
+              "aea2aa64941c4840f67ed024791f740be4c89730"
             ]
           },
           "content": "Like I said, you often don't want to make commits directly to the main branch of a repo. This branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name;\"\n}\n```",
@@ -1067,7 +1067,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "091780fd58cad98b7da4451ba4d0431de710bbbb"
+              "0b15d4e32517fdb0f0d0981859dc1898e036efb7"
             ]
           },
           "content": "Show me the status again. You might as well get used to it :smiley_cat:",
@@ -1093,7 +1093,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a04e866a66be26321aa578d4d8ddbc6acecc907c"
+              "a07af8991215e2c357b677d3ed527e184b378a02"
             ]
           },
           "content": "Changes not staged. Check the `diff` quick so you can make sure your changes look good.",
@@ -1119,7 +1119,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a093ab906c9da052cef3072afe142ba101fe09d4"
+              "a2ec192bdfaa08b34f0449ad1f2813e97d40e1be"
             ]
           },
           "content": "You made new changes so the file shows up as not staged. Add the file to staging so you can commit the changes.",
@@ -1146,7 +1146,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "910faa858118a0bacd4029644b20b7de9183fc6d"
+              "ec76c34cbb3158f86055175113eb2dae522b5fc0"
             ]
           },
           "content": "The changes are now in staging. Commit your staged changes with the message `feat: add create table reference`.",
@@ -1175,7 +1175,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8880174dd24a837ac8207f5bf2d9b1eb14550342"
+              "48402d1a7108f59b12fc02512958800fdd17dea4"
             ]
           },
           "content": "Check your `git log` again.",
@@ -1201,7 +1201,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fd840b5b6bec71bf4feebb72f7bd746aa541ebe3"
+              "82586709450208c170ab9ce39398b6b5df8cc76a"
             ]
           },
           "content": "Now you have four commits, they are getting a little hard to see. Check the log again, but this time use the `--oneline` flag to condense the output so it's more readable.",
@@ -1226,7 +1226,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "78d841a08a3f7f8f090e55be19c1034c08c2717b"
+              "be5dcdb3380b045ffa412ef4e9e57453aa268b61"
             ]
           },
           "content": "That's better. Use `git checkout` to switch back to the `main` branch.",
@@ -1250,7 +1250,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "842e63fc989c10fbbf30286f0d337425beee8122"
+              "08db3b9b2fa102478d613a611f6f84c8529019f3"
             ]
           },
           "content": "You may have noticed that the code you added disappeared from the JSON file. Your changes were added on the `feat/add-create-table-reference` branch so they don't exist on this branch. Check the log of the main branch, use the `--oneline` flag again.",
@@ -1275,7 +1275,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "94d53a4c393fd47ba0be3f149194f0ae5e1cd936"
+              "240def222e21db4c2f33a7dd7f546086c62ad6dd"
             ]
           },
           "content": "You can see three commits on this branch and four on the feature branch you were just on. The commit and code you added on the feature branch only exist over there for now. View the branches you have to remind me the name of your other branch.",
@@ -1300,7 +1300,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "103455fba90537d0d76367c8dd1bfaf1b24d6ccd"
+              "6409399b19a851bcdaa3aac98c63d3e124ccebf3"
             ]
           },
           "content": "You created the `feat/add-create-table-reference` branch, made a commit, and now it's ready to be added to the `main` branch. You can use `git merge branch_name` to bring changes from a branch into the branch you are currently on. Merge the changes from your feature branch into the `main` branch.",
@@ -1324,7 +1324,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b487ca5afd88f010de1d1cb1e16bc21c4746a180"
+              "69f34d9ad66bdfa9c2843467f6e020bec4bd01c2"
             ]
           },
           "content": "The commits and code from your feature branch were added to this branch. There's a message with some info about the merge. Check the log with the `--oneline` flag again.",
@@ -1348,7 +1348,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "53ba1e119782445ef7fc88be6c1c644792011851"
+              "80b0ac3eee96f5c23d438c443258864815c5e48d"
             ]
           },
           "content": "The `feat: add create table reference` commit you made on your feature branch was added to this branch with the merge. You can delete a branch with `git branch -d branch_name`. `-d` stands for \"delete\". Since your changes were added, you can safely delete your feature branch. Do that now.",
@@ -1372,7 +1372,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "55a6e4e13f75349a0fc89b8ab543ca321ffe226f"
+              "98024a345d81943a7a01a05d959122c99b7c17ba"
             ]
           },
           "content": "It said it was deleted, but view your branches again for me to verify that it's gone.",
@@ -1397,7 +1397,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "412c6583a160fe1a179f71d8583fa644592f2e03"
+              "9d4c3d0d378ef57f7adb086648d7de328ff1cc8d"
             ]
           },
           "content": "You're just left with the `main` branch... Want to try it again? Last time you created a branch and then switched to it. You can do both at the same time with `git checkout -b branch_name`. Create and switch to a new branch named `feat/add-drop-table-reference`.",
@@ -1420,7 +1420,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "16810af3a01f723b8636ecbf5f90e0958ffc2e72"
+              "4f72aef271a41bcd1a70fb67874b876277c776ab"
             ]
           },
           "content": "Add a `drop` key to the `table` object of your JSON file. Give it a value for how to drop a table. The syntax is in the hints.",
@@ -1449,7 +1449,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4553f413501c633f74a38b8a1a23bc5159f84854"
+              "985123d2ea04018bd44611c035ed846abe01a11f"
             ]
           },
           "content": "Check your status.",
@@ -1474,7 +1474,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fa1039da998bba90e301ae740e502cbe0cc22ac7"
+              "b6558097b59a9c2130a61e9ead651431b5b6311b"
             ]
           },
           "content": "Check the `diff` so you can confirm you like your changes.",
@@ -1500,7 +1500,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2282db55136e5b5d118891f350788dce929cd621"
+              "4ceed364fb365a60a20840599d56cfe78cfd6b25"
             ]
           },
           "content": "Add your changes to staging.",
@@ -1525,7 +1525,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "88ea3ab9585b270cf3f44bc1f347f058f58f703d"
+              "5108fe46afc6a14c62f7dd9eddb571eabb517f07"
             ]
           },
           "content": "Commit your staged changes with the message `feat: add drop table reference`.",
@@ -1553,7 +1553,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "75862fc0cbe3f9587b0c0736d6178e29f1eb95a8"
+              "53f8dcee5c34b11af8bba22068810167a5bcba65"
             ]
           },
           "content": "Switch back your `main` branch so you can merge in these changes.",
@@ -1577,7 +1577,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4f8f31e18dd902e8ec61b8916afc9c8be15eca09"
+              "96b9d36f026017bb4ac513e0c2206f4362ee8818"
             ]
           },
           "content": "Remember that the code and commit you added aren't on this branch, so they disappeared again. View the branches on your repo so you can get the name of it to merge your feature into the main branch.",
@@ -1601,7 +1601,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bf2b3e496ccfc27be8e59a8861c2de9c2d10b716"
+              "e366a1b9c95fa6641f73183e3b018a2b5a840d82"
             ]
           },
           "content": "Merge your feature branch into the `main` branch.",
@@ -1627,7 +1627,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c185a9b2d8982b21097f048427818b74d3759c57"
+              "8378d8ee80821e555ca28a35fb54d60fc9b8597a"
             ]
           },
           "content": "The commit from your feature branch was added to the `main` branch so you can safely delete the feature branch. Delete your feature branch.",
@@ -1654,7 +1654,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b26647746f54edc88a7d0a2fed9bddda2aacba3e"
+              "501cdf562a13f05b8ec2d77980a5db847408813e"
             ]
           },
           "content": "You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into branch you started on. Pretty simple, lets keep going. Create and checkout a new branch named `feat/add-column-references`",
@@ -1678,7 +1678,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "36cfe6df80911497f4e4d267b1001781f37c1bb4"
+              "ec80d46b9e9da63548906b231f7a285a1f533584"
             ]
           },
           "content": "This branch will be a work in progress. Add a `column` key to your JSON object. Make it an object like the other two. Give it a single property, `add`, that has the value `\"ALTER TABLE table_name ADD COLUMN column_name;\"`.",
@@ -1705,7 +1705,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2253482fc1ae2a2a41d966ccdd52f0cfd66d2a02"
+              "b62f248feb1758366397c8c971755979a94544c1"
             ]
           },
           "content": "View the `diff` to make sure your new changes are what you expect.",
@@ -1730,7 +1730,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0c1e27ef92bb38f20d960c0b43e4bbc92d7a5f52"
+              "16b91632580091ac0d0b9e08cb4d5beac99f752a"
             ]
           },
           "content": "Add your changes to staging. Here's a tip: you can use `git add .` to add all files to staging.",
@@ -1755,7 +1755,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e4c58c0adb6a94b74710256b42c99cf8cf589b31"
+              "4e315f453a6892b5379cd7928ceea2b445b5704f"
             ]
           },
           "content": "Commit your staged changes with the message `feat: add column reference`.",
@@ -1782,7 +1782,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "df1329c3dcbb2dd7e0986c8d25a7752f6cdc3ecc"
+              "dd8277a4d440a7610251997bb495c5f8dc15fe78"
             ]
           },
           "content": "View your log with the oneline flag.",
@@ -1807,7 +1807,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5ea18e83fe51f9f5dd3c83e52617f263ce1aba86"
+              "8b0f7dd3b50b2e43393c1cff4388b3ea90e127a0"
             ]
           },
           "content": "The commit was added. I see an error in the syntax of one of the commands. You want to fix it, but this branch is not for fixing it. Switch back to your `main` branch so you can create a new branch to fix it.",
@@ -1831,7 +1831,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cc9f7e9b6158fe96fc5539e0c5142401e17095ab"
+              "b617962b864f34547004edbf25ad2523ee4ab02c"
             ]
           },
           "content": "Remember that, when you create a branch, it will be a clone of whatever branch you are on when you create it. That's why you switched to `main` first. Create and switch to a branch named `fix/create-table-syntax`.",
@@ -1855,7 +1855,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "ee3d21700d320bc86d76450127c22811610c67f8"
+              "5231deb301acc45773b8040c2b35d4d1f94011f7"
             ]
           },
           "content": "The create table command is a function, so it needs parenthesis `()` at the end. Add those to the end of the command.",
@@ -1883,7 +1883,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3680b750bb5cfb483cb3fea7f52b2a14b669485e"
+              "58f38e16cc8674bb6d400c0347dbad900ec41ab3"
             ]
           },
           "content": "Check your status and diff to see your new changes. Then, add your files to staging.",
@@ -1908,7 +1908,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "acec93719b3a32e60fb571de43feddcae877b0d5"
+              "4d0b7e3f843a12af619cf235863cf7391ea718f1"
             ]
           },
           "content": "Commit your changes with the message `fix: create table syntax`.",
@@ -1935,7 +1935,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1482434039f79f51ee26e8b8a21b133b45cd9296"
+              "e7aeb7fdeac1f5625b528e64142942653e2dad20"
             ]
           },
           "content": "Switch back to your `main` so you can merge this important bug fix.",
@@ -1959,7 +1959,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "078a20cd296cddfcb8ccdc6f3ea9e7710a5efeb4"
+              "31029135c62715bc3c4c37a61ae9a1df03594e10"
             ]
           },
           "content": "View your branches to remind me of the branch name.",
@@ -1983,7 +1983,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1f459b9aa301eb1b0d69d1a5b5f284a5c997388a"
+              "dc1dc0260333fe8fa6f451926b7c08d289dccc90"
             ]
           },
           "content": "Merge your bug fix branch into this branch.",
@@ -2008,7 +2008,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4ad910884d9a75413e7030a28d6f08da11da5e87"
+              "d0a8bcede479b44f2f61f7366eb6369932cedc6e"
             ]
           },
           "content": "View your log with the oneline flag.",
@@ -2033,7 +2033,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2a97ff513b7275915f8d60f34c7c4ec4a3caea28"
+              "bd3c428c5062a8e18ce63a979226d7963287c783"
             ]
           },
           "content": "The bug fix is in and you can safely delete the branch. Go ahead and delete the branch that was for that fix. View your branches if you need to find the name.",
@@ -2059,7 +2059,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "908ac28127af7810fd771a0482b273056a4982aa"
+              "5a867489b1c26f89807afca4d1cf9d0aead0e173"
             ]
           },
           "content": "Your bug fix is merged into the `main` branch. Switch back to your feature branch so you can continue adding column references.",
@@ -2086,7 +2086,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "85dc1dc5e799029cf9e7a8133bf4a1e1c1dc8d58"
+              "28c00d1e245c5bd4e8222f9c43ba96f3ee6d27a6"
             ]
           },
           "content": "View your log with the oneline flag.",
@@ -2111,7 +2111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "96d7a6d7eb22fbcec1bc160741f6f029d214d7ea"
+              "14d436e079f4f3cc4c523845312388308403eb19"
             ]
           },
           "content": "You created this branch and made a commit. Since then, a commit for a bug fix was added to `main`. This is common with many people working on a codebase simultaneously. You need to update this branch so it has the same commits from `main`, but you can't just merge that branch into this one. You need that bug fix commit to be in the same order here as it is on `main`, right after the \"drop table\" commit. You need to `rebase` this branch against `main` to do that. Enter `git rebase main` to rebase this branch.",
@@ -2134,7 +2134,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8e539f0204d3d7293e7b036765cba97acaa23b5c"
+              "a9fbf76e2c3e6207541da8399a2c25ef18d71518"
             ]
           },
           "content": "There was some fancy output there, but you can see the parenthesis from the bug fix commit were added to the `table.create` value. Show me the log again with the same flag you have been using so you can see what happened.",
@@ -2159,7 +2159,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "44cfb8e03b4eb208240b0fb19ea33766e8e9cb95"
+              "341a3ac302987b506529d40e4831eb85c7121a0f"
             ]
           },
           "content": "The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have the same commit history. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.",
@@ -2189,7 +2189,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f8c95394c07245327e8d27fa5979b8e32eee5ee1"
+              "6c68803af83fc39d719b5025eb0a34eb204b71a5"
             ]
           },
           "content": "Check your status and diff to see your new changes. Then, add your changes to staging.",
@@ -2214,7 +2214,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0138a7fa527b1ecfe071e59abfe1623330ddc7bf"
+              "5321980fe2bf3cd10cd5b5eb6658a2810af19f5e"
             ]
           },
           "content": "Commit your changes with the message: `feat: add drop column reference`.",
@@ -2241,7 +2241,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5edbb64f887b865af34d5ecc678fa90b2e34bd98"
+              "1b57a9971dbe0af2323c58eb624dd3e659abc0f3"
             ]
           },
           "content": "View your log again. Make sure you use my favorite flag.",
@@ -2266,7 +2266,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9a5853a78cfb471cd383a7acbb6cee108384dc72"
+              "db67f896a8d9769c0bdc0d8b7134d9c964571d86"
             ]
           },
           "content": "Switch to your `main` branch, there's another feature that needs to be worked on.",
@@ -2291,7 +2291,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "edcb348408e3d1f869a14c8024ab924fcfb9ed40"
+              "b35ba4e5d97c50883a772249e335784852d69e97"
             ]
           },
           "content": "Create and switch to a new branch named `feat/add-insert-row-reference`.",
@@ -2315,7 +2315,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "82e23aa0195680a1b1d013520b9406807cf47879"
+              "8036cf1ae8592ab4e4dedf8bd7f0c74d6645c2da"
             ]
           },
           "content": "Pretend that this branch is for someone else working on a new feature at the same time you are working on the column commands. Add a `row` key to your JSON object. Make it an object with an `insert` key whose value is `\"INSERT INTO table_name(columns) VALUES(values);\"`",
@@ -2342,7 +2342,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6cc2f1c02baca38c2f6ae172df2c637e7a713bb6"
+              "a5a37fb9e7418f2329fd4e2be376454b6763a8fe"
             ]
           },
           "content": "Check your status and diff so you can see your new changes. Then, add your changes to staging.",
@@ -2367,7 +2367,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a0b4065e46d3fd03ff169971cce2ed398b4f337"
+              "5d9e6b928d7c5f96920fcc2c48be56de386ce760"
             ]
           },
           "content": "Commit your changes with the message: `feat: add insert row reference`.",
@@ -2394,7 +2394,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dc2625c0936df30779f92e3f9a8a6f0563b62fa6"
+              "cafcfdd9623cbaef1a2c378e2fd7bcb0449d690e"
             ]
           },
           "content": "This branch is finished. Switch to your `main` branch so you can merge this commit in.",
@@ -2419,7 +2419,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5db9339a659a8a1cf8c10eef07eb1cbb851ccdb7"
+              "ce1d1db2f46a70ca936a6c73915720e058693e7e"
             ]
           },
           "content": "View your branches to find the name of the branch you want to merge.",
@@ -2443,7 +2443,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "14f9b97015e12fe86ccc283b7645126d35509e7a"
+              "d4be2cb41283acb63bbaced2b88075d294c4526c"
             ]
           },
           "content": "Merge your branch with the `insert row` reference you were just working on into the `main` branch.",
@@ -2469,7 +2469,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ad1f54a17d361ba166e41a26de12bc9dea544e4d"
+              "b6f2e57ccefbcc8c456a96bbf09483fe4fd56baf"
             ]
           },
           "content": "Check your logs to make sure the commit was added. Then, switch to your branch for adding column references.",
@@ -2496,7 +2496,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "432cc3ea94436d9cabc664b199cb6cc801b761b9"
+              "1fc0f6ffe74c5c88bf0b823cf527f6ed2a378bc9"
             ]
           },
           "content": "Another commit was added to `main`, you should update this branch again. To be more specific, a rebase will \"rewind\" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...",
@@ -2520,7 +2520,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "fd39de571c296b10c3d55a9817bd65e2e8e3bbc7"
+              "492d1bf21654f0cb6854f711b4774ac0b0495ba9"
             ]
           },
           "content": "The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.",
@@ -2547,7 +2547,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a52680e23866cd79f4054dc3f6cc56836cb29cc6"
+              "5b8b63e2d6ad0b5d8ba1856f536ef4b8811ff485"
             ]
           },
           "content": "Check your status.",
@@ -2572,7 +2572,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cfcc75b29c920f8d7af1a6d32b9b0dd3ee078b8e"
+              "4b26d7a04f5f3bf54b33888169894a0bc597b034"
             ]
           },
           "content": "It says that you are still in the middle of rebasing and there's one file that needs to be merged yet. Add the file to staging like you would any other commit.",
@@ -2597,7 +2597,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2117a2126740b16c9f50e8fd0b34d86f8f50cbdc"
+              "6140512d484a8da2cc6c1ed1572d7ea0bb0f7430"
             ]
           },
           "content": "Check your status again.",
@@ -2622,7 +2622,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d8ce4a8a4d6d1593ea2d4038f01170fddb911578"
+              "a524e283abe03c444e176d6ff83cb3ca5c9eb24e"
             ]
           },
           "content": "You fixed the conflicts that arose from trying to add this commit and added them to staging. It says `all conflicts fixed: run \"git rebase --continue\"`. Run the suggested command to continue the rebase.",
@@ -2645,7 +2645,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6b3eea7ba8f635e2058cbc08e70c04681fad5fcc"
+              "69cc37051172de6729ddc768f1e8a50ae05cfc38"
             ]
           },
           "content": "The last commit was added after you continued the rebase without conflict. The rebase is now finished. View your log with the `oneline` flag.",
@@ -2669,7 +2669,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "ef06f70c2e4d422cfc0c89ff2346cadfd65c8ae0"
+              "c3f1fb764bc682662125d492f1910a1de9c727f1"
             ]
           },
           "content": "You can see the \"insert row\" commit from `main` was added to this branch before the two commits you made here. Now this branch is up to date and you can continue working on it. Add a `rename` key to the `column` object. The value should look like this: `\"ALTER TABLE table_name RENAME COLUMN column_name TO new_name;\"`",
@@ -2695,7 +2695,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7c5cd5634b1448214279ada75177f770fb8b8217"
+              "4c9bed5db006510a7bdbf17710c03b20a239bf98"
             ]
           },
           "content": "Check your status and diff to see your new changes. Then, add the file to staging.",
@@ -2721,7 +2721,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ec01f4b06615717cd2f0b846fbd7588ee88b30d9"
+              "8f3955a261dd2becc13acf0a48a7ade76d434ca0"
             ]
           },
           "content": "Commit your changes with the message `feat: add rename column reference`",
@@ -2748,7 +2748,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "907862c8dfcb90f5a0d425404818d8368c57f2b7"
+              "20e9e7bc845ac0d7561c84e213aeda1879f33bca"
             ]
           },
           "content": "There's now three commits that are unique to this branch, you will come back to it later. Switch to the branch for adding row references.",
@@ -2775,7 +2775,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "13859697cb57674dbc1790b959fedab7077956af"
+              "a2095ffd8764a303a92be8a72a45b96252f5b699"
             ]
           },
           "content": "This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `\"UPDATE table_name SET column_name = new_value WHERE condition;\"` as it's value.",
@@ -2801,7 +2801,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f742dd79ddc067540506dc68f7988613a7e32819"
+              "4d462d92ea21c944cb1dd412b07f1a7aceb63a33"
             ]
           },
           "content": "Check your status.",
@@ -2826,7 +2826,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c34641625d6604e00c16b708751adc9f405714b7"
+              "e06d2cd63bbc65870247e88c458fab3ae0fc3f8c"
             ]
           },
           "content": "There's been a mistake. This branch was for the `insert` command, not the `update` command. You can put your changes aside with `git stash`. Stash your changes so you can add them to a different branch.",
@@ -2849,7 +2849,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b21f82636039c27795e4b90d86f40197efe1cf75"
+              "244d625ebd44ca7fca6d3f745a8a87466552ebd3"
             ]
           },
           "content": "You might have noticed your uncommitted changes disappeared from the file. Check your status again.",
@@ -2874,7 +2874,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ef613835f6908790c1d75f807e4a9615f4c399e0"
+              "76fa7150e95a0407ef34b48747f1a91e9296210e"
             ]
           },
           "content": "Your working tree is clean and there's no changes git recognizes. The changes you made are stashed. View the things you have stashed with `git stash list`.",
@@ -2898,7 +2898,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9885810c9efa32599fc11261361ab7a326e830be"
+              "e0509a95171ae2e25eba96d58e40ce181da9460c"
             ]
           },
           "content": "You can see one item there. Bring the changes back with `git stash pop`.",
@@ -2922,7 +2922,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "68139ecdc194993b58e08fe6c6db048257aed11d"
+              "f813bef47ef05e114430fded74829f68af7ad64d"
             ]
           },
           "content": "The changes from the stash reappeared in the file and git showed the status for you. You are right where you left of before stashing the changes. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.",
@@ -2946,7 +2946,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "efcba7c8d6d5f8fc6c5ff0b3e5ca84f82b021dda"
+              "81c0f88fcb790e8c6e15130c48fc14a9b42a8605"
             ]
           },
           "content": "The list is empty again. Put the changes back in the stash.",
@@ -2970,7 +2970,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3c9762e3fe63c2c347d9b409c346f9eb6686bc60"
+              "c0ba75bda8f6cd903f86ab3fc4c9ab9f9d94aaba"
             ]
           },
           "content": "View the list of your stashed changes.",
@@ -2994,7 +2994,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bce7787d6262999c1e98e2c39db5053bbf0b6fab"
+              "b6c1eee513fcbea8a80fb43778ddf1eff065cb33"
             ]
           },
           "content": "The changes are stashed again. View a condensed version of the changes in the **latest** stash with `git stash show`.",
@@ -3017,7 +3017,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8d148964c4796d352a6c32b52c3819418217e1db"
+              "89505deed4ef3ffc59bb35b1f3c6e8a9657ffb2e"
             ]
           },
           "content": "You can see what file was changed and how many lines were added and removed from the file. View the full changes of the latest stash with `git stash show -p`. `-p` stands for \"patch\".",
@@ -3040,7 +3040,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e85a2b9ab0419e83b41a457c9411295bf58e969f"
+              "20c00194cee63b523561b5dfbe26696c5d7967ce"
             ]
           },
           "content": "Now you can see the actual changes that are stored in the stash. Before, you used the pop command to removed the latest stash and add it to your working tree. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.",
@@ -3063,7 +3063,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ddfb39ca98826b72aa8715cbe466c9b42593e294"
+              "dc620688c8dc8da77831d7016f7bda15df5e0fd5"
             ]
           },
           "content": "Git showed you your status after applying the stash. The one file is unstaged again. View your stash list.",
@@ -3087,7 +3087,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4e2caab778b162f918d6d37811ba86c6816f1340"
+              "db47f0a82793dd6e52b775dae35920e4c683326e"
             ]
           },
           "content": "The code from the stash was added to your working tree, and the stash is still there in case you want to add it somewhere else. Stash the changes again.",
@@ -3111,7 +3111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "91787d0fd1f6d5ce6e1953b6614d00ab82b33aac"
+              "8ae3385b71929e78054cdb8993c460bfac4b1b08"
             ]
           },
           "content": "View the list of your stashed changes again.",
@@ -3135,7 +3135,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "acbc9d5c465da696d7403bf7c143124a8a16a7ab"
+              "66cb0e205469df83015c26e7d8b80a716cfc204f"
             ]
           },
           "content": "Now there's two things stashed. You can use the name at the front of each stash (`stash@{#}`) with many of the stash commands to select one other than the latest one. The most recent stash is the one at the top, `stash@{0}`. View the condensed changes of the **oldest** stash with the `git stash show` command by putting the name of the stash after it.",
@@ -3160,7 +3160,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0b5f8f9ef266bffe9d41078b0ea9011e2a3460c7"
+              "ee42a42eb431e3f97b02d37cf4de252fa5390b3d"
             ]
           },
           "content": "Next, using a similar method, **show** the full changes of the **oldest** stash with the \"patch\" flag you used earlier.",
@@ -3187,7 +3187,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7f73b1a10593f8a5d157edda7561f57ef064a70e"
+              "c737456ec6cb817ea24f4b757f63eaba00624a9f"
             ]
           },
           "content": "There's two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.",
@@ -3211,7 +3211,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c3e825b3d83237fa35c33cd29fd0fb4b678bb9f4"
+              "a5a3e37783e13947078c4e631c8c964c582420ba"
             ]
           },
           "content": "View the list of stashed changes again to verify the one got deleted.",
@@ -3235,7 +3235,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d3338efb2faf853545de0b3d8cae1655d238448f"
+              "bf0e74bf772534e8f8308a25cead9891f3e62472"
             ]
           },
           "content": "You should just have the one stash left. Switch to your `main` branch so you can create a new branch from that and add these changes to it.",
@@ -3260,7 +3260,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "149da55bb8c48e2910a2dc1bb517de64e7398316"
+              "c534b1bdc8a587922001ac03ba7643c6a6243487"
             ]
           },
           "content": "Before I make you work on the wrong branch again. Delete the branch for inserting a row.",
@@ -3287,7 +3287,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3391be0d62f4cbe874527bad20191c12c23f2997"
+              "0e7248376c02b5bb58e3e753b666d9e2d319f53e"
             ]
           },
           "content": "Create and checkout a new branch named `feat/add-more-row-references` for adding some more row related commands.",
@@ -3312,7 +3312,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3279e2166c0bb98fb7690259002b02132b04371a"
+              "bcc2f0fd046a6919c58b091ea586fb2ed2e383b8"
             ]
           },
           "content": "Show me your stash list again to make sure your changes from the other branch are still stashed.",
@@ -3336,7 +3336,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "126ca027d52c6de6ba8b954360b6ef3ea9fb4f82"
+              "7003eac335d73d6ca622d1a63b9b35c556d9eaf4"
             ]
           },
           "content": "It's still there. Pop the stash so the code gets added to this new branch.",
@@ -3360,7 +3360,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "53afd93abeea3dda5a92f547c640ed10f3e3314b"
+              "8d8da2d3a4acc9a73bc710fca7ccd5c01aab16a5"
             ]
           },
           "content": "Git showed you your status again, and it looks like it recognizes that the file has new changes after adding the stash. View the stash list to verify that it's empty.",
@@ -3384,7 +3384,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a8cd198cdcf9736ae23ced0ea4af7d8945fdeba2"
+              "c046166fc1d722757d4569660654a38745beed14"
             ]
           },
           "content": "The list is empty. View the diff of your changes so you can make sure they are what you expect.",
@@ -3409,7 +3409,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8e6a507b44f3e709a78b251ac4b53b2499910198"
+              "0b2ad8d0573c051e4db3700c79e755db8d84f7e2"
             ]
           },
           "content": "It looks good. Add the changes to staging.",
@@ -3435,7 +3435,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e8cfb00dcae5827a9e57a5315501f2e2decb76fb"
+              "8d41351855c782f8deb5346bd27ba94a00072cdb"
             ]
           },
           "content": "View your status, then commit the staged changes with the message `feat: add update row reference`.",
@@ -3462,7 +3462,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "02378086e83e50d5e5321073c2da0be0b4e83cf8"
+              "4739cd3a7e4e730f4d8145e241bd9ddc9b2c59df"
             ]
           },
           "content": "Your work on this branch is done for now. Switch to your `main` branch so you can merge the commit you just made.",
@@ -3487,7 +3487,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3a68e3729206502cd1f863e1b37fe814d1f26c79"
+              "d3e3515c6469c799e57b5eeb9bb4a040da9f3fb2"
             ]
           },
           "content": "Merge your branch for adding row references that you just added a commit to.",
@@ -3514,7 +3514,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1217e7b78cc3b375947fab5c4f88b8479f49fdaa"
+              "d91d60641d8b93bd918c81df8a3c81a0642fe449"
             ]
           },
           "content": "Switch to your branch for the column references so you can continue working on that.",
@@ -3540,7 +3540,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "15e182e4a018e09426bcb094e6383dc1eb9ecdbe"
+              "44417f30f4a849f00d325ec06aa86709dc158967"
             ]
           },
           "content": "Once again, commits have been added to `main` so you should update this branch. Rebase this branch against `main` to bring in the new commits. You should get a conflict.",
@@ -3566,7 +3566,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a1a1882ce43ef92feded26ee0733d7897bf54b9a"
+              "d5da8734331b149a296efd4b958492aa74d92e98"
             ]
           },
           "content": "This conflict is a little trickier. Make the JSON object whole again so you can add the changes and finish rebasing. Make sure you put all the references in their correct objects, and in the same order they were originally in. There may be a duplicate line you need to delete.",
@@ -3591,7 +3591,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "62ebf55b636baa2a8a98c1cbeda7c26536f2a3c5"
+              "0fdc057208988554764fbf9d178e4bc9d3cfd313"
             ]
           },
           "content": "View the status of your repo.",
@@ -3616,7 +3616,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bf3e6f1670a34ad750d9db85385c0abca9aecfda"
+              "bd073f280a8a3f0dbae2d00a8ba7fa1e59a52026"
             ]
           },
           "content": "You are still rebasing. You fixed the conflicts for the commit trying to be added. It looks like it was the \"add column\" commit that had the conflict. Add your changes to staging.",
@@ -3642,7 +3642,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "00185e307383b56ec73627a11394453764c3bfba"
+              "473f0014dadf85aac5fa65483139efd6829999b0"
             ]
           },
           "content": "View the status again.",
@@ -3667,7 +3667,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "47c3f30be6ab469955bf83a7b48262217d4d4e80"
+              "a9fba8c99b8695d1793794032820c2b82d0decd2"
             ]
           },
           "content": "Continue your rebase with the suggested command.",
@@ -3692,7 +3692,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7511be7f4e6d877bee4c64f737dbac1242529720"
+              "207e96c49ae4fbcc6042d9289232aefa25999936"
             ]
           },
           "content": "The rest of the commits were added without conflict. View your log with the oneline flag.",
@@ -3717,7 +3717,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "a33136ee1753c74d34768324906a25ca136989be"
+              "7cc2b8e093a622f4ca6451750088828eb049009b"
             ]
           },
           "content": "The rebase added the \"row\" commits where they are supposed to be, then the \"column\" commits from this branch on top. Excellent. Now you can continue working on it. Add a reference to the column object for setting a column as the primary key. Give it a key of `primary_key` and a value of `\"ALTER TABLE table_name ADD PRIMARY KEY(column_name);\"`",
@@ -3743,7 +3743,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9089edf4f3c472e68a2df5d14e885653bbe5d7e9"
+              "74bcad99b6f2871b68b63d99f1497799801aa12e"
             ]
           },
           "content": "Check the diff to make sure you like your changes. Then, add the changes to staging.",
@@ -3769,7 +3769,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e535bc4d76d53050654370f1e91001f154c1764c"
+              "c45e3e4c555124815d1e288d7a67ccddc1882f96"
             ]
           },
           "content": "Commit your staged files with `feat: add primary key reference` as the message.",
@@ -3796,7 +3796,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "fa329db44ffbc26e2615cf560ee454e686f188a3"
+              "c8f562a63f9d1abe83729854d02f14ed1489ddbf"
             ]
           },
           "content": "Add `foreign_key` to the `column` object for another command. It's value should be `\"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"`.",
@@ -3822,7 +3822,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5cd66150c285a444f678507cefd20a0feb882b8e"
+              "b864e5fba9539c81f52961da902b626c7853d3d3"
             ]
           },
           "content": "Check the diff to make sure you like the changes, then add the changes to staging.",
@@ -3848,7 +3848,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "824ac9231c52304df97342d9cc3f61cf54945b46"
+              "b3a3feb11f77d743c70774191d6aae06ba33b5a8"
             ]
           },
           "content": "Commit the changes with `feat: add foreign key reference` as its message.",
@@ -3875,7 +3875,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8e7c8ef71b62482d9d2e42f176848b63e99a680b"
+              "5f268c7f3d7350de56de163b445d3c40b3405eeb"
             ]
           },
           "content": "Go to your branch for the row references so you can continue work on those.",
@@ -3902,7 +3902,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "54cead30f03808d335ce0d7550c1b5c514a09877"
+              "b25a50f42843bd396cd110334ee1ce89e9975128"
             ]
           },
           "content": "In your JSON file, add a `delete` key to the `row` object. Take a guess at the value, it should include the `DELETE FROM` and `WHERE` keywords. The whole value is in the hints.",
@@ -3929,7 +3929,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f313b2ef0e3e6e8bdd8aead85e752ad7dc4190b5"
+              "7682970f6c7fd8cdf6c58b7e5517ae720e5d7cee"
             ]
           },
           "content": "View the diff of your changes, then add them to staging.",
@@ -3955,7 +3955,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "15a5ee15d8f9319da56b3958188b221cdc74a938"
+              "9ae5f14bc7963a824600d321cf2d8c6f712e26a7"
             ]
           },
           "content": "Commit the staged changes with the message `feat: add delete row reference`.",
@@ -3982,7 +3982,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6adb71d1dc7d3a7fb9f3ad30eab0ed85ce6e7723"
+              "07d2480c5a0d482f087b30a48c17f7c298902320"
             ]
           },
           "content": "Go to the `main` branch so you can merge these commits.",
@@ -4007,7 +4007,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "19291e59fee69721f2109e444806c766b3c330c5"
+              "86a3446dc3ade8cfec4168741b2ffd6426518940"
             ]
           },
           "content": "Merge the branch for the row commands into `main`.",
@@ -4034,7 +4034,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3fe1302d67df9ed7fbbc6b89ff4710b78d2db5e8"
+              "5779aaeabf36664a43a2ab87a3b2ad1c292d0698"
             ]
           },
           "content": "You merged the branch and are done with it. Delete the branch for the row references.",
@@ -4061,7 +4061,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bee5e24d16faeceac9bedda443909e51ecd56f09"
+              "8fd0d59a5a2ff26a81d598c3b79ce631e0db7b62"
             ]
           },
           "content": "I missed a bunch of the rename commands when I had you work on a few of the objects. Create and checkout a branch named `fix/add-missing-rename-references`.",
@@ -4086,7 +4086,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "7a759b157d2d2dda9a3f2745d25b99068c51d9bb"
+              "064b0b3916b2753102ae1ef07887d3ca56f42a64"
             ]
           },
           "content": "I forgot to add a command for how to rename a database. In your JSON file, add a `rename` key to the `database` object. The value should be `\"ALTER DATABASE database_name RENAME TO new_name;\"`",
@@ -4112,7 +4112,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "eb01da005d59afc57373739900f67618c39bed09"
+              "2314d3e92d306b21ce26814b0a2a4bbeb246eba9"
             ]
           },
           "content": "View the diff of your changes to make sure you like them, then add them to staging.",
@@ -4138,7 +4138,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ee3e7e29fd041200b69288ab44d5f563cb813547"
+              "c70761a7a26fd0eaddde8ca173c77a841624f965"
             ]
           },
           "content": "Commit your stages changes with `fix: add missing rename database reference` for the message.",
@@ -4165,7 +4165,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1619ce283e0a96595c3f793a913c92a6272ab1b0"
+              "d3b47290a9549765f76bfe63166000df35c19e5f"
             ]
           },
           "content": "Leave this branch for now. Switch back to your branch for the column references so you can hopefully finally finish it.",
@@ -4192,7 +4192,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b4bb7623570063f92ce4787016955fc137d65d0e"
+              "ec239b379d33cfcd0255ee840bdd3a86a75cb58d"
             ]
           },
           "content": "There was a commit to `main` since you last worked on this from when you merged the \"add more row references\" branch. Rebase this branch against `main` so it's up to date and you can finish working on it.",
@@ -4218,7 +4218,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "cfb5a53f297974b45810f3ee556982de6d464d97"
+              "c8e6e07d6e5c828db83cb9cf94e742cf167b4897"
             ]
           },
           "content": "Fix the conflicts so that all the commands are in their correct objects.",
@@ -4245,7 +4245,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b9b9f6d0334eca72ab6fa6add48ba41e0b67e29c"
+              "4e154c010c063600c313fbf0347f5a81bc2dbe93"
             ]
           },
           "content": "You fixed the conflicts. Check your status, then add your files to staging.",
@@ -4271,7 +4271,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fe6b05153dd4746245601cbfb1ef6533cf2df70d"
+              "bbd6e93a5eb533e457abb586943a17f447293ceb"
             ]
           },
           "content": "Check your status again.",
@@ -4296,7 +4296,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "302a54a1d5b4f53531cc007e02799c4ac01b7922"
+              "39ffa98383f5f6406b3637141fcf9e0eebf2f170"
             ]
           },
           "content": "Use the suggested command to continue your rebase.",
@@ -4321,7 +4321,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "9dcbc66a6fc92859b4d33f1f4b4133836d9a29c7"
+              "36120fbd99d7407198c622e72c973132d6986f30"
             ]
           },
           "content": "There was a conflict when it tried to add the first commit from this branch on top of the one that was brought in from `main`. The rest of the commits were added without conflicts. In your JSON file, add a `unique` key to the `column` object. Give it a value of `\"ALTER TABLE table_name ADD UNIQUE(column_name);\"`",
@@ -4348,7 +4348,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5528e2518c993c4e9e60e7e7c44232061f994d43"
+              "056e6996e9fea002844e0c118e8f07b19bc5f2d7"
             ]
           },
           "content": "View the diff to make sure you like the changes, then add the changes to staging.",
@@ -4374,7 +4374,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c13350f3f55f8b86985a16228932084d2e10a45a"
+              "0f148f19dd0dea837cd9f6d861ea897d7ec6be33"
             ]
           },
           "content": "Commit the stages files with `feat: add unique reference` for the message.",
@@ -4401,7 +4401,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0b3715f82473c68745a21b5c0f1b826a4ff49fe6"
+              "521569d53465fe73ca7c628fea5e04c3f37fafd3"
             ]
           },
           "content": "I'm going to show you a few ways to remove or undo a commit. The first is to simply \"travel back in time\". You can use the `git reset` command to travel to any point in your commit history. Your current `HEAD` is a reference to the last commit you just made. Use `git reset HEAD~1` to go back one before `HEAD`.",
@@ -4424,7 +4424,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c1d40ee35cd1991000114d299bccdec8cd0b8f5e"
+              "5fe330943fd420f57d0f7ea4b9d0a1d53b2e4f64"
             ]
           },
           "content": "This is a \"soft\" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.",
@@ -4449,7 +4449,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c0e026a71e616daaf064961b73170fbd228a8500"
+              "468778c8657253102fa348432f3b23cc6b43e82b"
             ]
           },
           "content": "Your commit for how to set a column to unique is gone. View your status.",
@@ -4474,7 +4474,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "63ead2621b6983ea6a4b7907b30721259a8c4b4d"
+              "9cb148bbe05c111216a6ec2e4fc0b8d85fc5a79a"
             ]
           },
           "content": "View the diff.",
@@ -4498,7 +4498,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4ae2be68c1fc84e699b91ed6b8e46d3637164e88"
+              "af9e0ff376381b0d5eb47c818af1ac0205407a8a"
             ]
           },
           "content": "And the changes from the reset are back in the working tree. So when you `reset` to one commit before `HEAD`, it removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.",
@@ -4524,7 +4524,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cb361d05c11783dc1371c9619104c3a458553622"
+              "1badf8b9b9b206ec47bd997659aa7c111526fecb"
             ]
           },
           "content": "Commit the change staged files with `feat: add unique reference` for its message.",
@@ -4551,7 +4551,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "9f025f5eaf0310b8de3a939d0f6b89734ea1a67e"
+              "93421fdc1cdc2d1737af00ecc48fb372e8f3b1e3"
             ]
           },
           "content": "Reverting is a good way to undo a commit because you don't lose the commit from the history. You can revert the most recent commit (`HEAD`) with `git revert HEAD`. Do that now.",
@@ -4575,7 +4575,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "6f96ba715cf4f1fcac1839ad169b59d427469cef"
+              "1840fd3014b1f211f032553dd31d856919f2b733"
             ]
           },
           "content": "Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.",
@@ -4602,7 +4602,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d78cef29bb1052dc589114bd5c9ccf42e96791ce"
+              "e4a1cfc99192d28deb029dc9e6f75ab642711334"
             ]
           },
           "content": "View the log with that flag I like again.",
@@ -4628,7 +4628,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1dde4ef15d527ae6193d0ba7ef9f305f1e283353"
+              "2ce439315eee71d5e1f9f0df6f2b75f344231141"
             ]
           },
           "content": "Using revert to undo that commit added another commit that is the exact opposite of it. Enter `git show` into the terminal to see the last commit added (now `HEAD`) and its details.",
@@ -4653,7 +4653,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "153c8e20292658ba998373eed000f6eaf0700f4f"
+              "7c2ff38e7864a37f936e737fc96ec2a0b012cbd6"
             ]
           },
           "content": "Type `git show HEAD~1` to take a look at the details of the original commit that you reverted.",
@@ -4677,7 +4677,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "b761d50c7f4a3cdf2e2082d6c47642146923c515"
+              "638d19bec426536629bf4d8f7e0cf48b81e47eee"
             ]
           },
           "content": "If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. Effectively, undoing the changes. You've used rebase to update this branch, but you can enter an \"interactive\" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.",
@@ -4703,7 +4703,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "59ea770f92091668fd0cc8ceccb81cc08fc1c78f"
+              "6417f24c1caacfdc41cd7b76aaefdb1eefe924fe"
             ]
           },
           "content": "At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.",
@@ -4728,7 +4728,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "31647df232cf91311c3d55e3052d15eca793f991"
+              "e43cb83b82de1ba6c2800aaa5772353d3ed56941"
             ]
           },
           "content": "View your log. Use the `--oneline` flag.",
@@ -4754,7 +4754,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "5b9c35c25c83f348f847bf660ae1868c0ceb64d1"
+              "ceb035b705e6ce4f4b57e6d5e3c5a67aa04100f7"
             ]
           },
           "content": "Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.",
@@ -4779,7 +4779,7 @@
               "./sql_reference/.git/rebase-merge/done"
             ],
             "commits": [
-              "b4b181cde9b54c130ad04ac491fa1f19d1bacd80"
+              "a3e5f4e1a9b4806bab13081eb9e051637b513ae1"
             ]
           },
           "content": "You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.",
@@ -4804,7 +4804,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3c6c7702e4e0896ba1bc118bda2466334753f713"
+              "8c985863cd28c1bac3cf6e1d8956693a8eb02eca"
             ]
           },
           "content": "Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.",
@@ -4828,7 +4828,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ea70a819cc36f817f1c7c5ba8f71f0eacb4f9b52"
+              "76935ff01c1ce79941851634db55d59236f8c908"
             ]
           },
           "content": "View your log. Use the `--oneline` flag.",
@@ -4854,7 +4854,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c9f832fe5a46167511ba1800844afc3f36b2f2bd"
+              "ca47fe1162441e7379cfdbf2f2479aace6cbc802"
             ]
           },
           "content": "The message was reworded, but there's a problem. Look at the commit hash for your `Initial commit` from the last two times you viewed the log, it's that string left of the log. They aren't the same anymore since you rebased back to the root. Same goes for the rest of the commits. When you rebase interactively it changes all those hashes, so git sees them as different commits. If you were to try and merge this into `main`, it wouldn't work because they don't share the same history anymore. For this reason, you don't want to do an interactive rebase where you go back passed commits unique to the branch you are on. Fortunately, you can fix this. Enter `git rebase main` to realign the history of the two branches.",
@@ -4880,7 +4880,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6d8bcd7051294957aef3cfd7e17d7ae9f1e54bcb"
+              "8addfea50af135fe69f0e8f41b7339f83c5d1c84"
             ]
           },
           "content": "View your log again. Use the `--oneline` flag.",
@@ -4905,7 +4905,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "8fda71ceec3a7357f2bd396768426ee9a19d9bd5"
+              "d51c5f826593dcdcc1d6925fe70dda2da74d9249"
             ]
           },
           "content": "Now the hashes are the same as they were before you rebased back to `--root`, which is what they are on `main`. Enter another interactive rebase. Go back to the first commit you added to this branch, it's `HEAD~5`.",
@@ -4933,7 +4933,7 @@
               "./sql_reference/.git/rebase-merge/done"
             ],
             "commits": [
-              "c726d4f00e398185206e511d1a3082c6b80a509c"
+              "9f90e914163a2376d8abbf51212f730cafb5b4e7"
             ]
           },
           "content": "Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file.",
@@ -4959,7 +4959,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d6e27d89ec57a59294cfc9027af5dd1f2b613fc6"
+              "43d5bf2b992f2042033878c50c7706e07a9838de"
             ]
           },
           "content": "Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those message and finish squashing the commits.",
@@ -4983,7 +4983,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c6b3b9b7b8a0ef9185a8dd19d5d5e682710b1c0a"
+              "3903718594d6e6fb28babd2874bd5371284898ee"
             ]
           },
           "content": "View your log with the oneline flag.",
@@ -5008,7 +5008,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ffd2f5436b24cdebc8c6eb6dc4676168f2df2a6a"
+              "5122b672f35b38f4b0528ccee164fd085dbcecb3"
             ]
           },
           "content": "Now all the \"column\" commits you made to this branch have been squashed into just the one commit at the top. View the log again, but use `-1` instead of `--oneline` this time to view only the last commit.",
@@ -5032,7 +5032,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "490380102afeff1c00f08a46cbb0419f6c9d1c61"
+              "3655499a09bfde86cc22890e00ec394b3bfa48ce"
             ]
           },
           "content": "You can see that your one commit has all the messages that were in Nano, which are all of the commits you made to this branch squashed into one commit. I think you are finally done with this branch. Go to your `main` branch so it can get merged.",
@@ -5057,7 +5057,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c8b117f342859d3a9e15f1ab48e5a0de9eec00d5"
+              "ebc1e8a3c4f2dd76e16de249e35a62cf1aa7dd6a"
             ]
           },
           "content": "Merge your branch for adding column commands into this one.",
@@ -5085,7 +5085,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2916a2a7d9ad3c5c1904e415c4c7532c8525db63"
+              "112786656fc84f83c622e1de0c39bc6037fd8033"
             ]
           },
           "content": "Hopefully, there was no conflicts. Delete your branch for adding information about column commands since you are done with it.",
@@ -5112,7 +5112,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1e0f8d884d1ecf0a05c1fb2632bfd7bd03978398"
+              "e0699b43b3e5af5e6cd4f71dbaa9ceff72509e71"
             ]
           },
           "content": "Go to your branch for adding the commands that were missing. There's one more to add.",
@@ -5139,7 +5139,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1bf6da0528cb787fc71404c77a5a240f2543ee43"
+              "9ec192172cc4c19ec3ed98c126f881b1d7d24506"
             ]
           },
           "content": "There was added a commit to `main` since you last worked on this. Update this branch with a rebase against main.",
@@ -5165,7 +5165,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6f9943fafaf54228486b3b3ee8fcf8ab10b3055d"
+              "6776cecab4f640187cbe9bd3d970861d90080651"
             ]
           },
           "content": "You viewed the most recent log with a `-1` flag. You can view the last `x` number of commits with any number instead of `1`. View the last five commits with the oneline flag.",
@@ -5190,7 +5190,7 @@
               "./sql_reference/sql_reference.json"
             ],
             "commits": [
-              "6fe208c9c7916be2f4e91845e8b1b9b652ffe336"
+              "1d7f723e25c7c2881715a4bdebbb628dddbdef4c"
             ]
           },
           "content": "This branch is up to date now. In your JSON file, add a `rename` key to the `table` object. The value is in the hints, but give it a try first. It follows a similar structure as the rest of them.",
@@ -5217,7 +5217,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e76ead14fbf74904f19eb5fc8c3897a14bf143fd"
+              "fd0ebd6718f8af17f160297302add8d8c27b914d"
             ]
           },
           "content": "Check the diff of your changes, then add them changes to staging.",
@@ -5243,7 +5243,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "daead55f305a8230eebed56ecd9e4e732157840b"
+              "ce0bcda31470fdd00b4329cfbaecc88627224d10"
             ]
           },
           "content": "Commit your staged changes with the message, `fix: add missing rename table reference`.",
@@ -5270,7 +5270,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "29978bcbbe999a3f16e021c28980c9b4a67366f1"
+              "44363b17c4ed10b7ed8ede6901784091c4f006a4"
             ]
           },
           "content": "View your last five logs with the oneline flag again.",
@@ -5295,7 +5295,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "6882a29a26523b41a3dd58930817c71d9e447713"
+              "eee8f4ddac6c4f67fd44287dfa8750999d9b8748"
             ]
           },
           "content": "You have two commits on this branch that could be squashed. Enter an interactive rebase that goes back to `HEAD~2` so you can squash them.",
@@ -5322,7 +5322,7 @@
               "./sql_reference/.git/rebase-merge/done"
             ],
             "commits": [
-              "d669dc11d814430b1c34ec42c56c26f18c011e38"
+              "f95639a3e3aa49932002d3114252d010ac7113af"
             ]
           },
           "content": "Replace `pick` with `s` next to your commit for adding the rename table reference to squash it. Be careful not to do the wrong one. When you are done, save and exit Nano.",
@@ -5347,7 +5347,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a209418a63f00e597817cf2f4d86df21b6009c77"
+              "33d8d9200edaafa8d194503cbfab80fc46db4150"
             ]
           },
           "content": "The lines that don't start with a `#` will be the commit messages. Add a new message at the top of the file on it's own line. Give it the text, `fix: add missing rename references`. When you are done, save and exit the file.",
@@ -5372,7 +5372,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7de6a07f589f7f3b748d98a8541b932d8d820e77"
+              "b93ca4ee37f02693a68c81306d2748bdd1140b29"
             ]
           },
           "content": "View only the last commit in your log to see your squashed commit.",
@@ -5398,7 +5398,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6de49ba5310552ea8e9d42bbe79b23cb6d4ae3e0"
+              "bd3fc5433aac150c86dee7c3126ea2e1b5da3d8e"
             ]
           },
           "content": "I think this branch is ready to go. Switch to `main` so you can merge it.",
@@ -5423,7 +5423,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "98ab8d301584662dcbb19b7e94d5f2a8f9b9ec68"
+              "3f34459d532d269c0c28849fc74f1b2e4aedb292"
             ]
           },
           "content": "Merge your branch for adding the rename commands into `main`.",
@@ -5450,7 +5450,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0317712c248ddc2005d3cf474874f79dc54daef7"
+              "94a030956889825af0a89725515005c1fc1658ce"
             ]
           },
           "content": "View your branches.",
@@ -5474,7 +5474,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b44f9c146a6cfc0ef67835a2a66ce7468236fe21"
+              "0feee6abdc7b065640229c23eae9bebf52a821ba"
             ]
           },
           "content": "Delete all your branches except `main`.",
@@ -5500,7 +5500,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "969c316514ff9584582d2f0b3df870e5567cb0e8"
+              "0054bdff93b719757b170d5defeb2290ece79bed"
             ]
           },
           "content": "I think the file is complete, thanks for making this for me. View the log with the oneline flag.",
@@ -5525,7 +5525,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "839e42b1b805de0937771e0e6c0cc04acf880a88"
+              "43fd5238e172c1d0be34eaabfcae3f51e3166cc7"
             ]
           },
           "content": "That's a nice looking commit history. There's one more thing you should learn. Create and checkout a branch named `feat/add-gitignore`.",
@@ -5550,7 +5550,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f8393496dc27ee49d5443b0ec1e6f7ccbc75f876"
+              "bb940dfaca4b43dc018087a63e43361f259fedb4"
             ]
           },
           "content": "Use the `touch` command to create a file named `.env` in your repo.",
@@ -5576,7 +5576,7 @@
               "./sql_reference/.env"
             ],
             "commits": [
-              "070f87a8393e7a983674c07de9208be84ec4385b"
+              "01ea186c06d147ab872f3b0f8644554b7ff0e7f7"
             ]
           },
           "content": "`.env` files are used to store environment variables for running code. Often times, there may be sensitive information in it. Add the text `SECRET=MY_SECRET` to the file.",
@@ -5601,7 +5601,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7fc6fe5af45148e19c241c3d6974801408f04c7e"
+              "a3aedb387e33d9f2fe13795a9b5e34e90dc75bb0"
             ]
           },
           "content": "View your status.",
@@ -5626,7 +5626,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cb2b792974055a00a96520e8537da1940a74bfae"
+              "8785cd18f508eba4766243992337ef63cc4e0f35"
             ]
           },
           "content": "You can see the `.env` file is new. Use `touch` again to create another file named `.gitignore` in your repo.",
@@ -5652,7 +5652,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0f009516dad870753bb41c0e8a87999c9c25bb47"
+              "e5a28a44b66fb23453554d1275cd200f76ba7357"
             ]
           },
           "content": "View the status again.",
@@ -5677,7 +5677,7 @@
               "./sql_reference/.gitignore"
             ],
             "commits": [
-              "c67ad948d2a238046d569336a9ee47f474e6101c"
+              "249bbb69b5a6534a9114be8847c2c5cc0d92b804"
             ]
           },
           "content": "Now there's two new files that aren't tracked yet. Add the text `.env` to your `.gitignore` file.",
@@ -5701,7 +5701,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dee7b8fc79634d2c571015b6788530541f1dc7a3"
+              "5b13a67b2ad74d751059dca564c7063d319d4fbe"
             ]
           },
           "content": "View the status again.",
@@ -5726,7 +5726,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c0882b434a7229d8e91c5cfdc61ec71c590871e7"
+              "38019f89b942c174e73ded4b540b1d34ff5f1b9c"
             ]
           },
           "content": "Now the `.env` file is being ignored by git because you added it to the `.gitignore` file. There are often a number of things you don't want to include in a repository, especially if it's publicly visible. Now, you know how to keep them from being tracked by git. Add your new changes to staging.",
@@ -5752,7 +5752,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "21ec45666894f0b67ec868e1245fe362b9ef607a"
+              "a3e4e9d86315c7fda02010a54561ef708fb63906"
             ]
           },
           "content": "Commit your changes with `feat: add .gitignore` for the message.",
@@ -5779,7 +5779,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "62b207e3064719eaf9f7634208d6887b9025ac17"
+              "f94fa1f6999466e6cf9a051110dfb261f147894e"
             ]
           },
           "content": "Use touch to create another file named `sample.env` in your repo.",
@@ -5805,7 +5805,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2f14810a857d923d021e399a5f2a3398261ad2d2"
+              "30390f2d4745276c5b565a9545bdd3c99d884174"
             ]
           },
           "content": "View the status.",
@@ -5830,7 +5830,7 @@
               "./sql_reference/sample.env"
             ],
             "commits": [
-              "f03df6d2c9dc70cb64e40498ca9403da19576251"
+              "b415c117e08eea3c151de0087faeb1be43135711"
             ]
           },
           "content": "Git won't ignore this file. Sensitive information can be stored in the `.env` file, but people need to know the variables that are in there so they can run a repository locally. Add `SECRET=` to `sample.env`.",
@@ -5853,7 +5853,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e4991a8fc72ee7932620b84558bde24024900605"
+              "cc190ab7e09c94d5af154b2442ba1146a48e7abe"
             ]
           },
           "content": "Now, when someone wants to run your repo, they will know that they need to create a `.env` file and add a value in it for `SECRET`. Add your new file to staging.",
@@ -5879,7 +5879,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6dd2a228cd7bd03022510efc995c2fef791edf83"
+              "b9f28f73e179f5f591077bfa8c62c6419ddbb664"
             ]
           },
           "content": "Commit the new changes with the message `feat: add sample.env`.",
@@ -5906,7 +5906,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "04404c497976351b1919a17b2fb9ff81176021fd"
+              "bcf0613287f87a1d8432fc17539ac181525af52b"
             ]
           },
           "content": "View the last five commits in your log with the oneline flag.",
@@ -5931,7 +5931,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "372aff1c7cd05b8086766c59adb1ad12a55234d3"
+              "eb653b8168a19268a20cd177a135a7fa56681a22"
             ]
           },
           "content": "The two commits you made to this branch can be squashed. Do an interactive rebase that goes back to all the commits unique to this branch (`HEAD~2`).",
@@ -5956,7 +5956,7 @@
               "./sql_reference/.git/rebase-merge/done"
             ],
             "commits": [
-              "f176d258800325e9bfaba7e98121f54e93f9b434"
+              "e7a7ac1a938b9212a2c88875f958a022ab870465"
             ]
           },
           "content": "Squash your commit that was for adding the `sample.env` file. When you are done, save the file and exit Nano.",
@@ -5982,7 +5982,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4d558df704078c77eff8052dd5f6292724284b67"
+              "53f1bea47b323d356b68aa3225cc806b3798d5af"
             ]
           },
           "content": "Add a new message at the very top of the file, `feat: add .gitignore and sample.env`. When you are done, save and exit the file.",
@@ -6008,7 +6008,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7dcc31a5da4ed7f9d479b91e26e7dfacec3edb71"
+              "243eed2e43176746d41775a91a4e187d888cc284"
             ]
           },
           "content": "View only the last commit in your log.",
@@ -6034,7 +6034,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6a62a1065fc601dab6d6ab5c0b99b082cbd084c1"
+              "057971ef1e5327bb48c6198dc23da8db0ed81997"
             ]
           },
           "content": "Switch back to `main` so you can add this in.",
@@ -6059,7 +6059,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d6f109856b8427ea06d4a23a2984b9af5edf1801"
+              "e4d11ea836d0d995e89b791b4029e027009eb8a2"
             ]
           },
           "content": "Merge the branch you just made into here.",
@@ -6087,7 +6087,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5e0fb7313118251e0ca4cfc3ec3b3b5736df9808"
+              "eddca85497848d804a36b92f090b023973beb969"
             ]
           },
           "content": "Delete the feature branch you just merged.",
@@ -6114,7 +6114,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d02845b76443980a5b2edef5041ad0f7f80c034a"
+              "dccd2d2b1718c209b0d26504e8740f4117366141"
             ]
           },
           "content": "I think it's all finished. View your log with the oneline flag to see your whole history.",
@@ -6139,7 +6139,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bfbb8fd3a1822a28713806da6893958a3c9cf70e"
+              "87b152f67da3808fa7cada28adc1261a7577b796"
             ]
           },
           "content": "Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now.",
