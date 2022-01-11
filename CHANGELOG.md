@@ -22,3 +22,7 @@ Whenever a new version is created, add the new branch name and the changes here
 ## [v1.0.3]
 
 - Fix reset commands so it works everywhere
+
+## [v1.0.4]
+
+- Further improve reset command so it doesn't delete and recreate the `sql_reference` folder when resetting

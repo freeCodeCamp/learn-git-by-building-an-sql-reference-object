@@ -1,4 +1,4 @@
-version: '1.0.3'
+version: '1.0.4'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/freeCodeCamp/learn-git-by-building-an-sql-reference-object
-    branch: v1.0.3
+    branch: v1.0.4
   reset:
     commands:
       - './.freeCodeCamp/setup.sh'
