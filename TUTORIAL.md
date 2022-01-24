@@ -3313,7 +3313,7 @@ Now, when someone wants to run your repo, they will know that they need to creat
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add sql_reference.json` to add changes to staging
-- Type `git add .env` into the terminal and press enter
+- Type `git add sample.env` into the terminal and press enter
 
 ## 1940. git commit feat: add sample.env
 
