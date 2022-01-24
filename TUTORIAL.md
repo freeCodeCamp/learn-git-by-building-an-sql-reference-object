@@ -3027,7 +3027,8 @@ View your last five logs with the oneline flag again.
 
 - Use the `git log` command with the correct flag
 - It's the `--oneline` flag
-- Type `git log --oneline` into the terminal and press enter
+- Use `-5` with your `git log --oneline` command
+- Type `git log --oneline -5` into the terminal and press enter
 
 ## 1720. git rebase interactive HEAD~2
 
