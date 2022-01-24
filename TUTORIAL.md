@@ -2743,7 +2743,7 @@ Both, the commit to add the unique command and the one to revert it, were droppe
 
 ### 1570.1
 
-You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.
+You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in an another `nano` instance to `reword` commit message for the commit you just chose. Do not change anything in it just yet.
 
 #### HINTS
 
@@ -2755,7 +2755,7 @@ You can see that the latest commit is at the bottom here. Be careful not to chan
 
 ### 1572.1
 
-Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
+You are already in an `nano` instance, editing the commit meassage for the selected commit. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
 
 #### HINTS
 
