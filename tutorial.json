@@ -4713,7 +4713,7 @@
               "036ec034272c9e4acf8337314710fe9e01540136"
             ]
           },
-          "content": "At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.",
+          "content": "At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` preceeding your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.",
           "hints": [
             "You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`",
             "The most recent commit message should be `feat: add foreign key reference`",
@@ -4789,7 +4789,7 @@
               "9185faa657c4ce031c53803e8421731653c18d65"
             ]
           },
-          "content": "You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.",
+          "content": "You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in an another `nano` instance to `reword` commit message for the commit you just chose. Do not change anything in it just yet.",
           "hints": [
             "Replace `pick` with an `r` next to the suggested commit",
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
@@ -4814,7 +4814,7 @@
               "c246d5c960329d1d41a09e727d615d862022f9e5"
             ]
           },
-          "content": "Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.",
+          "content": "You are already in an `nano` instance, editing the commit meassage for the selected commit. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.",
           "hints": [
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
             "To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive --root` after it's done resetting. Then, in nano, replace `pick` with an `r` next to the `feat: add column reference` commit, and save and exit"
@@ -4943,7 +4943,7 @@
               "acf7ce7783267410c21568103c72c1f33fdfd14e"
             ]
           },
-          "content": "Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file.",
+          "content": "Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of `nano`. Don't change aything just yet.",
           "hints": [
             "Replace `pick` with an `s` next to the suggested commits",
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
@@ -5202,8 +5202,8 @@
           },
           "content": "This branch is up to date now. In your JSON file, add a `rename` key to the `table` object. The value is in the hints, but give it a try first. It follows a similar structure as the rest of them.",
           "hints": [
-            "The value is `\"ALTER TABLE table_name RENAME_TO new_name;\"`",
-            "The `table` object should look like this:\n```json\n{\n  \"create\": \"CREATE TABLE table_name();\",\n  \"drop\": \"DROP TABLE table_name;\",\n  \"rename\": \"ALTER TABLE table_name RENAME_TO new_name;\"\n}\n```",
+            "The value is `\"ALTER TABLE table_name RENAME TO new_name;\"`",
+            "The `table` object should look like this:\n```json\n{\n  \"create\": \"CREATE TABLE table_name();\",\n  \"drop\": \"DROP TABLE table_name;\",\n  \"rename\": \"ALTER TABLE table_name RENAME TO new_name;\"\n}\n```",
             "The whole file should look like this:\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\",\n    \"rename\": \"ALTER DATABASE database_name RENAME TO new_name;\"\n  },\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name();\",\n    \"drop\": \"DROP TABLE table_name;\",\n    \"rename\": \"ALTER TABLE table_name RENAME TO new_name;\"\n  },\n  \"row\": {\n    \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\",\n    \"update\": \"UPDATE table_name SET column_name = new_value WHERE condition;\",\n    \"delete\": \"DELETE FROM table_name WHERE condition;\"\n  },\n  \"column\": {\n    \"add\": \"ALTER TABLE table_name ADD COLUMN column_name;\",\n    \"drop\": \"ALTER TABLE table_name DROP COLUMN column_name;\",\n    \"rename\": \"ALTER TABLE table_name RENAME COLUMN column_name TO new_name;\",\n    \"primary_key\": \"ALTER TABLE table_name ADD PRIMARY KEY(column_name);\",\n    \"foreign_key\": \"ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);\"\n  }\n}\n\n```",
             "Make sure there's one empty line at the bottom of the file and no extra spaces after any of the values or curly brackets",
             "You can view the `git diff` to see if there's any extra spaces"
@@ -5284,7 +5284,8 @@
           "hints": [
             "Use the `git log` command with the correct flag",
             "It's the `--oneline` flag",
-            "Type `git log --oneline` into the terminal and press enter"
+            "Use `-5` with your `git log --oneline` command",
+            "Type `git log --oneline -5` into the terminal and press enter"
           ]
         }
       ]
@@ -5868,7 +5869,7 @@
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
             "You previously used `git add sql_reference.json` to add changes to staging",
-            "Type `git add .env` into the terminal and press enter"
+            "Type `git add sample.env` into the terminal and press enter"
           ]
         }
       ]
