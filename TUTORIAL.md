@@ -2706,7 +2706,7 @@ If you look at the bottom of those two messages, it shows the diff. The diff of 
 
 ### 1563.1
 
-At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
+At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` preceeding your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
 
 #### HINTS
 
