@@ -193,7 +193,7 @@ Check your status again.
 
 ### 160.1
 
-You now have one file in staging and one that is untracked. Add the new file you created to the staging area. 
+You now have one file in staging and one that is untracked. Add the new file you created to the staging area.
 
 #### HINTS
 
@@ -1006,7 +1006,7 @@ The create table command is a function, so it needs parenthesis `()` at the end.
 
 ### 700.1
 
-Check your status and diff to see your new changes. Then, add your files to staging. 
+Check your status and diff to see your new changes. Then, add your files to staging.
 
 #### HINTS
 
@@ -1362,7 +1362,7 @@ Another commit was added to `main`, you should update this branch again. To be m
 
 ### 950.1
 
-The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again. 
+The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.
 
 #### HINTS
 
@@ -2533,7 +2533,7 @@ There was a conflict when it tried to add the first commit from this branch on t
 
 ### 1520.1
 
-View the diff to make sure you like the changes, then add the changes to staging. 
+View the diff to make sure you like the changes, then add the changes to staging.
 
 #### HINTS
 
@@ -3448,7 +3448,7 @@ I think it's all finished. View your log with the oneline flag to see your whole
 
 ### 2000.1
 
-Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
+Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now.
 
 #### HINTS
 
