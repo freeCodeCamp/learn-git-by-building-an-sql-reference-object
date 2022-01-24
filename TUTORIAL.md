@@ -2950,13 +2950,13 @@ This branch is up to date now. In your JSON file, add a `rename` key to the `tab
 
 #### HINTS
 
-- The value is `"ALTER TABLE table_name RENAME_TO new_name;"`
+- The value is `"ALTER TABLE table_name RENAME TO new_name;"`
 - The `table` object should look like this:
 ```json
 {
   "create": "CREATE TABLE table_name();",
   "drop": "DROP TABLE table_name;",
-  "rename": "ALTER TABLE table_name RENAME_TO new_name;"
+  "rename": "ALTER TABLE table_name RENAME TO new_name;"
 }
 ```
 - The whole file should look like this:
