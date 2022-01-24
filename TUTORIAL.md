@@ -2819,7 +2819,7 @@ Now the hashes are the same as they were before you rebased back to `--root`, wh
 
 ### 1590.1
 
-Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file.
+Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of `nano`. Don't change aything just yet.
 
 #### HINTS
 
