@@ -4789,7 +4789,7 @@
               "9185faa657c4ce031c53803e8421731653c18d65"
             ]
           },
-          "content": "You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in an another `nano` instance to `reword` commit message for the commit you just chose. Do not change anything in it just yet.",
+          "content": "You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in another Nano instance to reword the commit message. Don't change anything in it yet.",
           "hints": [
             "Replace `pick` with an `r` next to the suggested commit",
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
@@ -4814,7 +4814,7 @@
               "c246d5c960329d1d41a09e727d615d862022f9e5"
             ]
           },
-          "content": "You are already in an `nano` instance, editing the commit meassage for the selected commit. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.",
+          "content": "Git is waiting for you to edit the commit message. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.",
           "hints": [
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
             "To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive --root` after it's done resetting. Then, in nano, replace `pick` with an `r` next to the `feat: add column reference` commit, and save and exit"
@@ -4943,7 +4943,7 @@
               "acf7ce7783267410c21568103c72c1f33fdfd14e"
             ]
           },
-          "content": "Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of `nano`. Don't change aything just yet.",
+          "content": "Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of Nano. Don't change anything in it yet.",
           "hints": [
             "Replace `pick` with an `s` next to the suggested commits",
             "Save and exit the file by pressing `ctrl+x` then `y` then `enter`",
