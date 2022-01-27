@@ -2743,7 +2743,7 @@ Both, the commit to add the unique command and the one to revert it, were droppe
 
 ### 1570.1
 
-You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in an another `nano` instance to `reword` commit message for the commit you just chose. Do not change anything in it just yet.
+You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in another Nano instance to reword the commit message. Don't change anything in it yet.
 
 #### HINTS
 
@@ -2755,7 +2755,7 @@ You can see that the latest commit is at the bottom here. Be careful not to chan
 
 ### 1572.1
 
-You are already in an `nano` instance, editing the commit meassage for the selected commit. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
+Git is waiting for you to edit the commit message. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2819,7 +2819,7 @@ Now the hashes are the same as they were before you rebased back to `--root`, wh
 
 ### 1590.1
 
-Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of `nano`. Don't change aything just yet.
+Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of Nano. Don't change anything in it yet.
 
 #### HINTS
 
