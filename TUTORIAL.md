@@ -2706,7 +2706,7 @@ If you look at the bottom of those two messages, it shows the diff. The diff of 
 
 ### 1563.1
 
-At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
+At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2731,7 +2731,7 @@ View your log. Use the `--oneline` flag.
 
 ### 1567.1
 
-Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.
+Both, the commit to add the unique command and the one to revert it, were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.
 
 #### HINTS
 
@@ -2832,7 +2832,7 @@ Squashing commits means that you will take a bunch of commits and turn them into
 
 ### 1595.1
 
-Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those message and finish squashing the commits.
+Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those messages and finish squashing the commits.
 
 #### HINTS
 
@@ -2893,7 +2893,7 @@ Merge your branch for adding column commands into this one.
 
 ### 1635.1
 
-Hopefully, there was no conflicts. Delete your branch for adding information about column commands since you are done with it.
+Hopefully, there were no conflicts. Delete your branch for adding information about column commands since you are done with it.
 
 #### HINTS
 
