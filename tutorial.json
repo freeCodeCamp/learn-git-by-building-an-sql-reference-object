@@ -4713,7 +4713,7 @@
               "036ec034272c9e4acf8337314710fe9e01540136"
             ]
           },
-          "content": "At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the work `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.",
+          "content": "At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.",
           "hints": [
             "You can save and exit Nano by pressing `ctrl+x` then `y` then `enter`",
             "The most recent commit message should be `feat: add foreign key reference`",
@@ -4764,7 +4764,7 @@
               "f5635e999b7b57ce2638d037f0ea2b2b7db2c748"
             ]
           },
-          "content": "Both, the commit to add the unique command and the one to revert it were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.",
+          "content": "Both, the commit to add the unique command and the one to revert it, were dropped. Enter another `--interactive` rebase that goes back to the `--root` instead of `HEAD~2`. I am going to show you how to change a commit message. `--root` means that the rebase will go back to your very first commit.",
           "hints": [
             "The command is `git rebase` with two arguments",
             "The two arguments are `--interactive` and `--root`",
@@ -4969,7 +4969,7 @@
               "894eb6722531a98ee88e349e9828d05675511723"
             ]
           },
-          "content": "Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those message and finish squashing the commits.",
+          "content": "Nano brought up a list of all the commit messages you used for the commits. Don't change anything in there, just exit the file to use those messages and finish squashing the commits.",
           "hints": [
             "Press `ctrl+x` to exit the file",
             "To reset this lesson, make sure nano is closed. Then, hit reset and enter `git rebase --interactive HEAD~5` after it's done resetting. Then, in nano, replace `pick` with an `s` next to all the commits except the `feat: add column reference` commit, and save and exit"
@@ -5095,7 +5095,7 @@
               "a7912ce16ef096aa4d07dd9d1f75f331a6ed5a68"
             ]
           },
-          "content": "Hopefully, there was no conflicts. Delete your branch for adding information about column commands since you are done with it.",
+          "content": "Hopefully, there were no conflicts. Delete your branch for adding information about column commands since you are done with it.",
           "hints": [
             "Use the `git branch` command with the `-d` flag",
             "Here's an example: `git branch -d branch_name`",
