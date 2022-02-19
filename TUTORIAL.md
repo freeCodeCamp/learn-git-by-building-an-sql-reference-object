@@ -193,7 +193,7 @@ Check your status again.
 
 ### 160.1
 
-You now have one file in staging and one that is untracked. Add the new file you created to the staging area. 
+You now have one file in staging and one that is untracked. Add the new file you created to the staging area.
 
 #### HINTS
 
@@ -1006,7 +1006,7 @@ The create table command is a function, so it needs parenthesis `()` at the end.
 
 ### 700.1
 
-Check your status and diff to see your new changes. Then, add your files to staging. 
+Check your status and diff to see your new changes. Then, add your files to staging.
 
 #### HINTS
 
@@ -1362,7 +1362,7 @@ Another commit was added to `main`, you should update this branch again. To be m
 
 ### 950.1
 
-The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again. 
+The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.
 
 #### HINTS
 
@@ -2533,7 +2533,7 @@ There was a conflict when it tried to add the first commit from this branch on t
 
 ### 1520.1
 
-View the diff to make sure you like the changes, then add the changes to staging. 
+View the diff to make sure you like the changes, then add the changes to staging.
 
 #### HINTS
 
@@ -2706,7 +2706,7 @@ If you look at the bottom of those two messages, it shows the diff. The diff of 
 
 ### 1563.1
 
-At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` by your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
+At the top of Nano, you can see the two commits with `pick` next to them. Below them, there's a list of options for working with them. `pick` means that it will use the commits as they were. At the bottom, it says, `d, drop = remove commit`. Replace the word `pick` preceeding your two commits with a `d` to drop them both. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2743,7 +2743,7 @@ Both, the commit to add the unique command and the one to revert it, were droppe
 
 ### 1570.1
 
-You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano.
+You can see that the latest commit is at the bottom here. Be careful not to change the wrong commits. One of the options is `r, reword = use commit, but edit the commit message`. Replace `pick` with an `r` next to the commit with the message `feat: add column reference` to reword the message, it's the very first commit you added to this branch. When you are done, save the file and exit Nano. Git will put you in another Nano instance to reword the commit message. Don't change anything in it yet.
 
 #### HINTS
 
@@ -2755,7 +2755,7 @@ You can see that the latest commit is at the bottom here. Be careful not to chan
 
 ### 1572.1
 
-Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
+Git is waiting for you to edit the commit message. Add an `s` at the end of the commit message so it is `feat: add column references`. When you are done, save the file and exit Nano.
 
 #### HINTS
 
@@ -2819,7 +2819,7 @@ Now the hashes are the same as they were before you rebased back to `--root`, wh
 
 ### 1590.1
 
-Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file.
+Squashing commits means that you will take a bunch of commits and turn them into one. This is helpful to keep your commit history clean and something you want try to do. Replace `pick` with an `s` next to all your commits except the one with the message `feat: add column references`. When you are done, save and exit the file. You will find yourself in another instance of Nano. Don't change anything in it yet.
 
 #### HINTS
 
@@ -2950,13 +2950,13 @@ This branch is up to date now. In your JSON file, add a `rename` key to the `tab
 
 #### HINTS
 
-- The value is `"ALTER TABLE table_name RENAME_TO new_name;"`
+- The value is `"ALTER TABLE table_name RENAME TO new_name;"`
 - The `table` object should look like this:
 ```json
 {
   "create": "CREATE TABLE table_name();",
   "drop": "DROP TABLE table_name;",
-  "rename": "ALTER TABLE table_name RENAME_TO new_name;"
+  "rename": "ALTER TABLE table_name RENAME TO new_name;"
 }
 ```
 - The whole file should look like this:
@@ -3027,7 +3027,8 @@ View your last five logs with the oneline flag again.
 
 - Use the `git log` command with the correct flag
 - It's the `--oneline` flag
-- Type `git log --oneline` into the terminal and press enter
+- Use `-5` with your `git log --oneline` command
+- Type `git log --oneline -5` into the terminal and press enter
 
 ## 1720. git rebase interactive HEAD~2
 
@@ -3312,7 +3313,7 @@ Now, when someone wants to run your repo, they will know that they need to creat
 - Use the `git add` command
 - Here's an example: `git add file_name`
 - You previously used `git add sql_reference.json` to add changes to staging
-- Type `git add .env` into the terminal and press enter
+- Type `git add sample.env` into the terminal and press enter
 
 ## 1940. git commit feat: add sample.env
 
@@ -3448,7 +3449,7 @@ I think it's all finished. View your log with the oneline flag to see your whole
 
 ### 2000.1
 
-Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now. 
+Looks great :smile: View the log one last time, without any flags, to see the details of all the commits. Congratulations, you are finished with your repo for now.
 
 #### HINTS
 
