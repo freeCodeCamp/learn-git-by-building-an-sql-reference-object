@@ -2570,7 +2570,7 @@ I'm going to show you a few ways to remove or undo a commit. The first is to sim
 
 ### 1536.1
 
-This is a "soft" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.
+This is a "medium" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.
 
 #### HINTS
 
