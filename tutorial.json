@@ -4434,7 +4434,7 @@
               "a90af9e7084661cc5051dc5e3360bd5317796fe7"
             ]
           },
-          "content": "This is a \"soft\" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.",
+          "content": "This is a \"mixed\" reset and will put the changes from the commit you undid in your working tree. You can see that it says there's unstaged changes after the reset to your file. View your log with the oneline flag.",
           "hints": [
             "Use the `git log` command with the correct flag",
             "It's the `--oneline` flag",
@@ -4508,7 +4508,7 @@
               "2f79d8ef75dd64486754d35820579ff20f968fc4"
             ]
           },
-          "content": "And the changes from the reset are back in the working tree. So when you `reset` to one commit before `HEAD`, it removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree. Add the changes back to staging so you can commit them again.",
+          "content": "And the changes from the reset are back in the working tree. So when you `reset` to one commit before `HEAD`, it removed the most recent commit, and put all the changes in the working tree. If you used the `--hard` flag with the reset, the changes would have not been added to the working tree and if you used the `--soft` flag, the changes would have been added to the working tree and to staging. Add the changes back to staging so you can commit them again.",
           "hints": [
             "Use the `git add` command",
             "Here's an example: `git add file_name`",
