@@ -2530,7 +2530,7 @@
               "2911df4bed99ff46d5a08fbb41ef5f26e7d1f391"
             ]
           },
-          "content": "The confict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.",
+          "content": "The conflict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.",
           "hints": [
             "Be sure to remove all those special characters",
             "The part of the JSON object with conflicts should look like this:\n```json\n\"row\": {\n  \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\"\n},\n\"column\": {\n  \"add\": \"ALTER TABLE table_name ADD COLUMN column_name;\"\n}\n```",
