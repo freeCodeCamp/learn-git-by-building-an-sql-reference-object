@@ -3050,7 +3050,7 @@
               "b1a7c3c5cebee156566a1ddc58e254a485b0e8c8"
             ]
           },
-          "content": "Now you can see the actual changes that are stored in the stash. Before, you used the pop command to removed the latest stash and add it to your working tree. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.",
+          "content": "Now you can see the actual changes that are stored in the stash. Before, you used the pop command to remove the latest stash and add it to your working tree. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.",
           "hints": [
             "Type `git stash apply` in the terminal and press enter"
           ]

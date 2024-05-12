@@ -1688,7 +1688,7 @@ You can see what file was changed and how many lines were added and removed from
 
 ### 1080.1
 
-Now you can see the actual changes that are stored in the stash. Before, you used the pop command to removed the latest stash and add it to your working tree. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.
+Now you can see the actual changes that are stored in the stash. Before, you used the pop command to remove the latest stash and add it to your working tree. You can add the latest stash while keeping it in the list with `git stash apply`. Apply your stash with this method.
 
 #### HINTS
 
