@@ -58,3 +58,5 @@ git commit /m "feat: add create database reference"
 git commit -m "feat: add create database reference"
 git log
 git status
+guit diff
+git diff
