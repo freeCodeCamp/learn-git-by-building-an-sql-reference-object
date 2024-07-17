@@ -149,3 +149,4 @@ git checkout feat/add-drop-table-reference
 git status
 git diff
 git add .
+git commit -m "feat: add drop table reference"
