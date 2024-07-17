@@ -40,3 +40,4 @@ echo SQL Reference >> README.md
 git status
 git add .
 git status
+touch sql_reference.json
