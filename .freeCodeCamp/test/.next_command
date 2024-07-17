@@ -49,3 +49,5 @@ git status
 git loh
 __vsc_prompt_cmd_original
 git log
+git log
+git status
