@@ -102,3 +102,4 @@ git branch
 git diff
 git status
 git diff
+git add .
