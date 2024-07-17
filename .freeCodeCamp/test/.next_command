@@ -157,3 +157,6 @@ git branch -d feat/add-drop-table-reference
 git checkout -b feat/add-column-reference
 git checkout -d feat/add-column-reference
 git checkout -b feat/add-column-references
+git checkout -d feat/add-column-reference
+git branch
+git branch -d feat/add-column-reference
