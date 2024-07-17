@@ -60,3 +60,4 @@ git log
 git status
 guit diff
 git diff
+git add .
