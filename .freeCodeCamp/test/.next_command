@@ -167,3 +167,5 @@ git log --onleine
 git log --oneline
 git checkout main
 git checkout -b fix/create-table-syntax
+git status
+git add .
