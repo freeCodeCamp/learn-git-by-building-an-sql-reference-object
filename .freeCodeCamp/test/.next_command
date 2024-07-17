@@ -100,3 +100,4 @@ git branch
 git checkout feat/add-create-table-reference
 git branch
 git diff
+git status
