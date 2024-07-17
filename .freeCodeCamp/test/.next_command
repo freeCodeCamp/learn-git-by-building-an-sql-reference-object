@@ -37,3 +37,4 @@ git status
 touch README.md
 echo SQL Reference >> readme.md
 echo SQL Reference >> README.md
+git status
