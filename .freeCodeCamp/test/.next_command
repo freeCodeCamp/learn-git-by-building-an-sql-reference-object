@@ -147,3 +147,4 @@ get branch feat/add-drop-table-reference
 git branch feat/add-drop-table-reference
 git checkout feat/add-drop-table-reference
 git status
+git diff
