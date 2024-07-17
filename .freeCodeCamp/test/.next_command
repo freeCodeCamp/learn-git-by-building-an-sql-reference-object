@@ -160,3 +160,4 @@ git checkout -b feat/add-column-references
 git checkout -d feat/add-column-reference
 git branch
 git branch -d feat/add-column-reference
+git diff
