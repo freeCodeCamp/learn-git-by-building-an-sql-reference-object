@@ -43,3 +43,4 @@ git status
 touch sql_reference.json
 git status
 git add .
+git status
