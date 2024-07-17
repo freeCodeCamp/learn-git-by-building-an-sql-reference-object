@@ -44,3 +44,4 @@ touch sql_reference.json
 git status
 git add .
 git status
+git commit -m "Initial commit"
