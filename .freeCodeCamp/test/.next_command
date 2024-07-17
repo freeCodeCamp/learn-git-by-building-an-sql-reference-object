@@ -171,3 +171,4 @@ git status
 git add .
 git commit -m "fix: create table syntax"
 git checkout main
+git branch
