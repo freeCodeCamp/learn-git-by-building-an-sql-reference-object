@@ -32,3 +32,4 @@ cd sql_reference/
 git init
 ls --color=auto -a
 git status
+git checkout -b main
