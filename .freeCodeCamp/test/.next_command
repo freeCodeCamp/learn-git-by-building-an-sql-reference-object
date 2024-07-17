@@ -182,3 +182,7 @@ git log
 git log --oneline
 git rebase main
 git log --oneline
+git diff
+git status
+add .
+git add .
