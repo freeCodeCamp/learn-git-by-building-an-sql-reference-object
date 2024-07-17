@@ -187,3 +187,4 @@ git status
 add .
 git add .
 git commit -m "feat: add drop column reference"
+git log --oneline
