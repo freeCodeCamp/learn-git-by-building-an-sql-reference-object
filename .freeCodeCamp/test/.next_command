@@ -151,3 +151,4 @@ git diff
 git add .
 git commit -m "feat: add drop table reference"
 git checkout main
+git branch
