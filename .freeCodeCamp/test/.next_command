@@ -28,3 +28,4 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo hello git
 mkdir sql_reference
+cd sql_reference/
