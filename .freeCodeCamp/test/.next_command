@@ -53,3 +53,4 @@ git log
 git status
 git diff
 git add .
+git status
