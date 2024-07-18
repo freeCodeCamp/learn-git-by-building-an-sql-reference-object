@@ -330,3 +330,4 @@ git checkout -b feat/add-row-references
 git checkout main
 git branch -d feat/add-row-references
 git checkout -b feat/add-more-row-references
+git stash list
