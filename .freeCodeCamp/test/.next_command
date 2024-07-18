@@ -313,3 +313,4 @@ git stash list
 git stash show
 git stash show -p
 __vsc_prompt_cmd_original
+git stash apply
