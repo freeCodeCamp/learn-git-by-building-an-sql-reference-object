@@ -349,3 +349,4 @@ git status
 git add .
 git status
 git rebase --continue
+git log --oneline
