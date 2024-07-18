@@ -335,3 +335,4 @@ gist stash pop
 git stash pop
 __vsc_prompt_cmd_original
 git stash list
+git diff
