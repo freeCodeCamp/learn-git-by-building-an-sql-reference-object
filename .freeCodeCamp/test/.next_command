@@ -243,3 +243,4 @@ git add .
 git commit -m "feat: add rename column reference"
 git branch
 git checkout feat/add-insert-row-reference
+git status
