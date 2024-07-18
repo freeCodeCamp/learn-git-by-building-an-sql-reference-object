@@ -316,3 +316,4 @@ __vsc_prompt_cmd_original
 git stash apply
 git stash list
 git stash
+git stash list
