@@ -310,3 +310,4 @@ git stash pop
 git stash list
 git stash
 git stash list
+git stash show
