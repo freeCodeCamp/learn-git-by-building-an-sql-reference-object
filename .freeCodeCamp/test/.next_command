@@ -226,3 +226,4 @@ git add .
 git commit -m "feat: add insert row reference"
 sql checkout main
 git checkout main
+git branch
