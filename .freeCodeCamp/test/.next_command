@@ -357,3 +357,5 @@ __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 git add .
 git commit -m "feat: add primary key reference"
+git diff
+git add .
