@@ -306,3 +306,4 @@ git stash
 git status
 git stash lsit
 git stash list
+git stash pop
