@@ -346,3 +346,4 @@ git rebase
 git rebase main
 git diff
 git status
+git add .
