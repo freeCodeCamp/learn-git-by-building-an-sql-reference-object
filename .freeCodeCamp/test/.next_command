@@ -320,3 +320,4 @@ git stash list
 git stash show stash{1}
 git stash show stash@{1}
 git stash show stash@{1} -p
+git stash drop
