@@ -350,3 +350,9 @@ git add .
 git status
 git rebase --continue
 git log --oneline
+git diff
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add .
