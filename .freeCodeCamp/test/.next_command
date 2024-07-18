@@ -231,3 +231,4 @@ git merge feat/add-insert-row-reference
 git log
 git branch
 git checkout feat/add-column-references
+git rebase main
