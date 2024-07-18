@@ -337,3 +337,4 @@ __vsc_prompt_cmd_original
 git stash list
 git diff
 git add .
+git commit -m "feat: add update row reference"
