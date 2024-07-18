@@ -333,3 +333,5 @@ git checkout -b feat/add-more-row-references
 git stash list
 gist stash pop
 git stash pop
+__vsc_prompt_cmd_original
+git stash list
