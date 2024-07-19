@@ -511,3 +511,4 @@ touch .gitignore
 git status
 cat .env
 cat .env >> .gitignore
+git status
