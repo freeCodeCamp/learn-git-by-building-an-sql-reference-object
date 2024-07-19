@@ -472,3 +472,4 @@ git log --oneline
 git rebase --interactive
 git rebase --interactive --root
 git rebase --interactive --root
+git log --oneline
