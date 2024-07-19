@@ -465,3 +465,5 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 cd sql_reference/
 git show HEAD~1
 git rebase --interactive HEAD~2
+git stash
+git rebase --interactive HEAD~2
