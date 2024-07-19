@@ -416,3 +416,4 @@ git status
 git add .
 __vsc_prompt_cmd_original
 git status
+git rebase --continue
