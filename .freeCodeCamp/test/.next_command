@@ -509,3 +509,5 @@ echo SECRET=MY_SECRET >> .env
 git status
 touch .gitignore
 git status
+cat .env
+cat .env >> .gitignore
