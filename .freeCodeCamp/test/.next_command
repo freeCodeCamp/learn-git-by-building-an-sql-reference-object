@@ -519,3 +519,4 @@ git status
 echo SECRET= >> sample.env
 add .
 git add .
+git commit -m "feat: add sample.env"
