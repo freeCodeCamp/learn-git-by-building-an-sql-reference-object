@@ -425,3 +425,4 @@ git reset HEAD~1
 git log --oneline
 git status
 git diff
+git reset HEAD~1 --soft
