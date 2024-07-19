@@ -490,3 +490,6 @@ git checkout fix/add-missing-rename-references
 git rebase main
 git log -5
 git log -5 --oneline
+git diff
+__vsc_prompt_cmd_original
+git add .
