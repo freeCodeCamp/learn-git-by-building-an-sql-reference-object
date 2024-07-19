@@ -524,3 +524,4 @@ git log -5 --oneline
 git rebase --interactive HEAD~2
 git log -1
 git checkout main
+git merge feat/add-gitignore
