@@ -412,3 +412,4 @@ git commit -m "fix: add missing rename database reference"
 git checkout feat/add-column-references
 git rebase
 git rebase main
+git status
