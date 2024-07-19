@@ -433,3 +433,4 @@ git stash
 git revert HEAD
 git status
 git log --oneline
+git show
