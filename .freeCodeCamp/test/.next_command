@@ -487,3 +487,4 @@ git checkout feat/add-more-row-references
 git checkout feat/add-insert-row-references
 git checkout feat/add-insert-row-reference
 git checkout fix/add-missing-rename-references
+git rebase main
