@@ -399,3 +399,5 @@ git add .
 git checkout feat/add-more-row-references
 git stash
 git checkout feat/add-more-row-references
+git diff
+git add .
