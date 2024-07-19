@@ -507,3 +507,4 @@ git checkout -b feat/add-gitignore
 touch .env
 echo SECRET=MY_SECRET >> .env
 git status
+touch .gitignore
