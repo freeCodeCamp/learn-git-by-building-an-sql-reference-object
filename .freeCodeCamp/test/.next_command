@@ -408,3 +408,4 @@ git branch -d feat/add-more-row-references
 git checkout -b fix/add-missing-rename-references
 git diff
 git add .
+git commit -m "fix: add missing rename database reference"
