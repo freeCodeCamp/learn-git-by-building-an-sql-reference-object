@@ -467,3 +467,5 @@ git show HEAD~1
 git rebase --interactive HEAD~2
 git stash
 git rebase --interactive HEAD~2
+git log
+git log --oneline
