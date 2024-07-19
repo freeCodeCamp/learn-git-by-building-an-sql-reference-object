@@ -523,3 +523,4 @@ git commit -m "feat: add sample.env"
 git log -5 --oneline
 git rebase --interactive HEAD~2
 git log -1
+git checkout main
