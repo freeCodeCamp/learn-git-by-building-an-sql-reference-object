@@ -512,3 +512,4 @@ git status
 cat .env
 cat .env >> .gitignore
 git status
+git add .
