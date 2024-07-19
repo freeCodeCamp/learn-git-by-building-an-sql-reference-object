@@ -417,3 +417,5 @@ git add .
 __vsc_prompt_cmd_original
 git status
 git rebase --continue
+git diff
+git add .
