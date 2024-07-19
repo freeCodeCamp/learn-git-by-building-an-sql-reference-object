@@ -428,3 +428,4 @@ git diff
 git reset HEAD~1 --soft
 git commmit -m "feat: add unique reference"
 git commit -m "feat: add unique reference"
+git revert HEAD
