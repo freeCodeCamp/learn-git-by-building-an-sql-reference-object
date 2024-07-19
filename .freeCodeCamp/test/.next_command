@@ -479,3 +479,4 @@ git rebase --interactive HEAD~5
 git log --onelines
 git log --oneline
 git log -1
+git checkout main
