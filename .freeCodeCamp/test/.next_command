@@ -476,3 +476,5 @@ git log --oneline
 git rebase main
 git log --oneline
 git rebase --interactive HEAD~5
+git log --onelines
+git log --oneline
