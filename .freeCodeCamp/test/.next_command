@@ -469,3 +469,5 @@ git stash
 git rebase --interactive HEAD~2
 git log
 git log --oneline
+git rebase --interactive
+git rebase --interactive --root
