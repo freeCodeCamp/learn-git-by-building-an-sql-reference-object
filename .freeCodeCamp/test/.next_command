@@ -406,3 +406,5 @@ git checkout main
 git merge feat/add-more-row-references
 git branch -d feat/add-more-row-references
 git checkout -b fix/add-missing-rename-references
+git diff
+git add .
