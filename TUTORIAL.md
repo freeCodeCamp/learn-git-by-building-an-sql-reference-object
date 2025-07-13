@@ -1635,7 +1635,7 @@ You can see one item there. Bring the changes back with `git stash pop`.
 
 ### 1050.1
 
-The changes from the stash reappeared in the file and git showed the status for you. You are right where you left of before stashing the changes. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.
+The changes from the stash reappeared in the file and git showed the status for you. You are right where you left off before stashing the changes. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.
 
 #### HINTS
 
