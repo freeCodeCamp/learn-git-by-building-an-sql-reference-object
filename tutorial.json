@@ -2932,7 +2932,7 @@
               "a99edebbd37ef2c807d344b27a50f59708812faa"
             ]
           },
-          "content": "The changes from the stash reappeared in the file and git showed the status for you. You are right where you left of before stashing the changes. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.",
+          "content": "The changes from the stash reappeared in the file and git showed the status for you. You are right where you left off before stashing the changes. Popping a stash like that will remove the most recent stash and apply it to your working tree. View the list of your stashes again.",
           "hints": [
             "Use the \"git stash list\" command in your repo",
             "Type `git stash list` in the terminal and press enter"
