@@ -2921,7 +2921,7 @@ Go to your branch for adding the commands that were missing. There's one more to
 
 ### 1650.1
 
-There was a commit added to `main` since you last worked on this. Update this branch with a rebase against main.
+There was a commit added to `main` since you last worked on this. Update this branch with a rebase against `main`.
 
 #### HINTS
 
