@@ -5149,7 +5149,7 @@
               "5c084993a86bbae2b8241b1a53d9b0520e9ea6c0"
             ]
           },
-          "content": "There was added a commit to `main` since you last worked on this. Update this branch with a rebase against main.",
+          "content": "There was a commit added to `main` since you last worked on this. Update this branch with a rebase against main.",
           "hints": [
             "Use the \"git rebase\" command",
             "Add the branch after the command that you want to rebase against",
